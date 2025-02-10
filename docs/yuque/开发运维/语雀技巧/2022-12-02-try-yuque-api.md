@@ -31,7 +31,7 @@ updated: "2023-04-12 17:00:15"
 import requests
 headers = {
 	"Content-Type": "application/json",
-	"User-Agent": ""Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
+	"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
 	"X-Auth-Token": 'XJ..........PQCoJtjrIO'
 }
 response = requests.request(method='GET', url='https://www.yuque.com/api/v2/users/shenweiyan/repos', headers=headers)

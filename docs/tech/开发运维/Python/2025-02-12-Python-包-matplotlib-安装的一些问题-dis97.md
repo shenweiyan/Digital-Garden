@@ -93,11 +93,11 @@ hint: See above for details.
 ```
 
 对于这种情况，可以：
-1. 根据提示给出的 URL 下载好相应的依赖（这个 URL 也可以在 `matplotlib-3.10.0/subprojects/*.wrap` 中找到），并把依赖包保存的服务器任何一个目录下。
-   - [freetype-2.6.1.wrap](https://github.com/matplotlib/matplotlib/blob/v3.10.x/subprojects/freetype-2.6.1.wrap)：`/bioinfo/src/py/freetype-2.6.1.tar.gz`；
+1. 根据提示给出的 URL 下载好相应的依赖（这个 URL 也可以在 `matplotlib-3.10.0/subprojects/*.wrap` 中找到），并把依赖包保存的服务器任何一个目录下。          
+   - [freetype-2.6.1.wrap](https://github.com/matplotlib/matplotlib/blob/v3.10.x/subprojects/freetype-2.6.1.wrap)：`/bioinfo/src/py/freetype-2.6.1.tar.gz`；         
    - [qhull.wrap](https://github.com/matplotlib/matplotlib/blob/v3.10.x/subprojects/qhull.wrap)：`/bioinfo/src/py/qhull-8.0.2.tar.gz`
    
-2. 修改 `matplotlib-3.10.0/subprojects/*.wrap`。
+2. 修改 `matplotlib-3.10.0/subprojects/*.wrap`。      
    - freetype-2.6.1.wrap
    ```
    [wrap-file]

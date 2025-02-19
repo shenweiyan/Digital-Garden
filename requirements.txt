@@ -4,4 +4,4 @@ mkdocs-rss-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-glightbox
 jieba
-mkdocs-awesome-pages-plugin
+mkdocs-awesome-nav

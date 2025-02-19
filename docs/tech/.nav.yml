@@ -1,11 +1,11 @@
-order: desc
-order_by: filename
+sort: 
+  direction: desc
+  by: filename
 
 nav:
     - index.md
     - 生物信息
-    - 操作系统
-    - 开发运维
     - 编程技术
+    - 开发运维
     - 数据库
     - 可视化

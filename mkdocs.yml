@@ -94,7 +94,7 @@ plugins:
       exclude:
           - blog/archive/*
           - blog/category/*
-  - awesome-pages:
+  - awesome-nav:
       order: desc
       sort_type: natural
       order_by: filename

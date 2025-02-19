@@ -48,17 +48,17 @@ jobs:
           GITCODE_REPOSITORY: shenweiyan/Knowledge-Garden
           GITCODE_PASSWORD: ${{ secrets.GITCODE_PAT }}
 
-      - name: Push to Gitee shenweiyan
-        uses: Yikun/hub-mirror-action@master
-        with:
-          src: github/shenweiyan
-          dst: gitee/shenweiyan
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          dst_token: ${{ secrets.GITEE_TOKEN }}
-          static_list: "Knowledge-Garden"
-          mappings: "Knowledge-Garden=>shenweiyan"
-          force_update: true
-          timeout: '0.5h'
+      #- name: Push to Gitee shenweiyan
+      #  uses: Yikun/hub-mirror-action@master
+      #  with:
+          #src: github/shenweiyan
+          #dst: gitee/shenweiyan
+          #dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          #dst_token: ${{ secrets.GITEE_TOKEN }}
+          #static_list: "Knowledge-Garden"
+          #mappings: "Knowledge-Garden=>shenweiyan"
+          #force_update: true
+          #timeout: '0.5h'
 
       #- name: Build Gitee Pages
       #  uses: yanglbme/gitee-pages-action@main

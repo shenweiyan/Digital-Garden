@@ -126,10 +126,10 @@ Cancel         [no]  => [RET]
 Accept License [yes] => 'A' >>A
 
 Please specify the installation directory.
-Path [/opt/ActiveTcl-8.6]: /Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9
+Path [/opt/ActiveTcl-8.6]: /home/shenweiyan/software/ActiveTcl-8.6.9
 
 Please specify the directory for the demos.
-Path [/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/demos]:
+Path [/home/shenweiyan/software/ActiveTcl-8.6.9/demos]:
 
 Please specify the runtime installation directory.
 
@@ -137,32 +137,32 @@ This is the directory the applications will see as their installation directory
 when searching for packages and libraries, instead of the directory the files
 were copied to. In most circumstances this is the same as the installation
 directory chosen before.
-Path [/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9]:
+Path [/home/shenweiyan/software/ActiveTcl-8.6.9]:
 
 Press return to begin installation
-     Installation Directory:  /Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9
-     Demos Directory:         /Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/demos
+     Installation Directory:  /home/shenweiyan/software/ActiveTcl-8.6.9
+     Demos Directory:         /home/shenweiyan/software/ActiveTcl-8.6.9/demos
      Runtime Directory:       See Installation Directory
 Cancel => C
 Next   => [RET] >>
 
 Installing ActiveTcl ...
-        Creating directory /Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/share ...
-        Creating directory /Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/share/man ...
+        Creating directory /home/shenweiyan/software/ActiveTcl-8.6.9/share ...
+        Creating directory /home/shenweiyan/software/ActiveTcl-8.6.9/share/man ...
         ......
 
 Please do not forget to extend your PATH and MANPATH variables to
 get access to the applications and manpages distributed with ActiveTcl.
 
 For a csh or compatible perform
-    setenv PATH "/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/bin:$PATH"
+    setenv PATH "/home/shenweiyan/software/ActiveTcl-8.6.9/bin:$PATH"
 
 For a sh or similar perform
-    PATH="/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/bin:$PATH"
+    PATH="/home/shenweiyan/software/ActiveTcl-8.6.9/bin:$PATH"
     export PATH
 
 Some shells (bash for example) allow
-    export PATH="/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/bin:$PATH"
+    export PATH="/home/shenweiyan/software/ActiveTcl-8.6.9/bin:$PATH"
 
 Similar changes are required for MANPATH
 Finish >>
@@ -170,7 +170,7 @@ Finish >>
 
 ActiveTcl 安装完成后，需要把 path 添加至环境变量（\~/.bashrc）:
 ```
-export PATH="/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/bin:$PATH"
+export PATH="/home/shenweiyan/software/ActiveTcl-8.6.9/bin:$PATH"
 ```
 
 ## Tcl/Tk
@@ -199,11 +199,11 @@ make install
 
 这里以 Python-3.11.6 为例，参考 [Python 3.11.0 install doesn’t recognize homebrew Tcl/Tk due to --with-tcltk-libs, --with-tcltk-includes switches being removed from 3.11 - pyenv#2499](https://github.com/pyenv/pyenv/issues/2499)，在编译安装过程中使用 `TCLTK_CFLAGS` 和 `TCLTK_LIBS` 解决 `_tkinter` 缺失的问题。
 ```
-export TCLTK_LIBS="-L/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/lib -ltcl8.6 -ltk8.6"  # 8.5.x 版本，需改为 -ltcl8.5 -ltk8.5
-export TCLTK_CFLAGS="-I/Bioinfo/Pipeline/SoftWare/ActiveTcl-8.6.9/include"
+export TCLTK_LIBS="-L/home/shenweiyan/software/ActiveTcl-8.6.9/lib -ltcl8.6 -ltk8.6"  # 8.5.x 版本，需改为 -ltcl8.5 -ltk8.5
+export TCLTK_CFLAGS="-I/home/shenweiyan/software/ActiveTcl-8.6.9/include"
 
 cd Python-3.11.6
-/configure --prefix=/Bioinfo/Pipeline/SoftWare/python-3.11.6 ......
+/configure --prefix=/home/shenweiyan/software/python-3.11.6 ......
 make && make install
 ```
 

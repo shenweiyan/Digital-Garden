@@ -45,7 +45,7 @@ Linux log01 2.6.32-431.el6.x86_64 #1 SMP Sun Nov 10 22:19:54 EST 2013 x86_64 x86
    **The `NO_NEW_PRIVS` bit is supported since Linux 3.5！**
    <br/> 
    ```bash
-   $ ./configure --prefix=/Bioinfo/Pipeline/SoftWare/Singularity-2.5.0
+   $ ./configure --prefix=/home/shenweiyan/software/Singularity-2.5.0
    checking for feature: NO_NEW_PRIVS... no
      
    ERROR!!!!!!

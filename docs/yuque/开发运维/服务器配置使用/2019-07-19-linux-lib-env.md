@@ -156,8 +156,8 @@ clear;
 bcl_fq='/Bioinfo/Project/BCL_fastq‘
 
 # Custom Path
-ANACONDA2_PATH='/Bioinfo/Pipeline/SoftWare/Anaconda2/bin'
-PERL_PATH='/Bioinfo/Pipeline/SoftWare/Perl-5.26/bin‘
+ANACONDA2_PATH='/home/shenweiyan/software/Anaconda2/bin'
+PERL_PATH='/home/shenweiyan/software/Perl-5.26/bin‘
 export PATH="$ANACONDA2_PATH:$ANACONDA3_PATH:$hdf5_PATH:$PERL_PATH:$PATH"
 
 export LD_LIBRARY_PATH="……: $LD_LIBRARY_PATH"

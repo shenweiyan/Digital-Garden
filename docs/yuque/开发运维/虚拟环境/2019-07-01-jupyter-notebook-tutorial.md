@@ -84,7 +84,7 @@ $ jupyter notebook --ip=0.0.0.0 --port=8080
 $ jupyter notebook --no-browser
 
 $ jupyter-notebook
-[I 10:47:32.588 NotebookApp] JupyterLab alpha preview extension loaded from /Bio/Bioinfo/Pipeline/SoftWare/Python/Anaconda2.5/lib/python2.7/site-packages/jupyterlab
+[I 10:47:32.588 NotebookApp] JupyterLab alpha preview extension loaded from /Bio/home/shenweiyan/software/Python/Anaconda2.5/lib/python2.7/site-packages/jupyterlab
 JupyterLab v0.27.0
 Known labextensions:
 [I 10:47:32.626 NotebookApp] Running the core application with no additional extensions or settings

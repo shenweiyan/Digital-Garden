@@ -19,19 +19,19 @@ Number of discriminative features with abs LDA score > 2.0 : 51
 
 $ lefse-plot_res.py hmp_aerobiosis_small.res hmp_aerobiosis_small.png
 Traceback (most recent call last):
-  File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/bin/lefse-plot_res.py", line 177, in <module>
+  File "/Bio/home/shenweiyan/software/Anaconda2/bin/lefse-plot_res.py", line 177, in <module>
     else: plot_histo_hor(params['output_file'],params,data,len(data['cls']) == 2,params['report_features'])
-  File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/bin/lefse-plot_res.py", line 70, in plot_histo_hor
+  File "/Bio/home/shenweiyan/software/Anaconda2/bin/lefse-plot_res.py", line 70, in plot_histo_hor
     ax = fig.add_subplot(111,frame_on=False,axis_bgcolor=params['back_color'])
-  File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages/matplotlib/figure.py", line 1239, in add_subplot
+  File "/Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages/matplotlib/figure.py", line 1239, in add_subplot
     a = subplot_class_factory(projection_class)(self, *args, **kwargs)
-  File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages/matplotlib/axes/_subplots.py", line 77, in __init__
+  File "/Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages/matplotlib/axes/_subplots.py", line 77, in __init__
     self._axes_class.__init__(self, fig, self.figbox, **kwargs)
-  File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages/matplotlib/axes/_base.py", line 539, in __init__
+  File "/Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages/matplotlib/axes/_base.py", line 539, in __init__
     self.update(kwargs)
-  File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages/matplotlib/artist.py", line 888, in update
+  File "/Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages/matplotlib/artist.py", line 888, in update
     for k, v in props.items()]
-  File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages/matplotlib/artist.py", line 881, in _update_property
+  File "/Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages/matplotlib/artist.py", line 881, in _update_property
     raise AttributeError('Unknown property %s' % k)
 AttributeError: Unknown property axis_bgcolor
 ```

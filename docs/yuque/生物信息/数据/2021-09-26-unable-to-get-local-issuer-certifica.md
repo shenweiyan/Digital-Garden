@@ -16,25 +16,25 @@ updated: "2021-11-06 19:29:44"
 >>> Entrez.email = "A.N.Other@example.com"
 >>> records = SeqIO.parse(Entrez.efetch(id='NM_001009537.4', db="nucleotide", rettype="gb", retmode="text"), "gb")
 Traceback (most recent call last):
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/urllib/request.py", line 1317, in do_open
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/urllib/request.py", line 1317, in do_open
     encode_chunked=req.has_header('Transfer-encoding'))
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/http/client.py", line 1229, in request
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/http/client.py", line 1229, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/http/client.py", line 1275, in _send_request
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/http/client.py", line 1275, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/http/client.py", line 1224, in endheaders
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/http/client.py", line 1224, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/http/client.py", line 1016, in _send_output
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/http/client.py", line 1016, in _send_output
     self.send(msg)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/http/client.py", line 956, in send
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/http/client.py", line 956, in send
     self.connect()
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/http/client.py", line 1392, in connect
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/http/client.py", line 1392, in connect
     server_hostname=server_hostname)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/ssl.py", line 412, in wrap_socket
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/ssl.py", line 412, in wrap_socket
     session=session
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/ssl.py", line 853, in _create
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/ssl.py", line 853, in _create
     self.do_handshake()
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/ssl.py", line 1117, in do_handshake
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/ssl.py", line 1117, in do_handshake
     self._sslobj.do_handshake()
 ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)
 
@@ -42,21 +42,21 @@ During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/Bio/Entrez/__init__.py", line 184, in efetch
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/site-packages/Bio/Entrez/__init__.py", line 184, in efetch
     return _open(cgi, variables, post=post)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/Bio/Entrez/__init__.py", line 543, in _open
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/site-packages/Bio/Entrez/__init__.py", line 543, in _open
     handle = _urlopen(cgi)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/urllib/request.py", line 222, in urlopen
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/urllib/request.py", line 222, in urlopen
     return opener.open(url, data, timeout)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/urllib/request.py", line 525, in open
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/urllib/request.py", line 525, in open
     response = self._open(req, data)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/urllib/request.py", line 543, in _open
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/urllib/request.py", line 543, in _open
     '_open', req)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/urllib/request.py", line 503, in _call_chain
     result = func(*args)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/urllib/request.py", line 1360, in https_open
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/urllib/request.py", line 1360, in https_open
     context=self._context, check_hostname=self._check_hostname)
-  File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/urllib/request.py", line 1319, in do_open
+  File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/urllib/request.py", line 1319, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1056)>
 ```
@@ -81,7 +81,7 @@ urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certifica
 ```python
 >>> import ssl
 >>> print(ssl.get_default_verify_paths())
-DefaultVerifyPaths(cafile=None, capath='/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/certs', openssl_cafile_env='SSL_CERT_FILE', openssl_cafile='/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/cert.pem', openssl_capath_env='SSL_CERT_DIR', openssl_capath='/Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl/certs')
+DefaultVerifyPaths(cafile=None, capath='/home/shenweiyan/software/LibDependence/openssl-1.1.1/ssl/certs', openssl_cafile_env='SSL_CERT_FILE', openssl_cafile='/home/shenweiyan/software/LibDependence/openssl-1.1.1/ssl/cert.pem', openssl_capath_env='SSL_CERT_DIR', openssl_capath='/home/shenweiyan/software/LibDependence/openssl-1.1.1/ssl/certs')
 ```
 
 由于在 **openssl_cafile** 中指定的 CA 文件（**cert.pem**）不存在，所以导致上面的错误。
@@ -89,7 +89,7 @@ DefaultVerifyPaths(cafile=None, capath='/Bioinfo/Pipeline/SoftWare/LibDependence
 2.  下载 CA 文件，将下载的 CA 文件放到 **openssl_cafile** 指定位置。注意，如果放到 **openssl_capath** 目录下还会出现类似的问题，一定要放到 **openssl_cafile** 指定的位置。
 
 ```python
-$ cd /Bioinfo/Pipeline/SoftWare/LibDependence/openssl-1.1.1/ssl
+$ cd /home/shenweiyan/software/LibDependence/openssl-1.1.1/ssl
 $ wget http://curl.haxx.se/ca/cacert.pem -O cert.pem --no-check-certificate
 ```
 

@@ -11,7 +11,7 @@ updated: "2021-06-25 10:41:01"
 ```r
 > install.packages("rms")
 --- Please select a CRAN mirror for use in this session ---
-Warning: failed to download mirrors file (cannot open URL 'https://cran.r-project.org/CRAN_mirrors.csv'); using local file '/Bioinfo/Pipeline/SoftWare/R/R-3.6.1/lib64/R/doc/CRAN_mirrors.csv'
+Warning: failed to download mirrors file (cannot open URL 'https://cran.r-project.org/CRAN_mirrors.csv'); using local file '/home/shenweiyan/software/R/R-3.6.1/lib64/R/doc/CRAN_mirrors.csv'
 trying URL 'http://mirrors.tuna.tsinghua.edu.cn/CRAN/src/contrib/rms_6.0-0.tar.gz'
 Content type 'application/x-gzip' length 623859 bytes (609 KB)
 ==================================================

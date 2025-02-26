@@ -13,7 +13,7 @@ updated: "2021-06-25 10:54:01"
 ```bash
 > install.packages("packagefinder")
 --- Please select a CRAN mirror for use in this session ---
-Warning: failed to download mirrors file (cannot open URL 'https://cran.r-project.org/CRAN_mirrors.csv'); using local file '/RiboBio/Bioinfo/Pipeline/SoftWare/R/R-4.0.3/lib64/R/doc/CRAN_mirrors.csv'
+Warning: failed to download mirrors file (cannot open URL 'https://cran.r-project.org/CRAN_mirrors.csv'); using local file '/RiboBio/home/shenweiyan/software/R/R-4.0.3/lib64/R/doc/CRAN_mirrors.csv'
 trying URL 'https://mirrors.ustc.edu.cn/CRAN/src/contrib/packagefinder_0.3.2.tar.gz'
 Content type 'application/octet-stream' length 433718 bytes (423 KB)
 ==================================================

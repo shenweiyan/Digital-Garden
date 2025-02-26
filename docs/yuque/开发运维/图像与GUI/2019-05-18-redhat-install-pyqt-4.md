@@ -26,15 +26,15 @@ updated: "2021-06-25 10:45:05"
     $ conda install STAMP
 
     $ which STAMP
-    /Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/bin/STAMP
+    /Bio/home/shenweiyan/software/Anaconda2/bin/STAMP
 
     $ STAMP
     Traceback (most recent call last):
-      File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/bin/STAMP", line 32, in <module>
+      File "/Bio/home/shenweiyan/software/Anaconda2/bin/STAMP", line 32, in <module>
         from stamp import STAMP
-      File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages/stamp/STAMP.py", line 38, in <module>
+      File "/Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages/stamp/STAMP.py", line 38, in <module>
         from stamp.GUI.plotDlg import PlotDlg  # forward reference so py2app recognizes this file is required
-      File "/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages/stamp/GUI/plotDlg.py", line 24, in <module>
+      File "/Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages/stamp/GUI/plotDlg.py", line 24, in <module>
         from PyQt4 import QtGui, QtCore
     ImportError: No module named PyQt4
 
@@ -64,8 +64,8 @@ updated: "2021-06-25 10:45:05"
 $ wget https://nchc.dl.sourceforge.net/project/pyqt/sip/sip-4.19.6/sip-4.19.6.tar.gz
 # https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.12/sip-4.19.12.tar.gz
 
-# 由于使用 /Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/bin/python 为默认 python
-# 因此通过源码，默认安装到 /Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/python2.7/site-packages
+# 由于使用 /Bio/home/shenweiyan/software/Anaconda2/bin/python 为默认 python
+# 因此通过源码，默认安装到 /Bio/home/shenweiyan/software/Anaconda2/lib/python2.7/site-packages
 $ tar zvxf sip-4.19.12.tar.gz
 $ cd sip-4.19.12
 $ python configure.py
@@ -80,13 +80,13 @@ $ make install
     $ cd PyQt4_gpl_x11-4.12.1
     $ python configure.py --verbose
     Determining the layout of your Qt installation...
-    /Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/bin/qmake -o qtdirs.mk qtdirs.pro
+    /Bio/home/shenweiyan/software/Anaconda2/bin/qmake -o qtdirs.mk qtdirs.pro
     make -f qtdirs.mk
     g++ -c -pipe -O2 -Wall -W -D_REENTRANT -fPIC -DQT_NO_DEBUG -DQT_CORE_LIB -I. -I../../../Anaconda2/include/qt -I../../../Anaconda2/include/qt/QtCore -I. -I../../../Anaconda2/mkspecs/linux-g++ -o qtdirs.o qtdirs.cpp
-    g++ -Wl,-O1 -Wl,-rpath,/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib -o qtdirs qtdirs.o   -L/Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib -lQt5Core -lpthread
-    /Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/libQt5Core.so: undefined reference to `__cxa_throw_bad_array_new_length@CXXABI_1.3.8'
-    /Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/libQt5Core.so: undefined reference to `operator delete[](void*, unsigned long)@CXXABI_1.3.9'
-    /Bio/Bioinfo/Pipeline/SoftWare/Anaconda2/lib/libQt5Core.so: undefined reference to `operator delete(void*, unsigned long)@CXXABI_1.3.9'
+    g++ -Wl,-O1 -Wl,-rpath,/Bio/home/shenweiyan/software/Anaconda2/lib -o qtdirs qtdirs.o   -L/Bio/home/shenweiyan/software/Anaconda2/lib -lQt5Core -lpthread
+    /Bio/home/shenweiyan/software/Anaconda2/lib/libQt5Core.so: undefined reference to `__cxa_throw_bad_array_new_length@CXXABI_1.3.8'
+    /Bio/home/shenweiyan/software/Anaconda2/lib/libQt5Core.so: undefined reference to `operator delete[](void*, unsigned long)@CXXABI_1.3.9'
+    /Bio/home/shenweiyan/software/Anaconda2/lib/libQt5Core.so: undefined reference to `operator delete(void*, unsigned long)@CXXABI_1.3.9'
     collect2: error: ld returned 1 exit status
     make: *** [qtdirs] Error 1
     Error: Failed to determine the layout of your Qt installation. Try again using
@@ -102,7 +102,7 @@ $ make install
     $ wget http://mirrors.ustc.edu.cn/qtproject/archive/qt/4.8/4.8.3/qt-everywhere-opensource-src-4.8.3.tar.gz
     $ tar zvxf qt-everywhere-opensource-src-4.8.3.tar.gz
     $ cd qt-everywhere-opensource-src-4.8.3
-    $ ./configure -prefix /Bio/Bioinfo/Pipeline/SoftWare/Qt-4.8.3
+    $ ./configure -prefix /Bio/home/shenweiyan/software/Qt-4.8.3
     $ make   # 很耗时；也可以根据 configure 后的提示使用 gmake
     $ make install
 
@@ -115,7 +115,7 @@ $ make install
 
 ① 源码安装 Qt-5.x.x 版本，configure 过程会出现 libxcb 相关库缺失，在实际安装过程中即使使用 `yum install xcb* libxcb`，依然无法解决问题。在安装中强烈推荐使用 Qt-4.x.x，如 4.8.3，通过版本解决 libxcb 的问题。
 
-    $ ./configure -prefix /Bio/Bioinfo/Pipeline/SoftWare/Qt-5.6.0  # 报错信息如截图所示
+    $ ./configure -prefix /Bio/home/shenweiyan/software/Qt-5.6.0  # 报错信息如截图所示
 
 ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/Fu7r9S18lVtBbSIEe8HG4gRQgZ1I.png)
 
@@ -123,7 +123,7 @@ $ make install
 
 ### 6、第三次安装 PyQt4
 
-    $ python configure.py -q /Bio/Bioinfo/Pipeline/SoftWare/Qt-4.8.3/bin/qmake
+    $ python configure.py -q /Bio/home/shenweiyan/software/Qt-4.8.3/bin/qmake
     Determining the layout of your Qt installation...
     This is the GPL version of PyQt 4.9.5 (licensed under the GNU General Public
     License) for Python 2.7.3 on linux2.

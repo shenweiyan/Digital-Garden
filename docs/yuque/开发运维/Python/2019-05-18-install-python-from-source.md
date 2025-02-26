@@ -110,7 +110,7 @@ $ ll /usr/include/sqlite3.h
 $ wget https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz --no-check-certificate
 $ tar zvxf sqlite-autoconf-3360000.tar.gz
 $ cd sqlite-autoconf-3360000
-$ ./configure --prefix=/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0
+$ ./configure --prefix=/home/shenweiyan/software/sqlite-3.36.0
 $ make
 $ make install
 ```
@@ -119,7 +119,7 @@ $ make install
 3. 修改 **setup.py** 文件，在 `sqlite_inc_paths` 中加上 `sqlite3.h` 的文件路径。
 
 ```bash
-sqlite_inc_paths = [ '/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/include',
+sqlite_inc_paths = [ '/home/shenweiyan/software/sqlite-3.36.0/include',
                      '/usr/include',
                      '/usr/include/sqlite',
                      '/usr/include/sqlite3',
@@ -132,7 +132,7 @@ sqlite_inc_paths = [ '/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/include',
 4. 配置环境。
 
 ```bash
-$ export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/lib:$LD_LIBRARY_PATH
+$ export LD_LIBRARY_PATH=/home/shenweiyan/software/sqlite-3.36.0/lib:$LD_LIBRARY_PATH
 ```
 
 #### _ssl
@@ -155,13 +155,13 @@ tar -zxvf openssl-1.1.1.tar.gz
 cd openssl-1.1.1
 
 # 进行配置下，自定义
-./config --prefix=/Bioinfo/Pipeline/SoftWare/openssl-1.1.1 shared zlib
+./config --prefix=/home/shenweiyan/software/openssl-1.1.1 shared zlib
 
 # 编译并安装
 make && make install
 
 # 配置到用户环境变量，随处使用
-echo "export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/openssl-1.1.1/lib:$LD_LIBRARY_PATH" >> $HOME/.bashrc
+echo "export LD_LIBRARY_PATH=/home/shenweiyan/software/openssl-1.1.1/lib:$LD_LIBRARY_PATH" >> $HOME/.bashrc
 
 # 是环境变量配置生效
 source $HOME/.bashrc
@@ -190,7 +190,7 @@ $ yum install xz-devel
 $ wget https://tukaani.org/xz/xz-5.2.5.tar.gz --no-check-certificat
 $ tar zvxf xz-5.2.5.tar.gz
 $ cd xz-5.2.5
-$ ./configure --prefix=/Bioinfo/Pipeline/SoftWare/xz-5.2.5
+$ ./configure --prefix=/home/shenweiyan/software/xz-5.2.5
 $ make
 $ make install
 ```
@@ -198,7 +198,7 @@ $ make install
 最后，配置环境：
 
 ```bash
-$ export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/xz-5.2.5/lib:$LD_LIBRARY_PATH
+$ export LD_LIBRARY_PATH=/home/shenweiyan/software/xz-5.2.5/lib:$LD_LIBRARY_PATH
 ```
 
 #### _ctypes
@@ -231,7 +231,7 @@ libffi-devel-3.0.5-3.2.el6.x86_64
 ```bash
 $ wget ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
 $ tar zvxf libffi-3.2.1.tar.gz
-$ ./configure --prefix=/Bioinfo/Pipeline/SoftWare/libffi-3.2.1
+$ ./configure --prefix=/home/shenweiyan/software/libffi-3.2.1
 $ make
 $ make install
 ```
@@ -245,12 +245,12 @@ $ make install
 > PyGraphviz 是 Graphviz 图形布局和可视化包的 Python 接口。 借助 PyGraphviz，您可以使用 Python 创建、编辑、读取、写入和绘制图形，以访问 Graphviz 图形数据结构和布局算法。
 
 ```bash
-$ /Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/pip3 install pygraphviz
+$ /home/shenweiyan/software/Python-3.7.3/bin/pip3 install pygraphviz
 Collecting pygraphviz
   Using cached https://files.pythonhosted.org/packages/7e/b1/d6d849ddaf6f11036f9980d433f383d4c13d1ebcfc3cd09bc845bda7e433/pygraphviz-1.5.zip
 Installing collected packages: pygraphviz
   Running setup.py install for pygraphviz ... error
-    Complete output from command /Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/python3.7 -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-g0mz7lrq/install-record.txt --single-version-externally-managed --compile:
+    Complete output from command /home/shenweiyan/software/Python-3.7.3/bin/python3.7 -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-g0mz7lrq/install-record.txt --single-version-externally-managed --compile:
     running install
     Trying dpkg
     Failed to find dpkg
@@ -263,13 +263,13 @@ Installing collected packages: pygraphviz
       File "<string>", line 1, in <module>
       File "/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py", line 93, in <module>
         tests_require=['nose>=1.3.7', 'doctest-ignore-unicode>=0.1.2', 'mock>=2.0.0'],
-      File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/setuptools/__init__.py", line 145, in setup
+      File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/site-packages/setuptools/__init__.py", line 145, in setup
         return distutils.core.setup(**attrs)
-      File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/core.py", line 148, in setup
+      File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/distutils/core.py", line 148, in setup
         dist.run_commands()
-      File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/dist.py", line 966, in run_commands
+      File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/distutils/dist.py", line 966, in run_commands
         self.run_command(cmd)
-      File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/dist.py", line 985, in run_command
+      File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/distutils/dist.py", line 985, in run_command
         cmd_obj.run()
       File "/tmp/pip-install-_zdjdg0j/pygraphviz/setup_commands.py", line 44, in modified_run
         self.include_path, self.library_path = get_graphviz_dirs()
@@ -279,14 +279,14 @@ Installing collected packages: pygraphviz
         i, l = try_function()
       File "/tmp/pip-install-_zdjdg0j/pygraphviz/setup_extra.py", line 72, in _pkg_config
         output = S.check_output(['pkg-config', '--libs-only-L', 'libcgraph'])
-      File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/subprocess.py", line 395, in check_output
+      File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/subprocess.py", line 395, in check_output
         **kwargs).stdout
-      File "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/subprocess.py", line 487, in run
+      File "/home/shenweiyan/software/Python-3.7.3/lib/python3.7/subprocess.py", line 487, in run
         output=stdout, stderr=stderr)
     subprocess.CalledProcessError: Command '['pkg-config', '--libs-only-L', 'libcgraph']' returned non-zero exit status 1.
 
     ----------------------------------------
-Command "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/python3.7 -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-g0mz7lrq/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-install-_zdjdg0j/pygraphviz/
+Command "/home/shenweiyan/software/Python-3.7.3/bin/python3.7 -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-g0mz7lrq/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-install-_zdjdg0j/pygraphviz/
 
 ```
 
@@ -296,24 +296,24 @@ Command "/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/python3.7 -u -c "import set
 $ wget https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/graphviz.tar.gz
 $ tar zvxf graphviz.tar.gz
 $ cd graphviz-2.40.1
-$ ./configure --prefix=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1
+$ ./configure --prefix=/home/shenweiyan/software/graphviz-2.40.1
 $ make && make install
 ```
 
 推荐把安装好的 graphviz 添加到环境变量，这样可以避免运行过程中出现：**"pygraphviz/graphviz_wrap.c:2987:29: fatal error: graphviz/cgraph.h: No such file or directory"** 无法找到头文件的异常。
 
 ```bash
-export PKG_CONFIG_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib/pkgconfig:$PKG_CONFIG_PATH
-export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib:$LD_LIBRARY_PATH
-export C_INCLUDE_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include:$C_INCLUDE_PATH
-export CPLUS_INCLUDE_PATH=/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include:$CPLUS_INCLUDE_PATH
+export PKG_CONFIG_PATH=/home/shenweiyan/software/graphviz-2.40.1/lib/pkgconfig:$PKG_CONFIG_PATH
+export LD_LIBRARY_PATH=/home/shenweiyan/software/graphviz-2.40.1/lib:$LD_LIBRARY_PATH
+export C_INCLUDE_PATH=/home/shenweiyan/software/graphviz-2.40.1/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=/home/shenweiyan/software/graphviz-2.40.1/include:$CPLUS_INCLUDE_PATH
 ```
 
 如果 graphviz 添加到环境变量， `pygraphviz`  的 python 包可以参考下面的方法安装：
 
 ```bash
-$ /Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/pip3 install --global-option=build_ext --global-option="-I/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include" --global-option="-L/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib" pygraphviz
-/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/pip/_internal/commands/install.py:207: UserWarning: Disabling all use of wheels due to the use of --build-options / --global-options / --install-options.
+$ /home/shenweiyan/software/Python-3.7.3/bin/pip3 install --global-option=build_ext --global-option="-I/home/shenweiyan/software/graphviz-2.40.1/include" --global-option="-L/home/shenweiyan/software/graphviz-2.40.1/lib" pygraphviz
+/home/shenweiyan/software/Python-3.7.3/lib/python3.7/site-packages/pip/_internal/commands/install.py:207: UserWarning: Disabling all use of wheels due to the use of --build-options / --global-options / --install-options.
   cmdoptions.check_install_build_global(options)
 Collecting pygraphviz
   Using cached https://files.pythonhosted.org/packages/7e/b1/d6d849ddaf6f11036f9980d433f383d4c13d1ebcfc3cd09bc845bda7e433/pygraphviz-1.5.zip
@@ -337,7 +337,7 @@ tar zvxf Python-3.7.3.tgz -C /usr/local/src
 第二，进入解压的源码路径，编译 Python 源码。
 
 ```bash
-$ soft=/Bioinfo/Pipeline/SoftWare
+$ soft=/home/shenweiyan/software
 $ export PKG_CONFIG_PATH=$soft/libffi-3.2.1/lib/pkgconfig:$PKG_CONFIG_PATH
 $ export PKG_CONFIG_PATH=$soft/graphviz-2.40.1/lib/pkgconfig:$PKG_CONFIG_PATH
 $ export LD_LIBRARY_PATH=$soft/libffi-3.2.1/lib64:$LD_LIBRARY_PATH
@@ -347,15 +347,15 @@ $ export LD_LIBRARY_PATH=$soft/sqlite-3.36.0/lib:$LD_LIBRARY_PATH
 
 $ ./configure \
 --enable-optimizations \
---prefix=/Bioinfo/Pipeline/SoftWare/Python-3.7.3 \
+--prefix=/home/shenweiyan/software/Python-3.7.3 \
 --with-openssl=$libs/openssl-1.1.1 \
-CC=/Bioinfo/Pipeline/SoftWare/gcc-4.8.5/bin/gcc \
-CXX=/Bioinfo/Pipeline/SoftWare/gcc-4.8.5/bin/c++ \
-LDFLAGS="-L/Bioinfo/Pipeline/SoftWare/libffi-3.2.1/lib64 \
-         -L/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib" \
-CPPFLAGS="-I/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include" \
-PKG_CONFIG_PATH="/Bioinfo/Pipeline/SoftWare/libffi-3.2.1/lib/pkgconfig: \
-                 /Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib/pkgconfig"
+CC=/home/shenweiyan/software/gcc-4.8.5/bin/gcc \
+CXX=/home/shenweiyan/software/gcc-4.8.5/bin/c++ \
+LDFLAGS="-L/home/shenweiyan/software/libffi-3.2.1/lib64 \
+         -L/home/shenweiyan/software/graphviz-2.40.1/lib" \
+CPPFLAGS="-I/home/shenweiyan/software/graphviz-2.40.1/include" \
+PKG_CONFIG_PATH="/home/shenweiyan/software/libffi-3.2.1/lib/pkgconfig: \
+                 /home/shenweiyan/software/graphviz-2.40.1/lib/pkgconfig"
 ```
 
 - `--enable-optimizations`  是优化选项（LTO，PGO  等）加上这个  flag  编译后，性能有  10%  左右的优化，但是这会明显的增加编译时间。建议使用这个参数；
@@ -409,10 +409,10 @@ make && make install
 ```bash
 # 替换系统自带的 python（不建议）
 mv /usr/bin/python /usr/bin/python2
-ln -s /Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/python3 /usr/bin/python
+ln -s /home/shenweiyan/software/Python-3.7.3/bin/python3 /usr/bin/python
 
 # 添加新 Python 到 PATH 环境变量（建议）
-echo "export PATH=/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin:$PATH" >>~/.bashrc
+echo "export PATH=/home/shenweiyan/software/Python-3.7.3/bin:$PATH" >>~/.bashrc
 source ~/.bashrc
 ```
 

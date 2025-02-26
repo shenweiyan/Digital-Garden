@@ -94,7 +94,7 @@ IMPORTANT: You may need to close and restart your shell after running 'conda ini
 $ source activate bio-base
 (bio-base) shenweiyan@ecs-steven 10:49:59 /home/shenweiyan
 $ which python
-/Bioinfo/Pipeline/SoftWare/Anaconda3/envs/bio-base/bin/python
+/home/shenweiyan/software/Anaconda3/envs/bio-base/bin/python
 $ source deactivate bio-base
 DeprecationWarning: 'source deactivate' is deprecated. Use 'conda deactivate'.
 

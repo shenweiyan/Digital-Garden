@@ -12620,7 +12620,7 @@ $<span class="w"> </span>ll<span class="w"> </span>/usr/include/sqlite3.h
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://www.sqlite.org/2021/sqlite-autoconf-3360000.tar.gz<span class="w"> </span>--no-check-certificate
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>sqlite-autoconf-3360000.tar.gz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>sqlite-autoconf-3360000
-$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0
+$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/home/shenweiyan/software/sqlite-3.36.0
 $<span class="w"> </span>make
 $<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
@@ -12628,7 +12628,7 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <li>找到 <strong>sqlite3.h</strong> 文件的保存目录。</li>
 <li>修改 <strong>setup.py</strong> 文件，在 <code>sqlite_inc_paths</code> 中加上 <code>sqlite3.h</code> 的文件路径。</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nv">sqlite_inc_paths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s1">&#39;/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/include&#39;</span>,
+<div class="highlight"><pre><span></span><code><span class="nv">sqlite_inc_paths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s1">&#39;/home/shenweiyan/software/sqlite-3.36.0/include&#39;</span>,
 <span class="w">                     </span><span class="s1">&#39;/usr/include&#39;</span>,
 <span class="w">                     </span><span class="s1">&#39;/usr/include/sqlite&#39;</span>,
 <span class="w">                     </span><span class="s1">&#39;/usr/include/sqlite3&#39;</span>,
@@ -12640,7 +12640,7 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <ol>
 <li>配置环境。</li>
 </ol>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/sqlite-3.36.0/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/home/shenweiyan/software/sqlite-3.36.0/lib:<span class="nv">$LD_LIBRARY_PATH</span>
 </code></pre></div>
 <h4 id="_ssl">_ssl<a class="headerlink" href="#_ssl" title="Permanent link">&para;</a></h4>
 <p>Python3 需要引用 <code>openssl</code>  模块，但是 python3.7+ 在 CentOS 中要求的 openssl 版本最低为 1.0.2，而 CentOS 默认的为 1.0.1（CentOS-6.x 通过 <code>yum</code>  源安装的 openssl 的最高版本是 1.0.1），所以需要手动更新 openssl。</p>
@@ -12659,13 +12659,13 @@ tar<span class="w"> </span>-zxvf<span class="w"> </span>openssl-1.1.1.tar.gz
 <span class="nb">cd</span><span class="w"> </span>openssl-1.1.1
 
 <span class="c1"># 进行配置下，自定义</span>
-./config<span class="w"> </span>--prefix<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/openssl-1.1.1<span class="w"> </span>shared<span class="w"> </span>zlib
+./config<span class="w"> </span>--prefix<span class="o">=</span>/home/shenweiyan/software/openssl-1.1.1<span class="w"> </span>shared<span class="w"> </span>zlib
 
 <span class="c1"># 编译并安装</span>
 make<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install
 
 <span class="c1"># 配置到用户环境变量，随处使用</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export LD_LIBRARY_PATH=/Bioinfo/Pipeline/SoftWare/openssl-1.1.1/lib:</span><span class="nv">$LD_LIBRARY_PATH</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$HOME</span>/.bashrc
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export LD_LIBRARY_PATH=/home/shenweiyan/software/openssl-1.1.1/lib:</span><span class="nv">$LD_LIBRARY_PATH</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span><span class="nv">$HOME</span>/.bashrc
 
 <span class="c1"># 是环境变量配置生效</span>
 <span class="nb">source</span><span class="w"> </span><span class="nv">$HOME</span>/.bashrc
@@ -12687,12 +12687,12 @@ $<span class="w"> </span>yum<span class="w"> </span>install<span class="w"> </sp
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://tukaani.org/xz/xz-5.2.5.tar.gz<span class="w"> </span>--no-check-certificat
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>xz-5.2.5.tar.gz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>xz-5.2.5
-$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/xz-5.2.5
+$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/home/shenweiyan/software/xz-5.2.5
 $<span class="w"> </span>make
 $<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
 <p>最后，配置环境：</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/xz-5.2.5/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/home/shenweiyan/software/xz-5.2.5/lib:<span class="nv">$LD_LIBRARY_PATH</span>
 </code></pre></div>
 <h4 id="_ctypes">_ctypes<a class="headerlink" href="#_ctypes" title="Permanent link">&para;</a></h4>
 <p>在 CentOS 6.x 安装 <code>libffi-devel</code>  的时候出现以下问题：</p>
@@ -12717,7 +12717,7 @@ libffi-devel-3.0.5-3.2.el6.x86_64
 <p>手动的源码方法安装如下：
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>libffi-3.2.1.tar.gz
-$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/libffi-3.2.1
+$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/home/shenweiyan/software/libffi-3.2.1
 $<span class="w"> </span>make
 $<span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div></p>
@@ -12727,12 +12727,12 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <p>PyGraphviz is a Python interface to the Graphviz graph layout and visualization package. With PyGraphviz you can create, edit, read, write, and draw graphs using Python to access the Graphviz graph data structure and layout algorithms.</p>
 <p>PyGraphviz 是 Graphviz 图形布局和可视化包的 Python 接口。 借助 PyGraphviz，您可以使用 Python 创建、编辑、读取、写入和绘制图形，以访问 Graphviz 图形数据结构和布局算法。</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/pip3<span class="w"> </span>install<span class="w"> </span>pygraphviz
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>/home/shenweiyan/software/Python-3.7.3/bin/pip3<span class="w"> </span>install<span class="w"> </span>pygraphviz
 Collecting<span class="w"> </span>pygraphviz
 <span class="w">  </span>Using<span class="w"> </span>cached<span class="w"> </span>https://files.pythonhosted.org/packages/7e/b1/d6d849ddaf6f11036f9980d433f383d4c13d1ebcfc3cd09bc845bda7e433/pygraphviz-1.5.zip
 Installing<span class="w"> </span>collected<span class="w"> </span>packages:<span class="w"> </span>pygraphviz
 <span class="w">  </span>Running<span class="w"> </span>setup.py<span class="w"> </span>install<span class="w"> </span><span class="k">for</span><span class="w"> </span>pygraphviz<span class="w"> </span>...<span class="w"> </span>error
-<span class="w">    </span>Complete<span class="w"> </span>output<span class="w"> </span>from<span class="w"> </span><span class="nb">command</span><span class="w"> </span>/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/python3.7<span class="w"> </span>-u<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import setuptools, tokenize;__file__=&#39;/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py&#39;;f=getattr(tokenize, &#39;open&#39;, open)(__file__);code=f.read().replace(&#39;\r\n&#39;, &#39;\n&#39;);f.close();exec(compile(code, __file__, &#39;exec&#39;))&quot;</span><span class="w"> </span>install<span class="w"> </span>--record<span class="w"> </span>/tmp/pip-record-g0mz7lrq/install-record.txt<span class="w"> </span>--single-version-externally-managed<span class="w"> </span>--compile:
+<span class="w">    </span>Complete<span class="w"> </span>output<span class="w"> </span>from<span class="w"> </span><span class="nb">command</span><span class="w"> </span>/home/shenweiyan/software/Python-3.7.3/bin/python3.7<span class="w"> </span>-u<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import setuptools, tokenize;__file__=&#39;/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py&#39;;f=getattr(tokenize, &#39;open&#39;, open)(__file__);code=f.read().replace(&#39;\r\n&#39;, &#39;\n&#39;);f.close();exec(compile(code, __file__, &#39;exec&#39;))&quot;</span><span class="w"> </span>install<span class="w"> </span>--record<span class="w"> </span>/tmp/pip-record-g0mz7lrq/install-record.txt<span class="w"> </span>--single-version-externally-managed<span class="w"> </span>--compile:
 <span class="w">    </span>running<span class="w"> </span>install
 <span class="w">    </span>Trying<span class="w"> </span>dpkg
 <span class="w">    </span>Failed<span class="w"> </span>to<span class="w"> </span>find<span class="w"> </span>dpkg
@@ -12745,13 +12745,13 @@ Installing<span class="w"> </span>collected<span class="w"> </span>packages:<spa
 <span class="s1">      File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;</span>
 <span class="s1">      File &quot;/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py&quot;, line 93, in &lt;module&gt;</span>
 <span class="s1">        tests_require=[&#39;</span>nose&gt;<span class="o">=</span><span class="m">1</span>.3.7<span class="s1">&#39;, &#39;</span>doctest-ignore-unicode&gt;<span class="o">=</span><span class="m">0</span>.1.2<span class="s1">&#39;, &#39;</span>mock&gt;<span class="o">=</span><span class="m">2</span>.0.0<span class="s1">&#39;],</span>
-<span class="s1">      File &quot;/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/setuptools/__init__.py&quot;, line 145, in setup</span>
+<span class="s1">      File &quot;/home/shenweiyan/software/Python-3.7.3/lib/python3.7/site-packages/setuptools/__init__.py&quot;, line 145, in setup</span>
 <span class="s1">        return distutils.core.setup(**attrs)</span>
-<span class="s1">      File &quot;/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/core.py&quot;, line 148, in setup</span>
+<span class="s1">      File &quot;/home/shenweiyan/software/Python-3.7.3/lib/python3.7/distutils/core.py&quot;, line 148, in setup</span>
 <span class="s1">        dist.run_commands()</span>
-<span class="s1">      File &quot;/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/dist.py&quot;, line 966, in run_commands</span>
+<span class="s1">      File &quot;/home/shenweiyan/software/Python-3.7.3/lib/python3.7/distutils/dist.py&quot;, line 966, in run_commands</span>
 <span class="s1">        self.run_command(cmd)</span>
-<span class="s1">      File &quot;/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/distutils/dist.py&quot;, line 985, in run_command</span>
+<span class="s1">      File &quot;/home/shenweiyan/software/Python-3.7.3/lib/python3.7/distutils/dist.py&quot;, line 985, in run_command</span>
 <span class="s1">        cmd_obj.run()</span>
 <span class="s1">      File &quot;/tmp/pip-install-_zdjdg0j/pygraphviz/setup_commands.py&quot;, line 44, in modified_run</span>
 <span class="s1">        self.include_path, self.library_path = get_graphviz_dirs()</span>
@@ -12761,31 +12761,31 @@ Installing<span class="w"> </span>collected<span class="w"> </span>packages:<spa
 <span class="s1">        i, l = try_function()</span>
 <span class="s1">      File &quot;/tmp/pip-install-_zdjdg0j/pygraphviz/setup_extra.py&quot;, line 72, in _pkg_config</span>
 <span class="s1">        output = S.check_output([&#39;</span>pkg-config<span class="s1">&#39;, &#39;</span>--libs-only-L<span class="s1">&#39;, &#39;</span>libcgraph<span class="s1">&#39;])</span>
-<span class="s1">      File &quot;/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/subprocess.py&quot;, line 395, in check_output</span>
+<span class="s1">      File &quot;/home/shenweiyan/software/Python-3.7.3/lib/python3.7/subprocess.py&quot;, line 395, in check_output</span>
 <span class="s1">        **kwargs).stdout</span>
-<span class="s1">      File &quot;/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/subprocess.py&quot;, line 487, in run</span>
+<span class="s1">      File &quot;/home/shenweiyan/software/Python-3.7.3/lib/python3.7/subprocess.py&quot;, line 487, in run</span>
 <span class="s1">        output=stdout, stderr=stderr)</span>
 <span class="s1">    subprocess.CalledProcessError: Command &#39;</span><span class="o">[</span><span class="s1">&#39;pkg-config&#39;</span>,<span class="w"> </span><span class="s1">&#39;--libs-only-L&#39;</span>,<span class="w"> </span><span class="s1">&#39;libcgraph&#39;</span><span class="o">]</span><span class="s1">&#39; returned non-zero exit status 1.</span>
 
 <span class="s1">    ----------------------------------------</span>
-<span class="s1">Command &quot;/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/python3.7 -u -c &quot;import setuptools, tokenize;__file__=&#39;</span>/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py<span class="s1">&#39;;f=getattr(tokenize, &#39;</span>open<span class="s1">&#39;, open)(__file__);code=f.read().replace(&#39;</span><span class="se">\r\n</span><span class="s1">&#39;, &#39;</span><span class="se">\n</span><span class="s1">&#39;);f.close();exec(compile(code, __file__, &#39;</span>exec<span class="err">&#39;</span><span class="o">))</span><span class="s2">&quot; install --record /tmp/pip-record-g0mz7lrq/install-record.txt --single-version-externally-managed --compile&quot;</span><span class="w"> </span>failed<span class="w"> </span>with<span class="w"> </span>error<span class="w"> </span>code<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>/tmp/pip-install-_zdjdg0j/pygraphviz/
+<span class="s1">Command &quot;/home/shenweiyan/software/Python-3.7.3/bin/python3.7 -u -c &quot;import setuptools, tokenize;__file__=&#39;</span>/tmp/pip-install-_zdjdg0j/pygraphviz/setup.py<span class="s1">&#39;;f=getattr(tokenize, &#39;</span>open<span class="s1">&#39;, open)(__file__);code=f.read().replace(&#39;</span><span class="se">\r\n</span><span class="s1">&#39;, &#39;</span><span class="se">\n</span><span class="s1">&#39;);f.close();exec(compile(code, __file__, &#39;</span>exec<span class="err">&#39;</span><span class="o">))</span><span class="s2">&quot; install --record /tmp/pip-record-g0mz7lrq/install-record.txt --single-version-externally-managed --compile&quot;</span><span class="w"> </span>failed<span class="w"> </span>with<span class="w"> </span>error<span class="w"> </span>code<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>/tmp/pip-install-_zdjdg0j/pygraphviz/
 </code></pre></div>
 <p>参考：《<a href="https://github.com/pygraphviz/pygraphviz/issues/11">Installation:fatal error: &lsquo;graphviz/cgraph.h&rsquo; file not found</a>》</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>wget<span class="w"> </span>https://graphviz.gitlab.io/pub/graphviz/stable/SOURCES/graphviz.tar.gz
 $<span class="w"> </span>tar<span class="w"> </span>zvxf<span class="w"> </span>graphviz.tar.gz
 $<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>graphviz-2.40.1
-$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1
+$<span class="w"> </span>./configure<span class="w"> </span>--prefix<span class="o">=</span>/home/shenweiyan/software/graphviz-2.40.1
 $<span class="w"> </span>make<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make<span class="w"> </span>install
 </code></pre></div>
 <p>推荐把安装好的 graphviz 添加到环境变量，这样可以避免运行过程中出现：<strong>&ldquo;pygraphviz/graphviz_wrap.c:2987:29: fatal error: graphviz/cgraph.h: No such file or directory&rdquo;</strong> 无法找到头文件的异常。</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib:<span class="nv">$LD_LIBRARY_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">C_INCLUDE_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include:<span class="nv">$C_INCLUDE_PATH</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">CPLUS_INCLUDE_PATH</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include:<span class="nv">$CPLUS_INCLUDE_PATH</span>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span>/home/shenweiyan/software/graphviz-2.40.1/lib/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/home/shenweiyan/software/graphviz-2.40.1/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">C_INCLUDE_PATH</span><span class="o">=</span>/home/shenweiyan/software/graphviz-2.40.1/include:<span class="nv">$C_INCLUDE_PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">CPLUS_INCLUDE_PATH</span><span class="o">=</span>/home/shenweiyan/software/graphviz-2.40.1/include:<span class="nv">$CPLUS_INCLUDE_PATH</span>
 </code></pre></div>
 <p>如果 graphviz 添加到环境变量， <code>pygraphviz</code>  的 python 包可以参考下面的方法安装：</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/pip3<span class="w"> </span>install<span class="w"> </span>--global-option<span class="o">=</span>build_ext<span class="w"> </span>--global-option<span class="o">=</span><span class="s2">&quot;-I/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include&quot;</span><span class="w"> </span>--global-option<span class="o">=</span><span class="s2">&quot;-L/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib&quot;</span><span class="w"> </span>pygraphviz
-/Bioinfo/Pipeline/SoftWare/Python-3.7.3/lib/python3.7/site-packages/pip/_internal/commands/install.py:207:<span class="w"> </span>UserWarning:<span class="w"> </span>Disabling<span class="w"> </span>all<span class="w"> </span>use<span class="w"> </span>of<span class="w"> </span>wheels<span class="w"> </span>due<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>use<span class="w"> </span>of<span class="w"> </span>--build-options<span class="w"> </span>/<span class="w"> </span>--global-options<span class="w"> </span>/<span class="w"> </span>--install-options.
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>/home/shenweiyan/software/Python-3.7.3/bin/pip3<span class="w"> </span>install<span class="w"> </span>--global-option<span class="o">=</span>build_ext<span class="w"> </span>--global-option<span class="o">=</span><span class="s2">&quot;-I/home/shenweiyan/software/graphviz-2.40.1/include&quot;</span><span class="w"> </span>--global-option<span class="o">=</span><span class="s2">&quot;-L/home/shenweiyan/software/graphviz-2.40.1/lib&quot;</span><span class="w"> </span>pygraphviz
+/home/shenweiyan/software/Python-3.7.3/lib/python3.7/site-packages/pip/_internal/commands/install.py:207:<span class="w"> </span>UserWarning:<span class="w"> </span>Disabling<span class="w"> </span>all<span class="w"> </span>use<span class="w"> </span>of<span class="w"> </span>wheels<span class="w"> </span>due<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>use<span class="w"> </span>of<span class="w"> </span>--build-options<span class="w"> </span>/<span class="w"> </span>--global-options<span class="w"> </span>/<span class="w"> </span>--install-options.
 <span class="w">  </span>cmdoptions.check_install_build_global<span class="o">(</span>options<span class="o">)</span>
 Collecting<span class="w"> </span>pygraphviz
 <span class="w">  </span>Using<span class="w"> </span>cached<span class="w"> </span>https://files.pythonhosted.org/packages/7e/b1/d6d849ddaf6f11036f9980d433f383d4c13d1ebcfc3cd09bc845bda7e433/pygraphviz-1.5.zip
@@ -12802,7 +12802,7 @@ wget<span class="w"> </span>https://www.python.org/ftp/python/3.7.3/Python-3.7.3
 tar<span class="w"> </span>zvxf<span class="w"> </span>Python-3.7.3.tgz<span class="w"> </span>-C<span class="w"> </span>/usr/local/src
 </code></pre></div>
 <p>第二，进入解压的源码路径，编译 Python 源码。</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nv">soft</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nv">soft</span><span class="o">=</span>/home/shenweiyan/software
 $<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span><span class="nv">$soft</span>/libffi-3.2.1/lib/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>
 $<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span><span class="nv">$soft</span>/graphviz-2.40.1/lib/pkgconfig:<span class="nv">$PKG_CONFIG_PATH</span>
 $<span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$soft</span>/libffi-3.2.1/lib64:<span class="nv">$LD_LIBRARY_PATH</span>
@@ -12812,15 +12812,15 @@ $<span class="w"> </span><span class="nb">export</span><span class="w"> </span><
 
 $<span class="w"> </span>./configure<span class="w"> </span><span class="se">\</span>
 --enable-optimizations<span class="w"> </span><span class="se">\</span>
---prefix<span class="o">=</span>/Bioinfo/Pipeline/SoftWare/Python-3.7.3<span class="w"> </span><span class="se">\</span>
+--prefix<span class="o">=</span>/home/shenweiyan/software/Python-3.7.3<span class="w"> </span><span class="se">\</span>
 --with-openssl<span class="o">=</span><span class="nv">$libs</span>/openssl-1.1.1<span class="w"> </span><span class="se">\</span>
-<span class="nv">CC</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/gcc-4.8.5/bin/gcc<span class="w"> </span><span class="se">\</span>
-<span class="nv">CXX</span><span class="o">=</span>/Bioinfo/Pipeline/SoftWare/gcc-4.8.5/bin/c++<span class="w"> </span><span class="se">\</span>
-<span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">&quot;-L/Bioinfo/Pipeline/SoftWare/libffi-3.2.1/lib64 \</span>
-<span class="s2">         -L/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="nv">CPPFLAGS</span><span class="o">=</span><span class="s2">&quot;-I/Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/include&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span><span class="s2">&quot;/Bioinfo/Pipeline/SoftWare/libffi-3.2.1/lib/pkgconfig: \</span>
-<span class="s2">                 /Bioinfo/Pipeline/SoftWare/graphviz-2.40.1/lib/pkgconfig&quot;</span>
+<span class="nv">CC</span><span class="o">=</span>/home/shenweiyan/software/gcc-4.8.5/bin/gcc<span class="w"> </span><span class="se">\</span>
+<span class="nv">CXX</span><span class="o">=</span>/home/shenweiyan/software/gcc-4.8.5/bin/c++<span class="w"> </span><span class="se">\</span>
+<span class="nv">LDFLAGS</span><span class="o">=</span><span class="s2">&quot;-L/home/shenweiyan/software/libffi-3.2.1/lib64 \</span>
+<span class="s2">         -L/home/shenweiyan/software/graphviz-2.40.1/lib&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">CPPFLAGS</span><span class="o">=</span><span class="s2">&quot;-I/home/shenweiyan/software/graphviz-2.40.1/include&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="nv">PKG_CONFIG_PATH</span><span class="o">=</span><span class="s2">&quot;/home/shenweiyan/software/libffi-3.2.1/lib/pkgconfig: \</span>
+<span class="s2">                 /home/shenweiyan/software/graphviz-2.40.1/lib/pkgconfig&quot;</span>
 </code></pre></div>
 <ul>
 <li><code>--enable-optimizations</code>  是优化选项（LTO，PGO  等）加上这个  flag  编译后，性能有  10%  左右的优化，但是这会明显的增加编译时间。建议使用这个参数；</li>
@@ -12866,10 +12866,10 @@ _ssl<span class="w"> </span>_ssl.c<span class="w"> </span><span class="se">\</sp
 <p>第四，安装完成。以上命令执行完毕，且无报错的情况下，我们将默认 python 换将切换至 3.7.3（一般不建议替换，个人建议把自定义安装的 Python bin 路径添加到 PATH 环境变量即可）：</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># 替换系统自带的 python（不建议）</span>
 mv<span class="w"> </span>/usr/bin/python<span class="w"> </span>/usr/bin/python2
-ln<span class="w"> </span>-s<span class="w"> </span>/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin/python3<span class="w"> </span>/usr/bin/python
+ln<span class="w"> </span>-s<span class="w"> </span>/home/shenweiyan/software/Python-3.7.3/bin/python3<span class="w"> </span>/usr/bin/python
 
 <span class="c1"># 添加新 Python 到 PATH 环境变量（建议）</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export PATH=/Bioinfo/Pipeline/SoftWare/Python-3.7.3/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;~/.bashrc
+<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;export PATH=/home/shenweiyan/software/Python-3.7.3/bin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span><span class="w"> </span>&gt;&gt;~/.bashrc
 <span class="nb">source</span><span class="w"> </span>~/.bashrc
 </code></pre></div>
 <p>运行命令 <code>python -V</code> ，查看是否出现 3.7.3  的版本，出现即为安装成功。</p>
@@ -13025,7 +13025,7 @@ make:<span class="w"> </span>***<span class="w"> </span><span class="o">[</span>
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-25</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-26</span>
   </span>
 
     

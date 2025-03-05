@@ -1154,6 +1154,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#版本选择" class="md-nav__link">
+    <span class="md-ellipsis">
+      版本选择
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12137,6 +12146,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#版本选择" class="md-nav__link">
+    <span class="md-ellipsis">
+      版本选择
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12181,7 +12199,7 @@
 After the release of Miniforge 23.3.1 in August 2023, Miniforge and Mambaforge are essentially identical. The only difference is the name of the installer and subsequently the default installation path.</p>
 <p>2023 年 8 月发布 Miniforge 23.3.1 后，Miniforge 和 Mambaforge 基本相同。唯一的区别是安装程序的名称以及随后的默认安装路径(一个默认是 miniforge3，一个默认是 mambaforge3)。</p>
 <p>Before that release, Miniforge only shipped conda, while Mambaforge added mamba on top. Since Miniconda started shipping conda-libmamba-solver in July 2023, Miniforge followed suit and started shipping it too in August. At that point, since conda-libmamba-solver depends on libmambapy, the only difference between Miniforge and Mambaforge was the presence of the mamba Python package. To minimize surprises, we decided to add mamba to Miniforge too.    </p>
-<p>在之前的版本中，Miniforge 仅提供 conda，而 Mambaforge 在此基础上增加了 mamba。自 2023 年 7 月 Miniconda 开始提供 conda-libmamba-solver 以来，Miniforge 也紧随其后，于 8 月开始提供此功能。那时，由于 conda-libmamba-solver 依赖于libmambapy，Miniforge 和 Mambaforge 之间的唯一区别就是是否包含 mamba Pytho n包。为了尽量减少意外情况，我们决定也在 Miniforge 中添加 mamba。</p>
+<p>在之前的版本中，Miniforge 仅提供 conda，而 Mambaforge 在此基础上增加了 mamba。自 2023 年 7 月 Miniconda 开始提供 conda-libmamba-solver 以来，Miniforge 也紧随其后，于 8 月开始提供此功能。那时，由于 conda-libmamba-solver 依赖于libmambapy，Miniforge 和 Mambaforge 之间的唯一区别就是是否包含 mamba Python 包。为了尽量减少意外情况，我们决定也在 Miniforge 中添加 mamba。</p>
 <p><strong>Should I choose one or another going forward at the risk of one of them gettting deprecated?</strong>   <br />
 Given its wide usage, there are no plans to deprecate Mambaforge. If at some point we decide to deprecate Mambaforge, it will be appropriately announced and communicated with sufficient time in advance.</p>
 <p>鉴于 Mambaforge 的广泛使用，目前没有计划将其弃用。如果未来我们决定弃用 Mambaforge，我们会提前充分公告并通知相关用户。</p>
@@ -12194,6 +12212,23 @@ Given its wide usage, there are no plans to deprecate Mambaforge. If at some poi
 <p>Miniconda 是公司 (Anaconda) 驱动的简约 conda 安装程序。随后的软件包安装来自 anaconda 频道（默认或其他）。</p>
 <h2 id="一句话">一句话<a class="headerlink" href="#一句话" title="Permanent link">&para;</a></h2>
 <p>总的一句话来说，Mambaforge 类似于 Miniforge，但将 mamba 安装到基础环境中。虽然没有严格弃用，但从 <strong>2023 年 9 月</strong>起不鼓励使用它（请参阅 miniforge 自述 <a href="https://github.com/conda-forge/miniforge">README</a> 文件）。</p>
+<h2 id="版本选择">版本选择<a class="headerlink" href="#版本选择" title="Permanent link">&para;</a></h2>
+<p>Miniforge3 的 <a href="https://github.com/conda-forge/miniforge/releases/tag/24.5.0-0">Release 24.5.0-0</a> 要求 <strong>Linux-x86_64: glibc &gt;= 2.17</strong>，也就是对于 CentOS/RHEL 6.x (glibc = 2.12) 的旧服务器将无法正常安装使用。</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>lsb_release<span class="w"> </span>-a
+LSB<span class="w"> </span>Version:<span class="w">    </span>:core-4.1-amd64:core-4.1-noarch
+Distributor<span class="w"> </span>ID:<span class="w"> </span>CentOS
+Description:<span class="w">    </span>CentOS<span class="w"> </span>Linux<span class="w"> </span>release<span class="w"> </span><span class="m">7</span>.7.1908<span class="w"> </span><span class="o">(</span>Core<span class="o">)</span>
+Release:<span class="w">        </span><span class="m">7</span>.7.1908
+Codename:<span class="w">       </span>Core
+
+$<span class="w"> </span>ldd<span class="w"> </span>--version
+ldd<span class="w"> </span><span class="o">(</span>GNU<span class="w"> </span>libc<span class="o">)</span><span class="w"> </span><span class="m">2</span>.17
+Copyright<span class="w"> </span><span class="o">(</span>C<span class="o">)</span><span class="w"> </span><span class="m">2012</span><span class="w"> </span>Free<span class="w"> </span>Software<span class="w"> </span>Foundation,<span class="w"> </span>Inc.
+This<span class="w"> </span>is<span class="w"> </span>free<span class="w"> </span>software<span class="p">;</span><span class="w"> </span>see<span class="w"> </span>the<span class="w"> </span><span class="nb">source</span><span class="w"> </span><span class="k">for</span><span class="w"> </span>copying<span class="w"> </span>conditions.<span class="w">  </span>There<span class="w"> </span>is<span class="w"> </span>NO
+warranty<span class="p">;</span><span class="w"> </span>not<span class="w"> </span>even<span class="w"> </span><span class="k">for</span><span class="w"> </span>MERCHANTABILITY<span class="w"> </span>or<span class="w"> </span>FITNESS<span class="w"> </span>FOR<span class="w"> </span>A<span class="w"> </span>PARTICULAR<span class="w"> </span>PURPOSE.
+Written<span class="w"> </span>by<span class="w"> </span>Roland<span class="w"> </span>McGrath<span class="w"> </span>and<span class="w"> </span>Ulrich<span class="w"> </span>Drepper.
+</code></pre></div>
+<p><a class="glightbox" href="https://kg.weiyan.tech/2025/03/miniforge3-24.5.0-0.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="miniforge3-24.5.0-0" src="https://kg.weiyan.tech/2025/03/miniforge3-24.5.0-0.webp" /></a></p>
 <script src="https://giscus.app/client.js"
     data-repo="shenweiyan/Digital-Garden"
     data-repo-id="R_kgDOKgxWlg"
@@ -12227,7 +12262,7 @@ Given its wide usage, there are no plans to deprecate Mambaforge. If at some poi
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-03-04</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="2025年3月5日 11:09:35">2025-03-05</span>
   </span>
 
     

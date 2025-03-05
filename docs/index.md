@@ -134,12 +134,3 @@ template: home.html
 
 感谢 [LetTTGACO](https://github.com/LetTTGACO) 提供的 [Elog](https://elog.1874.cool/) 工具，提供了一个可以从语雀到本平台的优雅同步方案。
 
-## 赞赏
-
-如果你觉得本站点的一些文章或者工具对你有所帮助(启发)，欢迎赞赏，有你的支持，我们一定会越来越好！
-
-<figure markdown>
-![微信-支付宝赞赏码](https://shub.weiyan.tech/mkdocs/donate.webp "感谢你的一路支持")
-<figcaption>Random acts of kindness.</figcaption>
-</figure>
-

@@ -94,10 +94,7 @@ plugins:
       exclude:
           - blog/archive/*
           - blog/category/*
-  - awesome-nav:
-      order: desc
-      sort_type: natural
-      order_by: filename
+  - awesome-nav
   - blog:
       blog_dir: blog
       post_dir: "{blog}/posts"

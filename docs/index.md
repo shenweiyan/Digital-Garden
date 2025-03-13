@@ -21,16 +21,16 @@ template: home.html
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <p align="center">
-    <img src="https://shub.weiyan.tech/mkdocs/kg-readme-cover.gif" alt='readme-cover' style="border-radius: 2%;"><br>
+    <img src="https://kg.weiyan.tech/0000/img/kg-readme-cover.gif" alt='readme-cover' style="border-radius: 2%;"><br>
 </p>
 
 
-本知识库基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，有一部分文章来源于个人的 **[语雀知识库](https://www.yuque.com/shenweiyan)**，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
+本知识库基于 [**Material for MkDocs**](https://squidfunk.github.io/mkdocs-material/) 进行部署，有一部分文章来源于个人的 [**语雀知识库**](https://www.yuque.com/shenweiyan)，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
 
 <div id="rcorners">
     <body>
       <font color="#4351AF">
-        <p class="p1"></p>
+        <p class="p1" style="font-weight:bold;"></p>
 <script defer>
     //格式：2020年04月12日 10:20:00 星期二
     function format(newDate) {

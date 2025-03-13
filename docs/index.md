@@ -1,10 +1,28 @@
 ---
+hide:
+  - navigation
+  - feedback
+  - toc
 title: 维燕的数字花园
 template: home.html
 ---
 
+<style>
+  article > h1 { display: none; }
+  @media (min-width: 900px) {
+    main > div > div.md-content {
+      max-width: 75%;
+      margin: auto;
+    }
+  }
+</style>
+
 <!--center><font  color= #518FC1 size=6 class="ml3">循此苦旅，以达星辰</font></center-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<p align="center">
+    <img src="https://shub.weiyan.tech/mkdocs/kg-readme-cover.gif" alt='readme-cover' style="border-radius: 2%;"><br>
+</p>
 
 
 本知识库基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，有一部分文章来源于个人的 **[语雀知识库](https://www.yuque.com/shenweiyan)**，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
@@ -73,14 +91,12 @@ template: home.html
     </body>
   </div>
 
-以下两个地址都可以访问本站点：     
+<!--p>以下两个地址都可以访问本站点：     
 
 - [weiyan.cc](https://www.weiyan.cc)：基于 [Netlify](https://app.netlify.com/)，国内访问相对快一些；     
 - [gh-pages.weiyan.cc](https://gh-pages.weiyan.cc)：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟。
-
-<p align="center">
-    <img src="https://shub.weiyan.tech/mkdocs/kg-readme-cover.gif" alt='readme-cover'><br>
-</p>
+</p-->
+<br>
 
 !!! abstract "希望所有读到此博客文章的读者都有所收获"
 

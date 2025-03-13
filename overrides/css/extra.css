@@ -15,6 +15,10 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
   background-size: 15px 15px;
 }
 
+.md-header--shadow {
+  box-shadow: unset !important;
+}
+
 #rcorners {
   border-radius: 10px;
   background: linear-gradient(to right, rgba(189,224,245),rgba(218,232,241), rgba(238,237,238));
@@ -25,7 +29,6 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
   text-align: center;
   font-size:14px;
 }
-
 
 /* rounded button */
 .rounded-button {

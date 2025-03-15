@@ -523,7 +523,7 @@ apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev l
 
 ### 编译安装
 
-Ubuntu/Debian 下 Python 编译安装的命令跟 CentOS/RedHat 是一样的，具体参考 [#1.3 编译安装 ](#eGHk1)一节的内容。
+Ubuntu/Debian 下 Python 编译安装的命令跟 CentOS/RedHat 是一样的，具体参考 **编译安装** 一节的内容。
 
 ## 参考资料
 

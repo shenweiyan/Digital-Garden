@@ -72,7 +72,7 @@ updated: 2024-03-21
 
     言成的个人博客网站，寓意为让我们相逢在更高处。
 
-- __[Pepper的博客](https://uioqps.github.io/)__
+- __[Pepper 的博客](https://uioqps.github.io/)__
 
     生命留给有价值的事物才能创造价值。
 
@@ -83,6 +83,10 @@ updated: 2024-03-21
 - __[Wcowin's Blog](https://wcowin.work/)__
 
     循此苦旅，以达星辰。
+
+- __[Goslion 的博客](https://goslion.eu.org/)__
+
+    一个专注技术与写作的个人博客，记录日常与技术。
 
 </div>
 

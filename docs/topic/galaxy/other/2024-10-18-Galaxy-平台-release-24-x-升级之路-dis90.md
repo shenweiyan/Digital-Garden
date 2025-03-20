@@ -91,7 +91,7 @@ export LD_LIBRARY_PATH=/home/shenweiyan/software/openssl-1.1.1/lib:$LD_LIBRARY_P
 ## Node 环境
 
 Galaxy 的 `sh run.sh` 默认通过 `ssl` 的方式安装已经提前编译好的 node-v18.12.1-linux-x64.tar.gz（直接解压即可使用），对于系统版本比较低的服务器（如 CentOS 7）会存在 GLIBC 异常，因此需要调整为 `ignore_ssl_certs` 的下载方式 + source 源码安装的方式安装 node-v18.12.1。     
-![nodeenv--help](https://kg.weiyan.cc/2024/10/nodeenv-help.webp)
+![nodeenv--help](https://kg.weiyan.tech/2024/10/nodeenv-help.webp)
 
 所以，最终的方法为调整 `./scripts/common_startup.sh` 中 `nodeenv -n "$NODE_VERSION" -p` 的安装代码如下：
 ```bash

@@ -8,7 +8,6 @@ template: home.html
 ---
 
 <style>
-  article > h1 { display: none; }
   @media (min-width: 900px) {
     main > div > div.md-content {
       max-width: 75%;

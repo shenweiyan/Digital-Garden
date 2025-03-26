@@ -1,4 +1,4 @@
 1c1
-< {'title': '测试讨论', 'number': 107, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/107', 'createdAt': '2025-03-25T06:51:15Z', 'lastEditedAt': '2025-03-25T09:10:05Z', 'updatedAt': '2025-03-26T07:02:16Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+< {'title': '测试讨论！', 'number': 107, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/107', 'createdAt': '2025-03-25T06:51:15Z', 'lastEditedAt': '2025-03-25T09:10:05Z', 'updatedAt': '2025-03-25T09:27:35Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
 ---
-> {'title': '测试讨论！', 'number': 107, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/107', 'createdAt': '2025-03-25T06:51:15Z', 'lastEditedAt': '2025-03-25T09:10:05Z', 'updatedAt': '2025-03-25T09:27:35Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+> {'title': '测试讨论', 'number': 107, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/107', 'createdAt': '2025-03-25T06:51:15Z', 'lastEditedAt': '2025-03-25T09:10:05Z', 'updatedAt': '2025-03-26T07:02:16Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}

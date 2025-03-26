@@ -1,0 +1,17 @@
+title: "Hello"
+
+sort:
+  direction: desc
+  by: filename
+
+nav:
+    - 主页: index.md
+    - 技术: tech
+    - 专题: topic
+    - 博客: blog
+    - 语雀: yuque
+    - 随笔: note
+    - 留言: message
+    - 关于: readme
+    - 友链: flinks
+    - RSS: feed_rss_created.xml

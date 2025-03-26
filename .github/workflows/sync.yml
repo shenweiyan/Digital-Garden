@@ -1,0 +1,73 @@
+name: code-sync
+
+on:
+  workflow_run:
+    workflows: mkdocs-deploy
+    types: completed
+
+jobs:
+  push-to-mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone
+        run: |
+          git config --global init.defaultBranch main
+          git init
+          git remote add origin https://shenweiyan:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git fetch --all
+          for branch in `git branch -a | grep remotes | grep -v HEAD`; do
+            git branch --track ${branch##*/} $branch
+          done
+        env:
+          GITHUB_REPOSITORY: shenweiyan/Knowledge-Garden
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+      - name: Push to AtomGit Knowledge-Garden
+        run: |
+          remote_repo="https://weiyan:${ATOMGIT_PAT}@atomgit.com/${ATOMGIT_REPOSITORY}.git"
+          git remote add atomgit "${remote_repo}"
+          git show-ref
+          git branch --verbose
+          # publish all
+          git push --all --force atomgit
+          git push --tags --force atomgit
+        env:
+          ATOMGIT_REPOSITORY: weiyan/Knowledge-Garden
+          ATOMGIT_PAT: ${{ secrets.ATOM_PAT }}
+          
+      - name: Push to Gitcode Knowledge-Garden
+        run: |
+          remote_repo="https://shenweiyan:${GITCODE_PASSWORD}@gitcode.com/${GITCODE_REPOSITORY}.git"
+          git remote add gitcode "${remote_repo}"
+          git show-ref
+          git branch --verbose
+          # publish all
+          git push --all --force gitcode
+          git push --tags --force gitcode
+        env:
+          GITCODE_REPOSITORY: shenweiyan/Knowledge-Garden
+          GITCODE_PASSWORD: ${{ secrets.GITCODE_PAT }}
+
+      #- name: Push to Gitee shenweiyan
+      #  uses: Yikun/hub-mirror-action@master
+      #  with:
+          #src: github/shenweiyan
+          #dst: gitee/shenweiyan
+          #dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          #dst_token: ${{ secrets.GITEE_TOKEN }}
+          #static_list: "Knowledge-Garden"
+          #mappings: "Knowledge-Garden=>shenweiyan"
+          #force_update: true
+          #timeout: '0.5h'
+
+      #- name: Build Gitee Pages
+      #  uses: yanglbme/gitee-pages-action@main
+      #  with:
+          # 注意替换为你的 Gitee 用户名
+          #gitee-username: shenweiyan
+          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
+          #gitee-password: ${{ secrets.GITEE_PASSWORD }}
+          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+          #gitee-repo: shenweiyan/shenweiyan
+          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+          #branch: gh-pages

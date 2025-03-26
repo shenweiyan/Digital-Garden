@@ -1,0 +1,100 @@
+name: Aync-Yuque-Mkdocs-Pages
+
+on:
+  # 允许手动push触发
+  push:
+    branches:
+      - main
+  # 允许外部仓库事件触发
+  repository_dispatch:
+    types:
+      - deploy
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    #env:
+      #ENABLE_YUQUE: ${{ secrets.ENABLE_YUQUE }}
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@master
+
+      - name: 安装node环境
+        uses: actions/setup-node@master
+        with:
+          node-version: "16.x"
+
+      - name: 安装pnpm
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install pnpm@7.9.5 -g
+
+      - name: 安装依赖
+        run: |
+          export TZ='Asia/Shanghai'
+          pnpm install --prod
+
+      - name: 清除缓存
+        env:
+          CLEAN_CACHE: ${{ secrets.CLEAN_CACHE }}
+        if: ${{ env.CLEAN_CACHE == 'true' }}
+        run: |
+          pnpm clean:yuque
+          #pnpm clean:notion
+          #pnpm clean:flowus
+
+      - name: 拉取语雀&Notion&FlowUs的文章
+        env:
+          YUQUE_TOKEN: ${{ secrets.YUQUE_TOKEN }}
+          YUQUE_LOGIN: ${{ secrets.YUQUE_LOGIN }}
+          YUQUE_REPO: ${{ secrets.YUQUE_REPO }}
+          #NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          #NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          COS_SECRET_ID: ${{ secrets.COS_SECRET_ID }}
+          COS_SECRET_KEY: ${{ secrets.COS_SECRET_KEY }}
+          COS_IMAGE_BUCKET: ${{ secrets.COS_IMAGE_BUCKET }}
+          COS_IMAGE_REGION: ${{ secrets.COS_IMAGE_REGION }}
+          #FLOWUS_TABLE_PAGE_ID: ${{ secrets.FLOWUS_TABLE_PAGE_ID }}
+        run: |
+          #pnpm sync:flowus
+          pnpm sync:yuque
+          #pnpm sync:notion
+
+      - name: 配置Git用户名邮箱
+        run: |
+          git config --global user.name "shenweiyan"
+          git config --global user.email "weiyanshum@gmail.com"
+
+      - name: 安装Python3
+        uses: actions/setup-python@main
+        with:
+          python-version: 3.9
+
+      - name: Generate index.md
+        run: python makeindex.py -r -d docs/cookbook
+
+      - name: 提交yuque拉取的文章到GitHub仓库
+        run: |
+          echo `date +"%Y-%m-%d %H:%M:%S"` begin ... > time.txt
+          git add .
+          git commit -m "Refresh elog.cache.json" -a
+
+      - name: 推送文章到仓库
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+
+      - uses: actions/cache@v3
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: .cache
+          restore-keys: |
+            mkdocs-material-
+      - run: pip install -r requirements.txt
+      - run: mkdocs gh-deploy --force

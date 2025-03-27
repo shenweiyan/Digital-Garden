@@ -98,6 +98,6 @@ jobs:
             mkdocs-material-
       - run: echo ${{ env.DIFF_CONTENT }}
       - run: pip install -r requirements.txt
-        if: env.DIFF_CONTENT != ''
+        if: env.DIFF_CONTENT != '' || github.ref == 'refs/heads/main'
       - run: mkdocs gh-deploy --force
-        if: env.DIFF_CONTENT != ''
+        if: env.DIFF_CONTENT != '' || github.ref == 'refs/heads/main'

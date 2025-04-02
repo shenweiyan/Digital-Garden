@@ -1,5 +1,5 @@
 ---
-title: Galaxy 安装应该选择哪个版本
+title: 【3.1.x-GalaxyOther】Galaxy 安装应该选择哪个版本
 number: 105
 slug: discussions-105/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/105

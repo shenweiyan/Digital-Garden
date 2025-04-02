@@ -19,7 +19,7 @@ vssue: ""
         - 2024-09-29 [上下班听广播](./discussions-89) 
         - 2024-09-24 [All in one](./discussions-88) 
         - 2024-08-20 [诛仙](./discussions-84) 
-        - 2024-08-12 [解决 GitHub 提交次数多导致仓库体积过大的问题](./discussions-83) 
+        - 2024-08-12 [【1.3.18-版本控制】解决 GitHub 提交次数多导致仓库体积过大的问题](./discussions-83) 
         - 2024-07-29 [巴黎奥运](./discussions-82) 
         - 2024-07-15 [寒冬将至](./discussions-81) 
         - 2024-07-08 [晒桌面](./discussions-80) 

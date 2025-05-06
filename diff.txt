@@ -1,4 +1,4 @@
 144c144
-< {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-01-22T01:51:23Z', 'updatedAt': '2025-03-27T14:55:19Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+< {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-01-22T01:51:23Z', 'updatedAt': '2025-05-06T03:10:09Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
 ---
-> {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-01-22T01:51:23Z', 'updatedAt': '2025-05-06T03:10:09Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+> {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-01-22T01:51:23Z', 'updatedAt': '2025-05-06T03:26:46Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}

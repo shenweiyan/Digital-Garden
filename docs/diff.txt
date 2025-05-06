@@ -1,6 +1,4 @@
-1,2c1,2
-< {'title': '语雀天使', 'number': 148, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/148', 'createdAt': '2025-04-30T08:11:02Z', 'lastEditedAt': None, 'updatedAt': '2025-04-30T08:11:03Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.5-语雀'}, 'labels': {'nodes': []}}
-< {'title': '语雀目录的一些困惑', 'number': 147, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/147', 'createdAt': '2025-04-30T08:11:01Z', 'lastEditedAt': None, 'updatedAt': '2025-04-30T08:11:03Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.5-语雀'}, 'labels': {'nodes': []}}
+143c143
+< {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-03-17T01:07:20Z', 'updatedAt': '2025-03-17T01:11:42Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
 ---
-> {'title': '语雀天使', 'number': 148, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/148', 'createdAt': '2025-04-30T08:11:02Z', 'lastEditedAt': None, 'updatedAt': '2025-04-30T08:11:03Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.5-语雀'}, 'labels': {'nodes': [{'name': '语雀随笔'}]}}
-> {'title': '语雀目录的一些困惑', 'number': 147, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/147', 'createdAt': '2025-04-30T08:11:01Z', 'lastEditedAt': None, 'updatedAt': '2025-04-30T08:11:03Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.5-语雀'}, 'labels': {'nodes': [{'name': '语雀随笔'}]}}
+> {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-05-06T03:49:57Z', 'updatedAt': '2025-05-06T03:49:57Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}

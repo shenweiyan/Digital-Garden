@@ -66,7 +66,11 @@ def __main__():
             if discussion_category.startswith('2.'):
                 category_name = discussion_category.strip().split("-")[-1] 
             else:
-                continue            
+                continue        
+
+            #把从语雀-随笔与乱弹转过来的文章统计重置创建时间.
+            if '语雀随笔' in discussion_labels:
+                discussion_createdAt = '2022-04-30'
 
             slug_name   = f'discussions-{discussion_number}'
             create_date = discussion_createdAt[0:10]
@@ -106,7 +110,7 @@ def __main__():
                 MD.write(comments)
 
             create_year   = discussion_createdAt[0:4]
-            blog_full_url = f'./{slug_name}'
+            blog_full_url = f'../{slug_name}'
             blog_title    = discussion_title
             if create_year in year_blogs_dict:
                 year_blogs_dict[create_year].append([create_date, blog_title, blog_full_url])
@@ -118,11 +122,11 @@ def __main__():
                        f'vssue: ""\n'
                        f'---\n\n'
                        f'# 博客文章\n\n'
-                       f'这是首发于 [GitHub Discussions](https://github.com/shenweiyan/Digital-Garden/discussions)，并定期同步更新至 Material for MkDocs 本站点上的博客文章。\n\n'
-                       f'??? "本站点所有博客文章归档"\n\n')
+                       f'这是来源于 [Discussions · Digital-Garden](https://github.com/shenweiyan/Digital-Garden/discussions)，定期同步更新至本站点上的博客类文章。\n\n'
+                       f'???+ "本站点所有博客文章归档"\n\n')
 
     # 保存博客的主页面输出结果
-    savedBlogIndex =  Path(outputDir).joinpath('blog/index.md') 
+    savedBlogIndex =  Path(outputDir).joinpath('blog/博文汇总/index.md') 
 
     with open(savedBlogIndex, "w") as BlogIndex:
         BlogIndex.write(blog_index_meta)

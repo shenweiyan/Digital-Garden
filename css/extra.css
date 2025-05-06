@@ -58,3 +58,7 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
   margin-right: 0.5em; /* Add some space between the SVG icon and the text */
 }
 
+/*友情链接 grid cards*/
+.md-typeset .grid.cards.flinks > ul > li {
+  background:#fff;
+}	

@@ -1,1 +1,4 @@
-
+39c39
+< {'title': 'MkDocs Material 大法好', 'number': 110, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/110', 'createdAt': '2025-04-25T06:38:20Z', 'lastEditedAt': None, 'updatedAt': '2025-04-25T06:38:21Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.2-好玩'}, 'labels': {'nodes': []}}
+---
+> {'title': 'MkDocs Material 大法好', 'number': 110, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/110', 'createdAt': '2025-04-25T06:38:20Z', 'lastEditedAt': None, 'updatedAt': '2025-05-07T11:43:08Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.2-好玩'}, 'labels': {'nodes': []}}

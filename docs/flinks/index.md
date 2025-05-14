@@ -40,7 +40,7 @@ updated: 2024-03-21
 
 <div class="grid cards flinks" markdown>
 
-- __[UncleCAT4](https://yuanj.top/)__
+- __[JiaoYuan's blog](https://jiaoyuan.org/)__
 
     思绪来得快去得也快，偶尔会在这里停留。
 

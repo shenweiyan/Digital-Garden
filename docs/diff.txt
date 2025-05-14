@@ -1,8 +1,8 @@
 1c1
-< {'title': '域名越来越贵了', 'number': 149, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/149', 'createdAt': '2025-05-08T02:18:46Z', 'lastEditedAt': '2025-05-08T03:31:40Z', 'updatedAt': '2025-05-09T15:24:27Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '域名'}]}}
+< {'title': '域名越来越贵了', 'number': 149, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/149', 'createdAt': '2025-05-08T02:18:46Z', 'lastEditedAt': '2025-05-08T03:31:40Z', 'updatedAt': '2025-05-10T15:30:34Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '域名'}]}}
 ---
-> {'title': '域名越来越贵了', 'number': 149, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/149', 'createdAt': '2025-05-08T02:18:46Z', 'lastEditedAt': '2025-05-08T03:31:40Z', 'updatedAt': '2025-05-10T15:30:34Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '域名'}]}}
-41c41
-< {'title': '一杯热茶一个下午', 'number': 109, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/109', 'createdAt': '2025-04-13T07:01:14Z', 'lastEditedAt': '2025-04-13T07:10:08Z', 'updatedAt': '2025-05-09T15:27:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+> {'title': '域名越来越贵了', 'number': 149, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/149', 'createdAt': '2025-05-08T02:18:46Z', 'lastEditedAt': '2025-05-14T01:25:04Z', 'updatedAt': '2025-05-14T01:25:04Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '域名'}]}}
+144c144
+< {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-05-06T03:49:57Z', 'updatedAt': '2025-05-06T03:49:57Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
 ---
-> {'title': '一杯热茶一个下午', 'number': 109, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/109', 'createdAt': '2025-04-13T07:01:14Z', 'lastEditedAt': '2025-04-13T07:10:08Z', 'updatedAt': '2025-05-10T15:31:01Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+> {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-05-14T06:44:07Z', 'updatedAt': '2025-05-14T06:44:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}

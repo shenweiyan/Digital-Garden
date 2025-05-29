@@ -11,8 +11,10 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
 
 /* Grid background */
 .md-main {
-  background-image: linear-gradient(rgba(50,0,0,0.05) 1px,transparent 0),linear-gradient(90deg,rgba(50,0,0,0.05) 1px,transparent 0);
-  background-size: 15px 15px;
+  #background-image: linear-gradient(rgba(50,0,0,0.05) 1px,transparent 0),linear-gradient(90deg,rgba(50,0,0,0.05) 1px,transparent 0);
+  #background-size: 15px 15px;
+  background-image: url('../assets/paper-pattern-clean.png');
+  overflow-y: auto;
 }
 
 .md-header--shadow {

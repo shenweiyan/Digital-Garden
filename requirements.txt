@@ -3,5 +3,4 @@ mkdocs-material
 mkdocs-rss-plugin
 mkdocs-git-revision-date-localized-plugin
 mkdocs-glightbox
-jieba
 mkdocs-awesome-nav

@@ -132,9 +132,9 @@ pg_ctl: server is running (PID: 32586)
 
 在 PostgreSQL 中，如果你想禁止管理员（通常是 `postgres` 用户）使用空密码登录（正常情况下 `postgres` 用户可以直接使用 `psql` 命令直接登录 PostgreSQL），你可以通过修改 `pg_hba.conf` 文件来实现。
 
-1. 找到你的 `pg_hba.conf` 文件。这个文件通常位于 PostgreSQL 的数据目录中，例如 `/var/lib/pgsql/data` 或 `/etc/postgresql/<version>/main`。
+第一步，找到你的 `pg_hba.conf` 文件。这个文件通常位于 PostgreSQL 的数据目录中，例如 `/var/lib/pgsql/data` 或 `/etc/postgresql/<version>/main`。
 
-2. 修改 `pg_hba.conf` 文件，将管理员的登录方式从 `trust` 更改为 `md5` 或 `password`。这意味着所有连接，包括 `postgres` 用户的，都需要提供密码。
+第二步，修改 `pg_hba.conf` 文件，将管理员的登录方式从 `trust` 更改为 `md5` 或 `password`。这意味着所有连接，包括 `postgres` 用户的，都需要提供密码。
 
 例如，将以下行：
 ```
@@ -146,7 +146,7 @@ local   all             postgres                                trust
 local   all             postgres                                md5
 ```
 
-3. 重新加载或重启 PostgreSQL 服务以应用更改。
+第三步，重新加载或重启 PostgreSQL 服务以应用更改。
 
 重新加载配置的命令通常是：
 ```bash

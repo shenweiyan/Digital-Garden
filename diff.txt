@@ -1,4 +1,1 @@
-66c66
-< {'title': 'Linux 下 PostgreSQL 源码编译安装', 'number': 86, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/86', 'createdAt': '2024-09-03T02:03:58Z', 'lastEditedAt': '2024-09-04T01:00:39Z', 'updatedAt': '2024-09-04T01:00:39Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.4-数据库'}, 'labels': {'nodes': [{'name': '1.4.1-PostgreSQL'}]}}
----
-> {'title': 'Linux 下 PostgreSQL 源码编译安装', 'number': 86, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/86', 'createdAt': '2024-09-03T02:03:58Z', 'lastEditedAt': '2025-06-09T02:01:54Z', 'updatedAt': '2025-06-09T02:01:54Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.4-数据库'}, 'labels': {'nodes': [{'name': '1.4.1-PostgreSQL'}]}}
+

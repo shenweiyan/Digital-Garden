@@ -87,6 +87,7 @@ plugins:
       lang:
           - en
           - zh
+      placeholder: "输入关键词搜索..."
   - git-revision-date-localized:
       type: iso_date
       timezone: Asia/Shanghai
@@ -104,6 +105,10 @@ plugins:
       pagination_per_page: 10
       post_url_date_format: ""
       pagination_if_single_page: true
+      tags: true
+  - tags:
+      listings: true
+
 
 hooks:
   - hooks.py
@@ -123,6 +128,8 @@ extra:
   analytics:
     provider: custom
     property: foobar
+  seearch:
+    placeholder: "输入关键词搜索..."
 
 extra_css:
   - css/extra.css

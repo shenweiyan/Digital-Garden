@@ -72,6 +72,9 @@ def __main__():
             if '语雀随笔' in discussion_labels:
                 discussion_createdAt = '2022-04-30'
 
+            #把 labels 标签转成 tags
+            discussion_tags = ''.join([f"  - {label}\n" for label in discussion_labels]) if discussion_labels else discussion_tags
+
             slug_name   = f'discussions-{discussion_number}'
             create_date = discussion_createdAt[0:10]
             md_filename = create_date + "-" + slugify(discussion_title, allow_unicode=True, lowercase=False) + ".md"    #2023-10-18-xxxxx.md
@@ -84,7 +87,7 @@ def __main__():
                             f'authors: [{discussion_author}]\n'
                             f'categories: \n'
                             f'  - {category_name}\n'
-                            f'labels: {discussion_labels}\n'
+                            f'tags: {discussion_tags}\n'
                             f'---\n\n')
             
             # 使用 giscus 加载评论

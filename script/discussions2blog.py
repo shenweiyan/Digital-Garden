@@ -87,7 +87,7 @@ def __main__():
                             f'authors: [{discussion_author}]\n'
                             f'categories: \n'
                             f'  - {category_name}\n'
-                            f'tags: {discussion_tags}\n'
+                            f'tags: \n{discussion_tags}\n'
                             f'---\n\n')
             
             # 使用 giscus 加载评论

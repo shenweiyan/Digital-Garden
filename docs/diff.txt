@@ -1,4 +1,4 @@
-66c66
-< {'title': 'Linux 下 PostgreSQL 源码编译安装', 'number': 86, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/86', 'createdAt': '2024-09-03T02:03:58Z', 'lastEditedAt': '2024-09-04T01:00:39Z', 'updatedAt': '2024-09-04T01:00:39Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.4-数据库'}, 'labels': {'nodes': [{'name': '1.4.1-PostgreSQL'}]}}
+136c136
+< {'title': '留言与建议', 'number': 16, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/16', 'createdAt': '2023-11-09T07:42:48Z', 'lastEditedAt': '2025-01-22T01:49:22Z', 'updatedAt': '2025-01-22T01:49:22Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': 'x.x-留言'}, 'labels': {'nodes': []}}
 ---
-> {'title': 'Linux 下 PostgreSQL 源码编译安装', 'number': 86, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/86', 'createdAt': '2024-09-03T02:03:58Z', 'lastEditedAt': '2025-06-09T02:01:54Z', 'updatedAt': '2025-06-09T02:01:54Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.4-数据库'}, 'labels': {'nodes': [{'name': '1.4.1-PostgreSQL'}]}}
+> {'title': '留言与建议', 'number': 16, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/16', 'createdAt': '2023-11-09T07:42:48Z', 'lastEditedAt': '2025-06-13T07:20:35Z', 'updatedAt': '2025-06-13T07:20:35Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': 'x.x-留言'}, 'labels': {'nodes': []}}

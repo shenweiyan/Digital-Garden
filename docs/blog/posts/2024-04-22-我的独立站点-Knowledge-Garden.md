@@ -7,7 +7,9 @@ date: 2024-04-22
 authors: [shenweiyan]
 categories: 
   - 乱弹
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 使用 GitHub Discussions 写作文章大半年以来，越来越得心应手，最近起用了新的一个仓库，用于 [Knowledge-Garden](https://github.com/shenweiyan/Knowledge-Garden/discussions) 静态资源的保存和使用。

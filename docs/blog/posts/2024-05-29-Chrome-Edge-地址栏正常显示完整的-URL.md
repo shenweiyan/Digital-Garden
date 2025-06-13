@@ -7,7 +7,9 @@ date: 2024-05-29
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 1.3.18-版本控制
+
 ---
 
 对于在 Chrome/Edge 使用 IP 或者其他 URL 访问网页，地址栏想复制 IP/URL 非要给我自动加上 `http://`(或者 `https://`) 前缀。

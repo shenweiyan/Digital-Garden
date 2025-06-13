@@ -7,7 +7,9 @@ date: 2023-10-19
 authors: [shenweiyan]
 categories: 
   - 乱弹
-labels: []
+tags: 
+  - mkdocs
+
 ---
 
 记录一下个人使用 Python3 爬取个人公众号的所有文章，并把文章保存为 Markdown 格式的一些操作记录，主要介绍一下思路和一些简单的代码。

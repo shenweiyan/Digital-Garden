@@ -7,7 +7,9 @@ date: 2024-01-19
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 主要记录一下在 Mkdocs material 中对指定页面隐藏标题，尤其是指在 Home 页面把 H1 级别的标题隐藏的一些解决方法。

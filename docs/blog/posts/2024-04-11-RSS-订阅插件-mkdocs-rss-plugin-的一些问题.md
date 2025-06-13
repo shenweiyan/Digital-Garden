@@ -7,7 +7,9 @@ date: 2024-04-11
 authors: [shenweiyan]
 categories: 
   - 乱弹
-labels: ['mkdocs']
+tags: 
+  - mkdocs
+
 ---
 
 聊一下 Mkdocs Material 的默认插件 [mkdocs-rss-plugin](https://github.com/Guts/mkdocs-rss-plugin) 在使用上的一些问题。

@@ -7,7 +7,9 @@ date: 2023-12-06
 authors: [shenweiyan]
 categories: 
   - 乱弹
-labels: ['公众号']
+tags: 
+  - 公众号
+
 ---
 
 从2023年7月起我所有可公开的文档都保存在了 [GitHub Discussions](https://github.com/shenweiyan/Knowledge-Garden/discussions) 上，作为博客、IED 编辑器，以及评论使用，GitHub Discussions 是完全没问题的。

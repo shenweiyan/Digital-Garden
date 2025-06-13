@@ -7,7 +7,9 @@ date: 2023-11-09
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 GitHub Discussions 是一个可以在每个 GitHub 仓库上启用的论坛。它使开发者能够轻松地讨论新功能，从社区获得反馈，创建投票，发布公告等。这里搜集了一些基于 GitHub Discussions 的博客与站点，以供参考。

@@ -7,7 +7,9 @@ date: 2024-01-23
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 Mkdocs material 默认使用目录+文件名作为 post 展示的 URL，如果目录名/文件名太长的话，你的 URL 就会显得非常长。尤其是当你从浏览器地址栏中复制某一篇文档的链接时候，如果你的 URL 同时包含了中文，URL 转码后会导致你复制后粘贴的链接变得更加长。

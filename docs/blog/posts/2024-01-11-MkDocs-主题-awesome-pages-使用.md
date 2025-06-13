@@ -7,7 +7,9 @@ date: 2024-01-11
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 很长一段时间都在使用 [mkdocs_include_dir_to_nav](https://github.com/mysiki/mkdocs_include_dir_to_nav) 这个插件来自动包含目录下的所有 md 文件，但随着新需求的出现 —— **如何给某一个指定的子目录使用 `reverse_sort_file`，即升序排列展示子目录相应的 markdown 内容**。这才开始接触到 [MkDocs Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin) 这个插件。

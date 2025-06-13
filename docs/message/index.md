@@ -13,7 +13,7 @@ updated: 2024-03-21
 📢 如果给我发邮件，或者通过微信添加好友，请写上您的**真名实姓**，让我感受到一个**真实的人的气息**。我不太愿意跟**网名**打交道，对于那些不知来路、上来就问问题的微信和邮件，我通常会直接忽略。
 
 - 微信：**ishenweiyan**（请备注真实姓名，谢谢）
-- 邮箱：**shen@weiyan.cc**
+- 邮箱：**shenweiyan@aliyun.com**
 
 <p align="center">
     <img src="https://shub.weiyan.tech/mkdocs/feedback.gif" alt="feedback">

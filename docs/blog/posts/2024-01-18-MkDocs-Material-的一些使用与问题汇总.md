@@ -7,7 +7,9 @@ date: 2024-01-18
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 记录一下 MkDocs Material 在使用过程中遇到的一些问题。

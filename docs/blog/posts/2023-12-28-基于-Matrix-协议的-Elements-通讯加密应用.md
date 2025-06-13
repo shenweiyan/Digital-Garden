@@ -7,7 +7,9 @@ date: 2023-12-28
 authors: [shenweiyan]
 categories: 
   - 乱弹
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 Matrix 是一个开源、开放、轻量级、去中心化的即时聊天通讯协议，它是包括 deepin、Mozilla、Fedora、KDE、Archlinux、Debian 等开源社区均在广泛使用的即时聊天协议。

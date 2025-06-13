@@ -7,7 +7,9 @@ date: 2025-04-25
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: ['mkdocs']
+tags: 
+  - mkdocs
+
 ---
 
 > Categories: 博客/好玩

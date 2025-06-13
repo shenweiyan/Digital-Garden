@@ -7,7 +7,9 @@ date: 2024-04-22
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 由于 [PicX](https://github.com/XPoet/picx) 自 v3.0 起，不再支持自由选择仓库和分支，统一使用内置的仓库和分支。所以出于自定义的仓库和分支使用需求，这里主要对 [PicX v2.0](https://github.com/XPoet/picx/tree/v2) 进行 Vercel 自定义部署。

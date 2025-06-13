@@ -7,7 +7,9 @@ date: 2023-12-06
 authors: [shenweiyan]
 categories: 
   - 好玩
-labels: []
+tags: 
+  - 公众号
+
 ---
 
 MkDocs 是一个快速、简单、华丽的静态网站生成器，适用于构建项目文档。文档源文件以 Markdown 编写，并使用一个 YAML 文件来进行配置。[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 是 [MkDocs](https://www.mkdocs.org/) 的一个主题配置，更加简洁美观，更新和维护也更加及时和频繁，且社区也更加活跃。

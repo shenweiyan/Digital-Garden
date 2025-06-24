@@ -1,4 +1,2 @@
-136c136
-< {'title': '留言与建议', 'number': 16, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/16', 'createdAt': '2023-11-09T07:42:48Z', 'lastEditedAt': '2025-01-22T01:49:22Z', 'updatedAt': '2025-01-22T01:49:22Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': 'x.x-留言'}, 'labels': {'nodes': []}}
----
-> {'title': '留言与建议', 'number': 16, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/16', 'createdAt': '2023-11-09T07:42:48Z', 'lastEditedAt': '2025-06-13T07:20:35Z', 'updatedAt': '2025-06-13T07:20:35Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': 'x.x-留言'}, 'labels': {'nodes': []}}
+0a1
+> {'title': '热爱生活', 'number': 153, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/153', 'createdAt': '2025-06-23T01:35:28Z', 'lastEditedAt': None, 'updatedAt': '2025-06-23T01:35:31Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}

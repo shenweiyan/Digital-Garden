@@ -73,7 +73,7 @@ def __main__():
                 discussion_createdAt = '2022-04-30'
 
             #把 labels 标签转成 tags
-            discussion_tags = ''.join([f"  - {label}\n" for label in discussion_labels]) if discussion_labels else discussion_tags
+            discussion_tags = ''.join([f"  - {label}\n" for label in discussion_labels]) if discussion_labels else ""
 
             slug_name   = f'discussions-{discussion_number}'
             create_date = discussion_createdAt[0:10]

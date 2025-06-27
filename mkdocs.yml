@@ -22,7 +22,7 @@ theme:
   favicon: assets/logo.ico
   logo: assets/octocat.png
   font:
-    text: 'Open Sans', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif
+    text: "'Open Sans', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif"
     code: "Consolas,Courier,courier new,stkaiti,kaiti,simkai,monospace"
   features:
     - navigation.instant

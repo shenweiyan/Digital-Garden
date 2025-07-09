@@ -1,5 +1,4 @@
-1c1,2
-< {'title': '热爱生活', 'number': 153, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/153', 'createdAt': '2025-06-23T01:35:28Z', 'lastEditedAt': '2025-06-24T01:33:28Z', 'updatedAt': '2025-06-24T01:33:29Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+1c1
+< {'title': '带着女儿泡星巴克', 'number': 154, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/154', 'createdAt': '2025-07-05T08:17:18Z', 'lastEditedAt': None, 'updatedAt': '2025-07-05T08:17:19Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '星巴克'}]}}
 ---
-> {'title': '带着女儿泡星巴克', 'number': 154, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/154', 'createdAt': '2025-07-05T08:17:18Z', 'lastEditedAt': None, 'updatedAt': '2025-07-05T08:17:19Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '星巴克'}]}}
-> {'title': '热爱生活', 'number': 153, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/153', 'createdAt': '2025-06-23T01:35:28Z', 'lastEditedAt': '2025-07-05T01:45:29Z', 'updatedAt': '2025-07-05T01:45:29Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+> {'title': '带着女儿泡星巴克', 'number': 154, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/154', 'createdAt': '2025-07-05T08:17:18Z', 'lastEditedAt': '2025-07-09T02:18:19Z', 'updatedAt': '2025-07-09T02:18:19Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '星巴克'}]}}

@@ -1,1 +1,2 @@
-
+0a1
+> {'title': 'NCBI Blast 源码编译安装', 'number': 155, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/155', 'createdAt': '2025-07-13T00:57:21Z', 'lastEditedAt': '2025-07-13T01:07:42Z', 'updatedAt': '2025-07-13T01:07:42Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.1-生信'}, 'labels': {'nodes': [{'name': '1.1.6-软件'}]}}

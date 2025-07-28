@@ -39,13 +39,13 @@ theme:
     - navigation.footer
   palette:
     - scheme: default
-      primary: grey
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/theme-light-dark
         name: Switch to dark mode
     - scheme: slate
-      primary: grey
+      primary: indigo
       accent: indigo
       toggle:
         icon: material/theme-light-dark

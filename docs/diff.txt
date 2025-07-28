@@ -1,2 +1,14 @@
-0a1
-> {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-07-15T12:58:36Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': []}}
+1,2c1,2
+< {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-07-15T12:58:36Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': []}}
+< {'title': 'NCBI Blast 源码编译安装', 'number': 155, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/155', 'createdAt': '2025-07-13T00:57:21Z', 'lastEditedAt': '2025-07-13T01:07:42Z', 'updatedAt': '2025-07-13T01:07:42Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.1-生信'}, 'labels': {'nodes': [{'name': '1.1.6-软件'}]}}
+---
+> {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-07-15T12:58:36Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.26-人工智能'}, {'name': 'dify'}, {'name': 'ollama'}]}}
+> {'title': 'NCBI Blast 源码编译安装', 'number': 155, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/155', 'createdAt': '2025-07-13T00:57:21Z', 'lastEditedAt': '2025-07-13T01:07:42Z', 'updatedAt': '2025-07-13T01:07:42Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.1-生信'}, 'labels': {'nodes': [{'name': '1.1.6-软件'}, {'name': 'blast'}]}}
+4c4
+< {'title': '热爱生活', 'number': 153, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/153', 'createdAt': '2025-06-23T01:35:28Z', 'lastEditedAt': '2025-07-05T01:45:29Z', 'updatedAt': '2025-07-05T01:45:29Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+---
+> {'title': '热爱生活', 'number': 153, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/153', 'createdAt': '2025-06-23T01:35:28Z', 'lastEditedAt': '2025-07-05T01:45:29Z', 'updatedAt': '2025-07-05T01:45:29Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': 'lifestyle'}]}}
+96c96
+< {'title': '【1.3.17-服务器配置使用】RockyLinux 9 基础配置与使用', 'number': 60, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/60', 'createdAt': '2024-03-08T02:24:12Z', 'lastEditedAt': '2024-10-31T02:14:48Z', 'updatedAt': '2025-04-02T05:22:35Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.17-服务器配置使用'}]}}
+---
+> {'title': 'RockyLinux 9 基础配置与使用', 'number': 60, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/60', 'createdAt': '2024-03-08T02:24:12Z', 'lastEditedAt': '2024-10-31T02:14:48Z', 'updatedAt': '2025-07-28T01:29:58Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.17-服务器配置使用'}, {'name': 'Rocky Linux'}]}}

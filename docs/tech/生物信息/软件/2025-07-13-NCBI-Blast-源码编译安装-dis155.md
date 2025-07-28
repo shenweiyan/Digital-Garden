@@ -7,7 +7,7 @@ date: 2025-07-13
 authors: [shenweiyan]
 categories: 
   - 1.1-生信
-labels: ['1.1.6-软件']
+labels: ['1.1.6-软件', 'blast']
 ---
 
 记录一下在老破旧服务器从源码编译安装 NCBI Blast 2.15.0+ 遇到的一些问题。

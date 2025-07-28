@@ -1,5 +1,5 @@
 ---
-title: 【1.3.17-服务器配置使用】RockyLinux 9 基础配置与使用
+title: RockyLinux 9 基础配置与使用
 number: 60
 slug: discussions-60/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/60
@@ -7,7 +7,7 @@ date: 2024-03-08
 authors: [shenweiyan]
 categories: 
   - 1.3-折腾
-labels: ['1.3.17-服务器配置使用']
+labels: ['1.3.17-服务器配置使用', 'Rocky Linux']
 ---
 
 今天终于在阿里云入手了一台 2核(vCPU)+ 2GiB + 3Mbps 的 ECS，安装了最新的 Rocky Linux release 9.3 (Blue Onyx)，记录一下开箱后的一些基础配置。

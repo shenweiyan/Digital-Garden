@@ -6,7 +6,7 @@ url: https://github.com/shenweiyan/Digital-Garden/discussions/156
 date: 2025-07-15
 authors: [shenweiyan]
 categories: 
-  - 1.3-折腾
+  - 1.6-人工智能
 labels: ['1.3.26-人工智能', 'dify', 'ollama']
 ---
 

@@ -1,16 +1,1 @@
-1c1
-< {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-07-15T12:58:36Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.26-人工智能'}, {'name': 'dify'}, {'name': 'ollama'}]}}
----
-> {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-07-29T02:29:19Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.6-人工智能'}, 'labels': {'nodes': [{'name': '1.3.26-人工智能'}, {'name': 'dify'}, {'name': 'ollama'}]}}
-53c53
-< {'title': 'git clone 设置临时代理', 'number': 104, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/104', 'createdAt': '2025-03-17T01:49:33Z', 'lastEditedAt': None, 'updatedAt': '2025-03-17T01:49:33Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.18-版本控制'}]}}
----
-> {'title': 'git clone 设置临时代理', 'number': 104, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/104', 'createdAt': '2025-03-17T01:49:33Z', 'lastEditedAt': '2025-07-29T03:31:32Z', 'updatedAt': '2025-07-29T03:31:32Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.18-版本控制'}]}}
-58c58
-< {'title': 'R 语言中的 libpng 版本冲突', 'number': 98, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/98', 'createdAt': '2025-02-14T05:14:00Z', 'lastEditedAt': '2025-02-14T08:08:40Z', 'updatedAt': '2025-02-14T08:08:40Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.6-R'}]}}
----
-> {'title': 'R 语言中的 libpng 版本冲突', 'number': 98, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/98', 'createdAt': '2025-02-14T05:14:00Z', 'lastEditedAt': '2025-07-29T03:32:32Z', 'updatedAt': '2025-07-29T03:32:32Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.6-R'}]}}
-148c148
-< {'title': '个人域名跳转至语雀个人主页', 'number': 8, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/8', 'createdAt': '2023-10-23T01:51:34Z', 'lastEditedAt': '2023-10-23T01:54:54Z', 'updatedAt': '2024-01-03T07:58:05Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '语雀'}]}}
----
-> {'title': '个人域名跳转至语雀个人主页', 'number': 8, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/8', 'createdAt': '2023-10-23T01:51:34Z', 'lastEditedAt': '2025-07-29T03:24:56Z', 'updatedAt': '2025-07-29T03:24:56Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '语雀'}]}}
+

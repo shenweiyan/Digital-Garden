@@ -1,1 +1,4 @@
-
+1c1
+< {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-07-29T02:29:19Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.6-人工智能'}, 'labels': {'nodes': [{'name': '1.3.26-人工智能'}, {'name': 'dify'}, {'name': 'ollama'}]}}
+---
+> {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-08-06T15:31:55Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.6-人工智能'}, 'labels': {'nodes': [{'name': '1.3.26-人工智能'}, {'name': 'dify'}, {'name': 'ollama'}]}}

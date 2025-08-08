@@ -10579,122 +10579,13 @@ var _hmt = _hmt || [];
               date_parser=None, thousands=None, comment=None, skipfooter=0,
               convert_float=True, **kwds)
 </code></pre></div>
-<p>下表对常用参数做了说明：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">参数名称</th>
-<th style="text-align: left;">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">io</td>
-<td style="text-align: left;">表示 Excel 文件的存储路径。</td>
-</tr>
-<tr>
-<td style="text-align: left;">sheet_name</td>
-<td style="text-align: left;">要读取的工作表名称，默认0，即读取第一个工作表作为 DataFrame(一定要加<code>sheet_name=None</code>，才能读取出所有的 sheet，否则默认读取第一个 sheet)。</td>
-</tr>
-<tr>
-<td style="text-align: left;">header</td>
-<td style="text-align: left;">指定作为列名的行，默认0，即取第一行的值为列名；若数据不包含列名，则设定 header = None。若将其设置为 header=2，则表示将前两行作为多重索引。</td>
-</tr>
-<tr>
-<td style="text-align: left;">names</td>
-<td style="text-align: left;">一般适用于Excel缺少列名，或者需要重新定义列名的情况；names的长度必须等于Excel表格列的长度，否则会报错。</td>
-</tr>
-<tr>
-<td style="text-align: left;">index_col</td>
-<td style="text-align: left;">用做行索引的列，可以是工作表的列名称，如 index_col = &lsquo;列名&rsquo;，也可以是整数或者列表。</td>
-</tr>
-<tr>
-<td style="text-align: left;">usecols</td>
-<td style="text-align: left;">int或list类型，默认为None，表示需要读取所有列。</td>
-</tr>
-<tr>
-<td style="text-align: left;">squeeze</td>
-<td style="text-align: left;">boolean，默认为False，如果解析的数据只包含一列，则返回一个Series。</td>
-</tr>
-<tr>
-<td style="text-align: left;">converters</td>
-<td style="text-align: left;">规定每一列的数据类型。</td>
-</tr>
-<tr>
-<td style="text-align: left;">skiprows</td>
-<td style="text-align: left;">接受一个列表，表示跳过指定行数的数据，从头部第一行开始。</td>
-</tr>
-<tr>
-<td style="text-align: left;">nrows</td>
-<td style="text-align: left;">需要读取的行数。</td>
-</tr>
-<tr>
-<td style="text-align: left;">skipfooter</td>
-<td style="text-align: left;">接受一个列表，省略指定行数的数据，从尾部最后一行开始。</td>
-</tr>
-</tbody>
-</table>
-<p>示例如下所示：
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
-<span class="c1"># 读取所有Sheet</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;example.xlsx&#39;</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-
-<span class="c1"># 读取第一个、第二个和名为&quot;Sheet5&quot;的工作表作为 DataFrame 的字典</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;example.xlsx&#39;</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Sheet5&quot;</span><span class="p">])</span>
-</code></pre></div></p>
-<h3 id="获取行数和列数"><a class="toclink" href="../../discussions-40/#获取行数和列数">获取行数和列数</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;example.xlsx&#39;</span><span class="p">)</span>
-<span class="c1"># 行索引</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>  
-<span class="c1"># RangeIndex(start=0, stop=3747, step=1)</span>
-
-<span class="c1"># 输出元祖,分别为行数和列数,默认第一行是表头不算行数</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> 
-<span class="c1"># (3747, 4)</span>
-</code></pre></div>
-<h3 id="获取表头"><a class="toclink" href="../../discussions-40/#获取表头">获取表头</a></h3>
-<p><code>read_excel</code> 默认是把 excel 的第一行当成表头。注意：如果 <code>read_excel</code> 的 <code>sheet_name=None</code>，读取的是所有 excel 的 sheet_name(key) 和 sheet_values(values) 组成的字典，<code>df.keys()</code> 的结果是所有 sheet_name，即名字(字典的键)。</p>
-<h4 id="获取第一个-sheet"><a class="toclink" href="../../discussions-40/#获取第一个-sheet">获取第一个 sheet</a></h4>
-<p>这时候 <code>df.keys()</code> 和 <code>df.columns</code> 的结果是一样的，都是第一个 sheet 的表头。</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;input.xlsx&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---------------&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
-</code></pre></div>
-<h4 id="获取所有-sheet"><a class="toclink" href="../../discussions-40/#获取所有-sheet">获取所有 sheet</a></h4>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-
-<span class="c1"># 参数为 None 代表读取所有 sheet</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;input.xlsx&#39;</span><span class="p">,</span><span class="n">sheet_name</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-
-<span class="c1"># 获取所有sheet名字, 如果read_excel参数不是None, 则df.keys()为表头</span>
-<span class="n">sheet_names</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sheet_names</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="参考资料"><a class="toclink" href="../../discussions-40/#参考资料">参考资料</a></h3>
-<ol>
-<li>老董，《<a href="https://www.python66.com/pandasshujufenxi/268.html">pandas获取excel的行数,列数,表头,sheet,前后行等数据</a>》，<a href="https://www.python66.com/">Python编程网</a></li>
-<li>《<a href="https://c.biancheng.net/pandas/excel.html">Pandas Excel读写操作详解</a>》，<a href="https://c.biancheng.net/">C语言中文网</a></li>
-<li>《<a href="https://pandas.pydata.org/docs/reference/api/pandas.read_excel.html">pandas.read_excel — pandas 2.1.4 documentation</a>》，<a href="https://pandas.pydata.org/docs/index.html">pandas documentation — pandas 2.1.4 documentation</a></li>
-</ol>
-<script src="https://giscus.app/client.js"
-    data-repo="shenweiyan/Digital-Garden"
-    data-repo-id="R_kgDOKgxWlg"
-    data-mapping="number"
-    data-term="40"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="light"
-    data-lang="zh-CN"
-    crossorigin="anonymous"
-    async>
-</script>
+    
+      <nav class="md-post__action">
+        <a href="../../discussions-40/">
+          继续阅读
+        </a>
+      </nav>
     
   </div>
 </article>

@@ -40,8 +40,11 @@ jobs:
       - name: 生成 mkdocs 博客文章
         run: python3 script/discussions2blog.py -i docs/Discussions.txt
 
-      - name: 生成 mkdocs 的技术/专题页面
-        run: python3 script/discussions2mkdocs.py -i docs/Discussions.txt -c nav4dir.yml
+      - name: 生成 mkdocs 技术页面
+        run: python3 script/discussions2tech.py -i docs/Discussions.txt
+
+      - name: 生成 mkdocs 专题页面
+        run: python3 script/discussions2topic.py -i docs/Discussions.txt -c nav4dir.yml
 
       - name: 生成 mkdocs 指定页面
         run: python3 script/discussions4pages.py -i docs/Discussions.txt

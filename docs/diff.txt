@@ -1,8 +1,4 @@
-1c1
-< {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-08-06T15:31:55Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.6-人工智能'}, 'labels': {'nodes': [{'name': '1.3.26-人工智能'}, {'name': 'dify'}, {'name': 'ollama'}]}}
+52c52
+< {'title': '【3.1.x-GalaxyOther】Galaxy 安装应该选择哪个版本', 'number': 105, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/105', 'createdAt': '2025-03-19T07:21:02Z', 'lastEditedAt': '2025-03-24T03:22:22Z', 'updatedAt': '2025-04-02T05:16:48Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '3.1-Galaxy'}, 'labels': {'nodes': [{'name': '3.1.x-GalaxyOther'}]}}
 ---
-> {'title': 'Dify 上的 Ollama 不支持 Rerank 模型', 'number': 156, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/156', 'createdAt': '2025-07-15T08:47:04Z', 'lastEditedAt': '2025-07-15T09:33:46Z', 'updatedAt': '2025-08-07T00:49:16Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.6-人工智能'}, 'labels': {'nodes': [{'name': '1.3.26-人工智能'}, {'name': 'dify'}, {'name': 'ollama'}]}}
-77c77
-< {'title': 'Python 陷阱之 strip、lstrip、rstrip 可以删除比预期更多的内容', 'number': 79, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/79', 'createdAt': '2024-07-03T08:05:40Z', 'lastEditedAt': None, 'updatedAt': '2024-07-03T08:05:40Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.2-编程'}, 'labels': {'nodes': []}}
----
-> {'title': 'Python 陷阱之 strip、lstrip、rstrip 可以删除比预期更多的内容', 'number': 79, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/79', 'createdAt': '2024-07-03T08:05:40Z', 'lastEditedAt': '2025-08-07T05:44:32Z', 'updatedAt': '2025-08-07T05:44:32Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.2-编程'}, 'labels': {'nodes': [{'name': 'python'}]}}
+> {'title': 'Galaxy 安装应该选择哪个版本', 'number': 105, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/105', 'createdAt': '2025-03-19T07:21:02Z', 'lastEditedAt': '2025-08-08T06:02:06Z', 'updatedAt': '2025-08-08T06:02:06Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '3.1-Galaxy'}, 'labels': {'nodes': [{'name': '3.1.x-GalaxyOther'}]}}

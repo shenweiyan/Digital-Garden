@@ -107,6 +107,17 @@ plugins:
       post_url_date_format: ""
       pagination_if_single_page: true
       tags: true
+  - blog:
+      blog_dir: tech
+      archive: false
+      post_dir: "{blog}/posts"
+      categories: true
+      categories_sort_reverse: true
+      pagination: true
+      pagination_per_page: 10
+      post_url_date_format: ""
+      pagination_if_single_page: true
+      tags: true
   - tags:
       listings: true
 

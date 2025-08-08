@@ -25,6 +25,8 @@ pd.read_excel(io, sheet_name=0, header=0, names=None, index_col=None,
               convert_float=True, **kwds)
 ```
 
+<!-- more -->
+
 下表对常用参数做了说明：
 
 |参数名称|说明|

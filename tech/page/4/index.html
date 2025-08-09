@@ -10350,100 +10350,13 @@ var _hmt = _hmt || [];
 <p>请确认所有的命令都是使用 root 用户执行的，或者使用 sudo 命令来享受与之同样的权限。让我们开始吧！下面，先使用 mkdir 命令来创建一个名为 share 的目录。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/data/share
 </code></pre></div>
-<h3 id="1-acl-权限设置"><a class="toclink" href="../../discussions-9/#1-acl-权限设置">1. ACL 权限设置</a></h3>
-<p><strong>重要提示：</strong>     <br />
-打算使用此方法的话，您需要确认您的 Linux 文件系统类型（如 ext3 和 ext4, NTFS, BTRFS）支持 ACL。</p>
-<h4 id="11-查看内核是否支持-acl"><a class="toclink" href="../../discussions-9/#11-查看内核是否支持-acl">1.1. 查看内核是否支持 ACL</a></h4>
-<p>依照以下命令在您的系统中检查当前文件系统类型，并且查看内核是否支持 ACL：**</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>df<span class="w"> </span>-T<span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1,$2,$NF}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;^/dev&quot;</span>
-$<span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>acl<span class="w"> </span>/boot/config*
-</code></pre></div>
-<p>从下方的截屏可以看到，文件系统类型是 ext4，并且从 <code>CONFIG_EXT4_FS_POSIX_ACL=y</code> 选项可以发现内核是支持 POSIX ACL 的。
-<img alt="config-ext4-fs-posix-acl" src="https://kg.weiyan.cc/2024/08/config-ext4-fs-posix-acl.webp" /></p>
-<h4 id="12-挂载是否使用了-acl"><a class="toclink" href="../../discussions-9/#12-挂载是否使用了-acl">1.2. 挂载是否使用了 ACL</a></h4>
-<p>使用下面的命令，查看文件系统（分区）挂载时是否使用了 ACL 选项。</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>tune2fs<span class="w"> </span>-l<span class="w"> </span>/dev/vda1<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>acl
-</code></pre></div>
-<p><img alt="tune2fs-acl" src="https://kg.weiyan.cc/2024/08/tune2fs-acl.webp" />    <br />
-通过上边的输出可以发现，默认的挂载项目中已经对 ACL 进行了支持。如果发现结果不如所愿，你可以通过以下命令对指定分区（此例中使用 /dev/sda3）开启 ACL 的支持）。</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>mount<span class="w"> </span>-o<span class="w"> </span>remount,acl<span class="w"> </span>/
-$<span class="w"> </span>tune2fs<span class="w"> </span>-o<span class="w"> </span>acl<span class="w"> </span>/dev/sda3
-</code></pre></div>
-<h4 id="13-设置-acl-权限"><a class="toclink" href="../../discussions-9/#13-设置-acl-权限">1.3. 设置 ACL 权限</a></h4>
-<div class="highlight"><pre><span></span><code>setfacl<span class="w"> </span>-m<span class="w"> </span>m:rx<span class="w"> </span>文件名<span class="w">    </span><span class="c1"># 给 mask 的权限为 r-x ，使用 &quot;m:rx&quot;格式 </span>
 
-setfacl<span class="w"> </span>-m<span class="w"> </span>u:用户名:权限<span class="w"> </span>-R<span class="w"> </span>目录名<span class="w">   </span><span class="c1"># 递归 ACL 权限(针对目录现有的文件设置 ACL) </span>
-</code></pre></div>
-<p>例如，指定目录 <code>share</code> 的读写权限分配给名为 <code>shenweiyan</code> 的用户了，依照以下命令执行即可。</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># 检查目录默认的 ACL 设置（Check the default ACL settings for the directory）</span>
-$<span class="w"> </span>getfacl<span class="w"> </span>/data/share
-
-<span class="c1"># 指定用户读写权限（Give rw access to user shenweiyan）</span>
-<span class="c1"># 对于目录必须增加 x (执行)权限, 否则无法进入目录</span>
-$<span class="w"> </span>setfacl<span class="w"> </span>-m<span class="w"> </span>user:shenweiyan:rwx<span class="w"> </span>/data/share
-
-<span class="c1"># 再次检查目录 ACL 设置（Check new ACL settings for the directory）</span>
-$<span class="w"> </span>getfacl<span class="w"> </span>/data/share
-</code></pre></div>
-<p><img alt="setfacl-m-user" src="https://kg.weiyan.cc/2024/08/setfacl-m-user.webp" />    <br />
-在上方的截屏中，通过输出结果的第二行 getfacl 命令可以发现，用户 shenweiyan 已经成功的被赋予了 /data/share 目录的读写权限。</p>
-<p>如果想要获取 ACL 列表的更多信息。请参考：</p>
-<ul>
-<li><a href="http://www.tecmint.com/set-access-control-lists-acls-and-disk-quotas-for-users-groups/">如何使用访问控制列表（ACL）为用户/组设置磁盘配额</a></li>
-<li><a href="http://www.tecmint.com/rhcsa-exam-configure-acls-and-mount-nfs-samba-shares/">如何使用访问控制列表（ACL）挂载网络共享</a></li>
-</ul>
-<h4 id="14-删除-acl-权限"><a class="toclink" href="../../discussions-9/#14-删除-acl-权限">1.4. 删除 ACL 权限</a></h4>
-<p>如果用户名（组名）已经删除，可以使用 UID（GID）进行删除。</p>
-<div class="highlight"><pre><span></span><code>setfacl<span class="w"> </span>-x<span class="w"> </span>u:用户名<span class="w"> </span>文件名<span class="w">     </span><span class="c1"># 删除指定用户的 ACL 权限</span>
-setfacl<span class="w"> </span>-x<span class="w"> </span>g:组名<span class="w">   </span>文件名<span class="w">     </span><span class="c1"># 删除指定组的 ACL 权限 </span>
-setfacl<span class="w"> </span>-b<span class="w"> </span>文件名<span class="w">              </span><span class="c1"># 删除文件下所有的 ACL 权限 </span>
-</code></pre></div>
-<h3 id="2-用户组权限设置"><a class="toclink" href="../../discussions-9/#2-用户组权限设置">2. 用户组权限设置</a></h3>
-<h4 id="21-变更属组"><a class="toclink" href="../../discussions-9/#21-变更属组">2.1. 变更属组</a></h4>
-<p>如果用户已经拥有了默认的用户组（通常组名与用户名相同），就可以简单的通过变更文件夹的所属用户组来完成。</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">chgrp</span> <span class="n">shenweiyan</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">share</span>
-</code></pre></div>
-<p>另外，我们也可以通过以下方法为多个用户（需要赋予指定目录读写权限的）新建一个用户组。如此一来，也就创建了一个共享目录。</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">groupadd</span> <span class="n">dbshare</span>
-</code></pre></div>
-<h4 id="22-把用户添加到属组"><a class="toclink" href="../../discussions-9/#22-把用户添加到属组">2.2. 把用户添加到属组</a></h4>
-<p>接下来将用户 <code>shenweiyan</code> 添加到 <code>dbshare</code> 组中：</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># add user to projects</span>
-<span class="err">$</span> <span class="n">usermod</span> <span class="o">-</span><span class="n">aG</span> <span class="n">dbshare</span> <span class="n">shenweiyan</span>
-
-<span class="c1"># check users groups</span>
-<span class="err">$</span> <span class="n">groups</span> <span class="n">tecmint</span>
-</code></pre></div>
-<h4 id="23-变更属组"><a class="toclink" href="../../discussions-9/#23-变更属组">2.3. 变更属组</a></h4>
-<p>将目录的所属用户组变更为 <code>dbshare</code>：</p>
-<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">chgrp</span> <span class="n">projects</span> <span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">share</span>
-</code></pre></div>
-<h4 id="24-设置组员权限"><a class="toclink" href="../../discussions-9/#24-设置组员权限">2.4. 设置组员权限</a></h4>
-<p>现在，给组成员设置读写权限。</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span>chmod<span class="w"> </span>-R<span class="w"> </span><span class="m">0760</span><span class="w"> </span>/data/share
-
-<span class="c1"># check new permissions</span>
-$<span class="w"> </span>ls<span class="w"> </span>-l<span class="w"> </span>/data/share
-</code></pre></div>
-<p>ok，在 Linux 上给用户赋予指定目录的读写权限就介绍到这里 ！</p>
-<h3 id="3-参考资料"><a class="toclink" href="../../discussions-9/#3-参考资料">3. 参考资料</a></h3>
-<ul>
-<li>高延斌，《<a href="https://www.ibm.com/developerworks/cn/linux/l-acl/index.html">Linux ACL 体验</a>》，IBM Developer</li>
-<li>Mr-Ping，《在 Linux 上给用户赋予指定目录的读写权限》，Linux 中国</li>
-</ul>
-<script src="https://giscus.app/client.js"
-    data-repo="shenweiyan/Digital-Garden"
-    data-repo-id="R_kgDOKgxWlg"
-    data-mapping="number"
-    data-term="9"
-    data-reactions-enabled="1"
-    data-emit-metadata="0"
-    data-input-position="bottom"
-    data-theme="light"
-    data-lang="zh-CN"
-    crossorigin="anonymous"
-    async>
-</script>
+    
+      <nav class="md-post__action">
+        <a href="../../discussions-9/">
+          继续阅读
+        </a>
+      </nav>
     
   </div>
 </article>

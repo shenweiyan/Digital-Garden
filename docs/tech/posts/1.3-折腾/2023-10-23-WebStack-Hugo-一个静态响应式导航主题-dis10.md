@@ -22,7 +22,9 @@ tags: ['语雀', '1.3.25-静态网站']
 
 ## 主题展示地址
 
-[**WebStack-Hugo 网址导航**](https://bioit.top/) | [**生信网址导航**](https://hao.bioitee.com/) 
+[**WebStack-Hugo 网址导航**](https://np.pagex.top/) | [**生信网址导航**](https://hao.bioit.top/) 
+
+<!-- more -->
 
 ## 为什么做这个网站
 

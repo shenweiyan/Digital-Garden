@@ -23,6 +23,8 @@ The necessary bits to build these optional modules were not found:
 _tkinter 
 ```
 
+<!-- more -->
+
 ## 中文乱码
 
 使用 Anaconda 3（conda 4.5.11）的 tkinter python 包（conda install -c conda-forge tk）开发 GUI 界面程序过程中，发现 UI 界面出现的中文 Unicode 乱码一直没办法解决。

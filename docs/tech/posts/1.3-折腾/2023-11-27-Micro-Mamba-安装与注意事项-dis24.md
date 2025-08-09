@@ -22,6 +22,8 @@ Mamba 可以使用 Mambaforge 方法和已有 Mini/conda 的方式安装，官�
 > We recommend that you start with the [Mambaforge distribution](https://github.com/conda-forge/miniforge#mambaforge). Mambaforge comes with the popular conda-forge channel preconfigured, but you can modify the configuration to use any channel you like. Note that Anaconda channels are generally incompatible with conda-forge, so you should not mix them.        
 > 我们建议您从 Mambaforge 发行版开始。 Mambaforge 预配置了流行的 conda-forge 通道，但您可以修改配置以使用您喜欢的任何通道。请注意，Anaconda 通道通常与 conda-forge 不兼容，因此您不应混合使用它们。
 
+<!-- more -->
+
 其实就是：          
 1. 先去 [Mambaforge distribution](https://github.com/conda-forge/miniforge#mambaforge) 下载 Mambaforge-Linux-x86_64.sh。          
 2. 执行 `sh Mambaforge-Linux-x86_64.sh` 安装命令。

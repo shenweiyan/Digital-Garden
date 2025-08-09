@@ -32,6 +32,8 @@ Traceback (most recent call last):
 ImportError: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2k-fips  26 Jan 2017'. See: https://github.com/urllib3/urllib3/issues/2168
 ```
 
+<!-- more -->
+
 网络上有很多关于这方面的教程，主要解决方案：
 
 1. 降级 `urllib3` 的版本，例如：`pip install --upgrade urllib3==1.26.15`；

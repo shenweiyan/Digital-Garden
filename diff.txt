@@ -1,4 +1,1 @@
-139c139
-< {'title': 'NCBI API 使用', 'number': 17, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/17', 'createdAt': '2023-11-21T06:44:23Z', 'lastEditedAt': None, 'updatedAt': '2023-11-21T06:44:24Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.1-生信'}, 'labels': {'nodes': []}}
----
-> {'title': 'NCBI API 使用', 'number': 17, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/17', 'createdAt': '2023-11-21T06:44:23Z', 'lastEditedAt': '2025-08-11T01:16:51Z', 'updatedAt': '2025-08-11T01:16:51Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.1-生信'}, 'labels': {'nodes': [{'name': 'ncbi'}]}}
+

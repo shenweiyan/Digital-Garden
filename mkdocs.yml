@@ -80,7 +80,7 @@ plugins:
           as_creation: "date"
           as_update: "date"
       abstract_chars_count: -1
-      match_path: "(blog/posts|flinks|message|note|readme|tech|topic|yuque)/.*"
+      match_path: "(blog/posts|flinks|message|note|readme|tech/posts|topic|yuque)/.*"
   - glightbox:
       auto_caption: false    
       caption_position: bottom

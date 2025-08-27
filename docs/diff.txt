@@ -1,4 +1,2 @@
-1c1
-< {'title': '这个夏天', 'number': 157, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/157', 'createdAt': '2025-08-14T01:45:53Z', 'lastEditedAt': None, 'updatedAt': '2025-08-14T01:45:54Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
----
-> {'title': '这个夏天', 'number': 157, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/157', 'createdAt': '2025-08-14T01:45:53Z', 'lastEditedAt': '2025-08-15T05:15:43Z', 'updatedAt': '2025-08-15T05:15:43Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+0a1
+> {'title': 'GitHub 2FA 双因素身份验证浏览器插件', 'number': 158, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/158', 'createdAt': '2025-08-27T01:55:24Z', 'lastEditedAt': '2025-08-27T02:01:57Z', 'updatedAt': '2025-08-27T02:01:57Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': 'github'}]}}

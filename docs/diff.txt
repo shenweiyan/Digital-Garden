@@ -1,8 +1,2 @@
-1c1
-< {'title': 'GitHub 2FA 双因素身份验证浏览器插件', 'number': 158, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/158', 'createdAt': '2025-08-27T01:55:24Z', 'lastEditedAt': '2025-08-27T02:01:57Z', 'updatedAt': '2025-08-27T02:01:57Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': 'github'}]}}
----
-> {'title': 'GitHub 2FA 双因素身份验证浏览器插件', 'number': 158, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/158', 'createdAt': '2025-08-27T01:55:24Z', 'lastEditedAt': '2025-08-28T00:48:01Z', 'updatedAt': '2025-08-28T00:48:01Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': 'github'}]}}
-154c154
-< {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-06-27T06:19:47Z', 'updatedAt': '2025-06-27T06:19:47Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
----
-> {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-08-28T03:49:45Z', 'updatedAt': '2025-08-28T03:49:45Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+0a1
+> {'title': '来自 GitHub 的 Trigger security scan 异常攻击', 'number': 159, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/159', 'createdAt': '2025-09-04T03:33:51Z', 'lastEditedAt': '2025-09-04T03:39:36Z', 'updatedAt': '2025-09-04T03:39:36Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': 'github'}]}}

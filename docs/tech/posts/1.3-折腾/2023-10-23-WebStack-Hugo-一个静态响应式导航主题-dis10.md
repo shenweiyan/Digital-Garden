@@ -10,9 +10,7 @@ categories:
 tags: ['语雀', '1.3.25-静态网站']
 ---
 
-> Via：[我给自己做了一个导航网站](https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag) | [BioIT爱好者](https://www.bioitee.com)    
-
-<br/>
+> Via：[我给自己做了一个导航网站](https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag) | [BioIT爱好者](https://github.com/bioitee)    
 
 **📢 让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://kg.weiyan.cc/0000/img/donate.webp) >.<**
 

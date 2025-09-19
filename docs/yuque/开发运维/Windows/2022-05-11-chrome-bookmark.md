@@ -1,9 +1,9 @@
 ---
 title: 推荐 | 中国用户也能同步 Chrome 书签了
-urlname: 2022-05-11-kf71lr
+urlname: 2022-05-11-chrome-bookmark
 author: 章鱼猫先生
 date: 2022-05-11
-updated: "2022-05-13 11:17:36"
+updated: 2022-09-19
 ---
 
 众所周知，Chrome 浏览器的书签的同步正常情况下需要连接 Google 账号才能进行，但由于某些原因这一点在国内正常情况下是不可用的。
@@ -16,7 +16,7 @@ updated: "2022-05-13 11:17:36"
 它的功能和 Chrome 自带的同步功能完全一样，当用户添加、修改或删除了书签时，自动同步到云端。当不同电脑登录同一个账户时，它们的书签列表会自动合并。使用也很方便，安装好插件之后，微信扫一扫即可登录。
 ![image.png](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvWLou5CEcpHN-O2UW5b-zAQtXqt.png)
 
-# 安装步骤
+## 安装步骤
 
 由于某些原因，国内无法访问 Chrome 应用商店，只能手动安装此扩展。安装步骤如下：
 
@@ -40,7 +40,7 @@ updated: "2022-05-13 11:17:36"
 
 ![](https://shub.weiyan.tech/yuque/elog-cookbook-img/FvXUlidd17BDkcBuJWs3klxpiPhX.png)
 
-# 使用方法
+## 使用方法
 
 使用方法非常简单，点击 Chrome 浏览器工具栏上的 Chrome 书签同步 图标，弹出登录框。使用微信扫一扫，即可登录，并自动同步数据到云端，无需手动干预。
 

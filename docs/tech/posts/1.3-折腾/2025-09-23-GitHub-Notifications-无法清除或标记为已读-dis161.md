@@ -16,7 +16,7 @@ GitHub 使用多了，最近总是遇到一些奇奇怪怪的问题。这不，�
 
 <!-- more -->
 
-这个问题，在 <https://github.com/orgs/community/discussions/174310> 也有人遇到过，是这样子解释的。
+这个问题，在 <https://github.com/orgs/community/discussions/174310> 也有人遇到过，在 V2EX 也有相关的讨论 ——[《疑似 GitHub × Gitcoin 的骗局》](https://www.v2ex.com/t/1161205)，是这样子解释的。
 
 > 这是 GitHub 上一个已知的边缘情况。当触发通知的仓库或用户被删除时，有时相关通知会“卡住”，无法清除或标记为已读。这是一个偶尔会发生的错误，尤其是在垃圾邮件或已删除的帐户中。
 

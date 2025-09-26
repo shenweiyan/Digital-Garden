@@ -112,13 +112,13 @@ def __main__():
                 MD.write(discussion_body)
                 MD.write(comments)
 
-            create_year   = discussion_createdAt[0:4]
-            blog_full_url = f'../{slug_name}'
-            blog_title    = discussion_title
+            create_year       = discussion_createdAt[0:4]
+            post_filename_url = f'../posts/{md_filename}'
+            post_title        = discussion_title
             if create_year in year_blogs_dict:
-                year_blogs_dict[create_year].append([create_date, blog_title, blog_full_url])
+                year_blogs_dict[create_year].append([create_date, post_title, post_filename_url])
             else:
-                year_blogs_dict[create_year] = [[create_date, blog_title, blog_full_url]]
+                year_blogs_dict[create_year] = [[create_date, post_title, post_filename_url]]
 
     # 博客的归档头部信息
     blog_index_meta = (f'---\n'

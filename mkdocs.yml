@@ -81,6 +81,8 @@ plugins:
           as_update: "date"
       abstract_chars_count: -1
       match_path: "(blog/posts|flinks|message|note|readme|tech/posts|topic|yuque)/.*"
+      feeds_filenames:
+          rss_created: rss.xml
   - glightbox:
       auto_caption: false    
       caption_position: bottom
@@ -88,14 +90,17 @@ plugins:
       lang:
           - en
           - zh
-      placeholder: "输入关键词搜索..."
-  - git-revision-date-localized:
-      type: iso_date
-      timezone: Asia/Shanghai
-      fallback_to_build_date: true
-      exclude:
-          - blog/archive/*
-          - blog/category/*
+  - document-dates:
+      position: top            # 显示位置: top(标题后) bottom(文档末尾)
+      type: date               # 时间类型: date datetime timeago, 默认：date
+      exclude:                 # 排除文件列表
+        - index.md
+        - tech/*
+        - blog/*       # 排除指定文件
+      date_format: '%Y-%m-%d'  # 日期格式化字符串，例如：%Y年%m月%d日、%b %d, %Y
+      time_format: '%H:%M:%S'  # 时间格式化字符串（仅在 type=datetime 时有效）
+      show_author: true        # 作者显示模式: true(头像) text(文本) false(隐藏)
+      recently-updated: true   # 是否开启最近更新的数据，默认：false
   - awesome-nav
   - blog:
       blog_dir: blog
@@ -106,18 +111,15 @@ plugins:
       pagination_per_page: 10
       post_url_date_format: ""
       pagination_if_single_page: true
-      tags: true
   - blog:
       blog_dir: tech
       archive: false
       post_dir: "{blog}/posts"
       categories: true
-      categories_sort_reverse: true
       pagination: true
       pagination_per_page: 10
       post_url_date_format: ""
       pagination_if_single_page: true
-      tags: true
   - tags:
       listings: true
 
@@ -140,8 +142,6 @@ extra:
   analytics:
     provider: custom
     property: foobar
-  seearch:
-    placeholder: "输入关键词搜索..."
 
 extra_css:
   - css/extra.css

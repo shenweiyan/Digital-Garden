@@ -1,5 +1,3 @@
-title: "Hello"
-
 sort:
   direction: desc
   by: filename
@@ -14,4 +12,4 @@ nav:
     - 留言: message
     - 关于: readme
     - 友链: flinks
-    - RSS: feed_rss_created.xml
+    - RSS: rss.xml

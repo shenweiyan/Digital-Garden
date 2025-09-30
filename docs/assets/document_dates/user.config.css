@@ -1,11 +1,14 @@
 /* 1. Plug-in styles
     including icons, fonts, colors, etc
     */
-/* 
+ 
 .md-main .document-dates-plugin {
-    color: rgba(109, 157, 204, 0.7);
-    font-size: 0.75rem;
+    /*color: rgba(109, 157, 204, 0.7);
+    font-size: 0.75rem;*/
+    color: var(--md-default-fg-color--light);
+    font-size: 0.7rem;
 }
+/*
 .md-main .document-dates-plugin .material-icons {
     font-size: 0.9rem;
 } */

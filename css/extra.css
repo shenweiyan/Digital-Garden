@@ -1,3 +1,5 @@
+html {font-size: 20px;}
+
 /* Light mode */
 [data-md-color-scheme="default"] {
   --md-default-bg-color: #e6e6e6;

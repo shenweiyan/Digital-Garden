@@ -1,6 +1,4 @@
-0a1
-> {'title': '今年的最后一个法定长假', 'number': 164, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/164', 'createdAt': '2025-10-09T02:14:01Z', 'lastEditedAt': None, 'updatedAt': '2025-10-09T02:14:02Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '中秋节'}, {'name': '国庆'}]}}
-2c3
-< {'title': '桦加沙', 'number': 162, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/162', 'createdAt': '2025-09-25T08:39:31Z', 'lastEditedAt': '2025-09-28T00:52:05Z', 'updatedAt': '2025-09-28T00:52:05Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+1c1
+< {'title': '今年的最后一个法定长假', 'number': 164, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/164', 'createdAt': '2025-10-09T02:14:01Z', 'lastEditedAt': None, 'updatedAt': '2025-10-09T02:14:02Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '中秋节'}, {'name': '国庆'}]}}
 ---
-> {'title': '桦加沙', 'number': 162, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/162', 'createdAt': '2025-09-25T08:39:31Z', 'lastEditedAt': '2025-09-28T00:52:05Z', 'updatedAt': '2025-09-28T00:52:05Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '台风'}]}}
+> {'title': '今年的最后一个法定长假', 'number': 164, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/164', 'createdAt': '2025-10-09T02:14:01Z', 'lastEditedAt': '2025-10-10T01:29:10Z', 'updatedAt': '2025-10-10T01:29:11Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '中秋节'}, {'name': '国庆'}]}}

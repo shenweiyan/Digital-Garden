@@ -88,6 +88,10 @@ updated: 2024-03-21
 
     一个专注技术与写作的个人博客，记录日常与技术。
 
+- __[博友圈](https://www.boyouquan.com/home)__
+
+    博客人的朋友圈，将一个个散落在各处的孤岛连接成一片广袤无垠的新大陆！
+
 </div>
 
 <script src="https://giscus.app/client.js"

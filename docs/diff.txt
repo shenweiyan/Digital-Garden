@@ -1,6 +1,4 @@
-0a1
-> {'title': '微信公众号当朋友圈', 'number': 165, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/165', 'createdAt': '2025-10-22T02:40:43Z', 'lastEditedAt': None, 'updatedAt': '2025-10-22T02:40:44Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
-159c160
-< {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-05-14T06:44:07Z', 'updatedAt': '2025-05-14T06:44:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+152c152
+< {'title': 'Python3 源码安装', 'number': 13, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/13', 'createdAt': '2023-11-02T03:05:46Z', 'lastEditedAt': '2025-08-09T03:14:29Z', 'updatedAt': '2025-08-09T03:14:30Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.5-Python'}]}}
 ---
-> {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-10-22T03:35:07Z', 'updatedAt': '2025-10-22T03:35:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+> {'title': 'Python3 源码安装', 'number': 13, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/13', 'createdAt': '2023-11-02T03:05:46Z', 'lastEditedAt': '2025-10-24T08:31:13Z', 'updatedAt': '2025-10-24T08:31:13Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.5-Python'}]}}

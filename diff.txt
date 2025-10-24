@@ -1,1 +1,4 @@
-
+152c152
+< {'title': 'Python3 源码安装', 'number': 13, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/13', 'createdAt': '2023-11-02T03:05:46Z', 'lastEditedAt': '2025-08-09T03:14:29Z', 'updatedAt': '2025-08-09T03:14:30Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.5-Python'}]}}
+---
+> {'title': 'Python3 源码安装', 'number': 13, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/13', 'createdAt': '2023-11-02T03:05:46Z', 'lastEditedAt': '2025-10-24T08:31:13Z', 'updatedAt': '2025-10-24T08:31:13Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.5-Python'}]}}

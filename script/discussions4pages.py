@@ -14,6 +14,16 @@ import optparse
 from slugify import slugify
 from pathlib import Path
 
+css = """
+<style>
+.md-typeset .grid{grid-template-columns: repeat(auto-fit, minmax(12rem, 5fr))}
+.md-sidebar--primary:is([hidden]) ~ .md-content:not(.md-content--post){margin-left: 5px;}
+.md-content__inner a{font-size:14px;font-weight:700}
+.md-typeset img{margin: 0 5px 0 0 !important;width: 48px;height: 48px;float:left;}
+.md-typeset ul li p:last-of-type {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;}
+</style>
+"""
+
 def __main__():
     usage = "usage: python3 %prog [options] \n\nExample:\n"
     usage = usage + "    python3 %prog -i Discussions.txt -o docs"
@@ -79,10 +89,31 @@ def __main__():
                                f'author: 沈维燕\n'
                                f'date: 2023-07-24\n'
                                f'updated: 2024-03-21\n'
-                               f'---\n\n')
+                               f'---\n')
+
+                flinks_contents1, flinks_contents2 = discussion_body.split('<!-- flinks-valid -->')
+                lines = [line.strip() for line in flinks_contents2.split('\n') if line.strip() and not line.startswith('#')]
+                groups = []
+                current_group = []
+                for line in lines:
+                    if line.startswith('- ') and len(current_group) >= 2:
+                        groups.append(current_group)
+                        current_group = [line[2:]]  # 去掉开头的 '- '
+                    elif line.startswith('- '):
+                        current_group.append(line[2:])
+                    else:
+                        current_group.append(line)
+                # 添加最后一组
+                if current_group:
+                    groups.append(current_group)
+                # 生成输出结果
+                flinks_contents = ""
+                for site_link, image_url, description in groups:
+                    flinks_contents = flinks_contents + f"- ![]({image_url}) {site_link}\n\n    {description}\n\n"
                 with open(flinks_md, "w") as FMD:
                     FMD.write(f_metadata)
-                    FMD.write(discussion_body)
+                    FMD.write(f"{css}\n")
+                    FMD.write(flinks_contents1 + f'<div class="grid cards" markdown>\n\n' + flinks_contents + f'</div>')
                     FMD.write(comments)
 
             elif int(discussion_number) == 16:

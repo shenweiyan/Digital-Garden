@@ -5,6 +5,14 @@ date: 2023-07-24
 updated: 2024-03-21
 ---
 
+<style>
+.md-typeset .grid{grid-template-columns: repeat(auto-fit, minmax(12rem, 5fr))}
+.md-sidebar--primary:is([hidden]) ~ .md-content:not(.md-content--post){margin-left: 5px;}
+.md-content__inner a{font-size:14px;font-weight:700}
+.md-typeset img{margin: 0 5px 0 0 !important;width: 48px;height: 48px;float:left;}
+.md-typeset ul li p:last-of-type {overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;}
+</style>
+
 > 每一个独立博客都是一个信息孤岛。我们没有类似「你可能喜欢其他人写的这些文章」的推荐机制，所以除了搜索引擎、社交网络引荐之外，我们应该还需要通过某种方法将这些信息孤岛连接起来：**交换友情链接就是一种很棒的架桥方式。**
 
 社交就是不断认识新的人、结交新的朋友，而友链也正是这样一种很棒的交朋友的方式，作为一个不太善于言辞的技术人，我希望结交更多的朋友，来丰富我的社交，一起成长。
@@ -38,57 +46,45 @@ updated: 2024-03-21
 
 以下站点按照添加的时间顺序排列。
 
-<div class="grid cards flinks" markdown>
+<div class="grid cards" markdown>
 
-- __[JiaoYuan's blog](https://jiaoyuan.org/)__
+- ![](https://avatars.githubusercontent.com/u/105262243) [**JiaoYuan's blog**](https://jiaoyuan.org/)
 
     思绪来得快去得也快，偶尔会在这里停留。
 
-- __[1874’s Blog](https://blog.1874.cool)__
+- ![](https://avatars.githubusercontent.com/u/37357188) [**1874’s Blog**](https://blog.1874.cool)
 
     有粤语歌就不会有世界末日。
 
-- __[望薮](https://ralvines.top)__
-
-    以我观物，故物皆著我之色彩。
-
-- __[Jayden's site](https://xxu.do/)__
+- ![](https://avatars.githubusercontent.com/u/97662597) [**Jayden's site**](https://xxu.do/)
 
     为天地立心，为生民立命，为往圣继绝学，为万世开太平。
 
-- __[Shitao Wu | 吴诗涛](https://shitao5.org/)__
+- ![](https://shitao5.org/logo.png) [**Shitao Wu | 吴诗涛**](https://shitao5.org/)
 
     喜欢捣鼓电脑，UseR，喜欢[阅读](https://shitao5.org/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/)，重度使用 Kindle。甘愿做一个平庸的人，走在成为我自己的道路上。
 
-- __[椒盐豆豉](https://blog.douchi.space/)__
+- ![](https://douchi.sfo3.cdn.digitaloceanspaces.com/blog/dino_statict.png) [**椒盐豆豉**](https://blog.douchi.space/)
 
     一个写了二十年博客，现居美国西雅图的女博主+码农。
 
-- __[墨迹心空](https://www.secondlife.love/)__
-
-    Life is coding.
-
-- __[言成的个人博客](https://meethigher.top/)__
-
-    言成的个人博客网站，寓意为让我们相逢在更高处。
-
-- __[Pepper 的博客](https://uioqps.github.io/)__
+- ![](https://uioqps.github.io/me.jpg) [**Pepper 的博客**](https://uioqps.github.io/)
 
     生命留给有价值的事物才能创造价值。
 
-- __[Wanjin Hu (胡万金)](https://wanjinhu.github.io/)__
+- ![](https://avatars.githubusercontent.com/u/69741445) [**Wanjin Hu (胡万金)**](https://wanjinhu.github.io/)
 
     思考人生，探索世界，知行合一。
 
-- __[Wcowin's Blog](https://wcowin.work/)__
+- ![](https://pica.zhimg.com/80/v2-74ecd899c7c4cc0258930eaff239a21b_1440w.webp) [**Wcowin's Blog**](https://wcowin.work/)
 
     循此苦旅，以达星辰。
 
-- __[Goslion 的博客](https://goslion.eu.org/)__
+- ![](https://avatars.githubusercontent.com/u/117809044) [**Goslion 的博客**](https://goslion.eu.org/)
 
     一个专注技术与写作的个人博客，记录日常与技术。
 
-- __[博友圈](https://www.boyouquan.com/home)__
+- ![](https://www.boyouquan.com/assets/images/sites/logo/logo-small.svg) [**博友圈**](https://www.boyouquan.com/home)
 
     博客人的朋友圈，将一个个散落在各处的孤岛连接成一片广袤无垠的新大陆！
 

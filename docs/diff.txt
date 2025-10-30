@@ -1,8 +1,2 @@
-160c160
-< {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-10-22T03:35:07Z', 'updatedAt': '2025-10-22T03:35:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
----
-> {'title': '友情链接', 'number': 5, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/5', 'createdAt': '2023-10-16T07:57:49Z', 'lastEditedAt': '2025-10-29T07:52:47Z', 'updatedAt': '2025-10-29T07:52:47Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
-162c162
-< {'title': 'Discussions 3', 'number': 3, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/3', 'createdAt': '2023-10-16T05:03:33Z', 'lastEditedAt': '2023-11-08T08:03:02Z', 'updatedAt': '2023-12-06T01:35:06Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '公告说明'}, 'labels': {'nodes': []}}
----
-> {'title': '友链测试页面', 'number': 3, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/3', 'createdAt': '2023-10-16T05:03:33Z', 'lastEditedAt': '2025-10-29T07:19:47Z', 'updatedAt': '2025-10-29T07:19:47Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '公告说明'}, 'labels': {'nodes': []}}
+0a1
+> {'title': '做猪呢最重要的是开心', 'number': 166, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/166', 'createdAt': '2025-10-30T09:07:42Z', 'lastEditedAt': '2025-10-30T09:09:10Z', 'updatedAt': '2025-10-30T09:09:10Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}

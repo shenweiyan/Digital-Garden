@@ -22,7 +22,7 @@
         <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../../assets/logo.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -10399,7 +10399,7 @@ var _hmt = _hmt || [];
 
   <h1>服务器崩溃日志之误删 OpenSSL</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><span data-tippy-content data-tippy-raw="2021-09-02"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-09-02T00:00:00">2021-09-02</time></span><span data-tippy-content data-tippy-raw="2021-10-29"><span class="material-icons" data-icon="doc_modified"></span><time datetime="2021-10-29T11:39:51">2021-10-29</time></span><span class="material-icons" data-icon="doc_author"></span><div class="avatar-group"><div class="avatar-wrapper" data-name="章鱼猫先生" data-tippy-content data-tippy-raw="章鱼猫先生"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://avatars.githubusercontent.com/shenweiyan" data-desc-position="bottom"><img class="avatar" src="https://avatars.githubusercontent.com/shenweiyan"></a></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><span data-tippy-content data-tippy-raw="2021-09-02"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-09-02T00:00:00">2021-09-02</time></span><span data-tippy-content data-tippy-raw="2021-10-29"><span class="material-icons" data-icon="doc_modified"></span><time datetime="2021-10-29T11:39:51">2021-10-29</time></span><span class="material-icons" data-icon="doc_author"></span><div class="avatar-group"><div class="avatar-wrapper" data-name="章鱼猫先生" data-tippy-content data-tippy-raw="章鱼猫先生"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="https://avatars.githubusercontent.com/shenweiyan"></a></div></div></div></div>
 <p>最开始是想安装 Bioconductor 中的 <strong>minfi</strong>（<a href="https://github.com/hansenlab/minfi">https://github.com/hansenlab/minfi</a>） 这个 R 包，但是发现不管是 <strong>conda</strong> 还是 <strong>BiocManager::install(“minfi”)</strong> 总不能成功，依赖包贼多不说，有些依赖包还特别坑爹。</p>
 <p>首先要说的是 <strong>sparseMatrixStats</strong>（<a href="https://github.com/const-ae/sparseMatrixStats">https://github.com/const-ae/sparseMatrixStats</a>），虽然这个包比较坑，但作者起码在 GitHub 上给出了说明和解决方法。</p>
 <p>最坑的应该是一个叫 <strong>rhdf5filters</strong>（<a href="https://github.com/grimbough/rhdf5filters">https://github.com/grimbough/rhdf5filters</a>）的 R 包，费劲了九牛二虎之力都搞不定，尤其是在 GCC-4.8.5 编译器下有人说 “assume it is just obsolete compiler”，让我感觉到我的 CentOS-6.5 +gcc-4.8.5 想要安装好它基本是没戏了！

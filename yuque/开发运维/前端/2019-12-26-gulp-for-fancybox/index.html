@@ -22,7 +22,7 @@
         <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../../assets/logo.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -10568,7 +10568,7 @@ var _hmt = _hmt || [];
 
   <h1>基于 gulp 的 fancybox 源码压缩</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><span data-tippy-content data-tippy-raw="2019-12-26"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-12-26T00:00:00">2019-12-26</time></span><span data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_modified"></span><time datetime="2021-06-25T10:53:12">2021-06-25</time></span><span class="material-icons" data-icon="doc_author"></span><div class="avatar-group"><div class="avatar-wrapper" data-name="章鱼猫先生" data-tippy-content data-tippy-raw="章鱼猫先生"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://avatars.githubusercontent.com/shenweiyan" data-desc-position="bottom"><img class="avatar" src="https://avatars.githubusercontent.com/shenweiyan"></a></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><span data-tippy-content data-tippy-raw="2019-12-26"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-12-26T00:00:00">2019-12-26</time></span><span data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_modified"></span><time datetime="2021-06-25T10:53:12">2021-06-25</time></span><span class="material-icons" data-icon="doc_author"></span><div class="avatar-group"><div class="avatar-wrapper" data-name="章鱼猫先生" data-tippy-content data-tippy-raw="章鱼猫先生"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="https://avatars.githubusercontent.com/shenweiyan"></a></div></div></div></div>
 <p>前不久，处理生信分析网页版自动化报告的时候就使用过 fancybox，今天在优化个人博客，为博文增加图片缩放效果，解决一些滚动条问题时，才从 fancybox 的 Github 源码中接触到 gulp —— 一个基于流的前端自动化构建工具，记录一下学习的过程。</p>
 <h2 id="1-fancybox-简单介绍">1. fancybox 简单介绍<a class="headerlink" href="#1-fancybox-简单介绍" title="Permanent link">¶</a></h2>
 <p>关于 fancybox，其官网的介绍是：JavaScript lightbox library for presenting various types of media. Responsive, touch-enabled and customizable. 翻译过来就是，Fancybox 是一个 JavaScript 库，用于以优雅的方式呈现图像，视频和任何 HTML 内容。它具有您期望的所有功能——触摸启用，响应和完全可定制。我们来看一下 fancybox 官网提供的 demo 效果。

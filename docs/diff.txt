@@ -1,8 +1,6 @@
-1c1
-< {'title': '做猪呢最重要的是开心', 'number': 166, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/166', 'createdAt': '2025-10-30T09:07:42Z', 'lastEditedAt': '2025-10-31T03:39:38Z', 'updatedAt': '2025-10-31T03:39:38Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+0a1
+> {'title': '网络文章', 'number': 167, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/167', 'createdAt': '2025-11-13T02:26:19Z', 'lastEditedAt': None, 'updatedAt': '2025-11-13T02:26:20Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
+162c163
+< {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-09-28T05:17:24Z', 'updatedAt': '2025-09-28T05:17:24Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
 ---
-> {'title': '做猪呢最重要的是开心', 'number': 166, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/166', 'createdAt': '2025-10-30T09:07:42Z', 'lastEditedAt': '2025-11-04T01:39:54Z', 'updatedAt': '2025-11-04T01:39:54Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
-4c4
-< {'title': '羽毛球拍', 'number': 163, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/163', 'createdAt': '2025-09-29T01:48:13Z', 'lastEditedAt': '2025-10-27T07:58:46Z', 'updatedAt': '2025-10-27T07:58:46Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.6-运动'}, 'labels': {'nodes': [{'name': '羽毛球'}]}}
----
-> {'title': '羽毛球拍', 'number': 163, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/163', 'createdAt': '2025-09-29T01:48:13Z', 'lastEditedAt': '2025-11-04T01:32:14Z', 'updatedAt': '2025-11-04T01:32:14Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.6-运动'}, 'labels': {'nodes': [{'name': '羽毛球'}]}}
+> {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-11-13T06:12:50Z', 'updatedAt': '2025-11-13T06:12:50Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}

@@ -49,7 +49,7 @@ updated: 2024-03-21
 
 个人目前用的比较多的沟通工具，一个是**邮箱**，另外一个是**微信**，你可以通过这两种方式直接和我联系。
 
-- 邮箱：<shen@weiyan.cc>（或者 <shenweiyan@aliyun.com>）
+- 邮箱：<shenweiyan@aliyun.com>
 - 微信：ishenweiyan（添加微信好友，请注明真实姓名）
 
 !!! note "请备注真名实姓，让我感受到一个真实的人的气息"

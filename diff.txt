@@ -1,6 +1,4 @@
-0a1
-> {'title': '网络文章', 'number': 167, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/167', 'createdAt': '2025-11-13T02:26:19Z', 'lastEditedAt': None, 'updatedAt': '2025-11-13T02:26:20Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': []}}
-162c163
-< {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-09-28T05:17:24Z', 'updatedAt': '2025-09-28T05:17:24Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+8c8
+< {'title': '把站点域名从 cc 换成 com 了', 'number': 160, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/160', 'createdAt': '2025-09-17T02:01:54Z', 'lastEditedAt': '2025-09-18T05:16:01Z', 'updatedAt': '2025-09-18T05:16:01Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '域名'}]}}
 ---
-> {'title': '关于 | 作者与站点', 'number': 4, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/4', 'createdAt': '2023-10-16T05:11:48Z', 'lastEditedAt': '2025-11-13T06:12:50Z', 'updatedAt': '2025-11-13T06:12:50Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+> {'title': '把站点域名从 cc 换成 com 了', 'number': 160, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/160', 'createdAt': '2025-09-17T02:01:54Z', 'lastEditedAt': '2025-09-18T05:16:01Z', 'updatedAt': '2025-11-14T02:26:51Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.1-乱弹'}, 'labels': {'nodes': [{'name': '域名'}]}}

@@ -22,8 +22,8 @@ updated: 2024-03-21
 **申请前记得先添加本站哦**，站点信息如下。
 
 - 站点名称: 维燕的数字花园
-- 站点链接: <https://weiyan.cc>
-- 站点头像: <https://weiyan.cc/assets/logo.png>
+- 站点链接: <https://shenwy.com>
+- 站点头像: <https://shenwy.com/assets/logo.png>
 - 站点描述: BioIT 爱好者，沉淀生活，记录点滴。
 
 ## 交换友链

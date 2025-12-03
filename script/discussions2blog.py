@@ -129,7 +129,7 @@ def __main__():
                        f'???+ "本站点所有博客文章归档"\n\n')
 
     # 保存博客的主页面输出结果
-    savedBlogIndex =  Path(outputDir).joinpath('blog/博文汇总/index.md') 
+    savedBlogIndex =  Path(outputDir).joinpath('blog/archive/index.md') 
 
     with open(savedBlogIndex, "w") as BlogIndex:
         BlogIndex.write(blog_index_meta)

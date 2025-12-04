@@ -35,13 +35,13 @@
     Google Fonts Icons (2500+): https://fonts.google.com/icons
 
     doc_created:  add_circle, add_circle, note_add, more_time
-    doc_modified: update, check_circle, task, refresh
+    doc_updated:  update, check_circle, task, refresh
     doc_author:   person, account_circle
     doc_authors:  group, groups */
 .document-dates-plugin .material-icons[data-icon="doc_created"]::before {
     content: "more_time";
 }
-.document-dates-plugin .material-icons[data-icon="doc_modified"]::before {
+.document-dates-plugin .material-icons[data-icon="doc_updated"]::before {
     content: "refresh";
 }
 .document-dates-plugin .material-icons[data-icon="doc_author"]::before {
@@ -59,7 +59,7 @@
 .document-dates-plugin-wrapper.document-dates-top,
 .document-dates-plugin-wrapper.document-dates-bottom {
     margin: 1rem 0;
-    border-bottom: 1px solid rgba(142, 142, 142, 0.15);
+    border-bottom: 1px solid rgba(142, 142, 142, 0.1);
 }
 .md-main .document-dates-plugin-wrapper.document-dates-top {
     margin: -1rem 0 1rem 0;

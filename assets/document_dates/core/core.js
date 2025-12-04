@@ -50,7 +50,7 @@ function generateAvatar() {
 // 图标键映射表
 const iconKeyMap = {
     doc_created: 'created_time',
-    doc_modified: 'modified_time',
+    doc_updated: 'updated_time',
     doc_author: 'author',
     doc_authors: 'authors'
 };

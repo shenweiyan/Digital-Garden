@@ -17,6 +17,7 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
   #background-size: 15px 15px;
   background-image: url('../assets/paper-pattern-clean.png');
   #overflow-y: auto; /*会引发左右导航、目录无法固定*/
+  background-attachment: fixed;  /*固定背景*/
 }
 
 .md-header--shadow {

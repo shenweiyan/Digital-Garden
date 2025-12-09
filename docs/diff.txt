@@ -1,4 +1,5 @@
-1c1
-< {'title': '广州金麦线徒步上集', 'number': 171, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/171', 'createdAt': '2025-12-01T05:34:40Z', 'lastEditedAt': '2025-12-04T05:13:07Z', 'updatedAt': '2025-12-04T05:14:43Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.2-好玩'}, 'labels': {'nodes': [{'name': '徒步'}]}}
+1c1,2
+< {'title': '广州金麦线徒步上集', 'number': 171, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/171', 'createdAt': '2025-12-01T05:34:40Z', 'lastEditedAt': '2025-12-04T09:21:12Z', 'updatedAt': '2025-12-04T09:21:12Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.2-好玩'}, 'labels': {'nodes': [{'name': '徒步'}]}}
 ---
-> {'title': '广州金麦线徒步上集', 'number': 171, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/171', 'createdAt': '2025-12-01T05:34:40Z', 'lastEditedAt': '2025-12-04T09:21:12Z', 'updatedAt': '2025-12-04T09:21:12Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.2-好玩'}, 'labels': {'nodes': [{'name': '徒步'}]}}
+> {'title': '广州金麦线徒步下集', 'number': 172, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/172', 'createdAt': '2025-12-09T01:28:19Z', 'lastEditedAt': None, 'updatedAt': '2025-12-09T01:29:09Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.7-户外'}, 'labels': {'nodes': [{'name': '徒步'}]}}
+> {'title': '广州金麦线徒步上集', 'number': 171, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/171', 'createdAt': '2025-12-01T05:34:40Z', 'lastEditedAt': '2025-12-04T09:21:12Z', 'updatedAt': '2025-12-09T01:25:56Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.7-户外'}, 'labels': {'nodes': [{'name': '徒步'}]}}

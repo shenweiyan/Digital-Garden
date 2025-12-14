@@ -12336,7 +12336,7 @@ A<span class="w"> </span>B<span class="w"> </span>B<span class="w"> </span>D<spa
 <span class="m">24946</span><span class="w">         </span><span class="c1"># $_, 上一个命令的最后一个参数。</span>
 <span class="w">              </span><span class="c1"># $!, 后台运行的最后一个进程的 ID 号。</span>
 </code></pre></div>
-<p><code>$*</code> 和 <code>$@</code> 都表示传递给函数或脚本的所有参数，不被双引号 (“”) 包含时，都以 “<span class="arithmatex">\(1""\)</span>2” … “<span class="arithmatex">\(n” 的形式输出所有参数。但是当它们被双引号 (“”) 包含时，”<code>$*</code>"会将所有的参数作为一个整体，以 "\)</span>1 <span class="arithmatex">\(2 … <span class="arithmatex">(n” 的形式输出所有参数； “<code>$@</code>"会将各个参数分开，以 "\)</span>1"、"\)</span>2”、…、”$n” 的形式输出所有参数。</p>
+<p><code>$*</code> 和 <code>$@</code> 都表示传递给函数或脚本的所有参数，不被双引号 (“”) 包含时，都以 “<span class="arithmatex">\(1""\)</span>2” … “$n” 的形式输出所有参数。但是当它们被双引号 (“”) 包含时，”<code>$*</code>“会将所有的参数作为一个整体，以 “$1 $2 … $n” 的形式输出所有参数； “<code>$@</code>“会将各个参数分开，以 “<span class="arithmatex">\(1"、"\)</span>2”、…、”$n” 的形式输出所有参数。</p>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
 <span class="nb">echo</span><span class="w"> </span><span class="s2">"\$* = "</span><span class="w"> </span><span class="nv">$*</span>

@@ -1,6 +1,2 @@
 0a1
-> {'title': 'Python 包和项目管理工具 UV 安装与更新', 'number': 173, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/173', 'createdAt': '2025-12-12T01:42:57Z', 'lastEditedAt': '2025-12-12T01:53:10Z', 'updatedAt': '2025-12-12T01:53:10Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': 'python'}]}}
-2c3
-< {'title': '广州金麦线徒步上集', 'number': 171, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/171', 'createdAt': '2025-12-01T05:34:40Z', 'lastEditedAt': '2025-12-04T09:21:12Z', 'updatedAt': '2025-12-09T01:25:56Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.7-户外'}, 'labels': {'nodes': [{'name': '徒步'}]}}
----
-> {'title': '广州金麦线徒步上集', 'number': 171, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/171', 'createdAt': '2025-12-01T05:34:40Z', 'lastEditedAt': '2025-12-12T03:51:42Z', 'updatedAt': '2025-12-12T03:51:42Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.7-户外'}, 'labels': {'nodes': [{'name': '公众号'}, {'name': '徒步'}]}}
+> {'title': '每周一山 | 广州龙渔线徒步', 'number': 174, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/174', 'createdAt': '2025-12-17T06:39:16Z', 'lastEditedAt': None, 'updatedAt': '2025-12-17T06:39:16Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.7-户外'}, 'labels': {'nodes': [{'name': '公众号'}, {'name': '徒步'}]}}

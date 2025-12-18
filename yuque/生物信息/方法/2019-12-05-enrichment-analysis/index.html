@@ -25,7 +25,7 @@
         <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../../feed_rss_updated.xml">
       
       <link rel="icon" href="../../../../assets/logo.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -12125,7 +12125,7 @@ var _hmt = _hmt || [];
   
 
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><span data-tippy-content data-tippy-raw="2019-12-05"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-12-05T00:00:00">2019-12-05</time></span><span data-tippy-content data-tippy-raw="2023-07-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2023-07-25T02:48:02">2023-07-25</time></span><span class="material-icons" data-icon="doc_author"></span><div class="avatar-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://avatars.githubusercontent.com/shenweiyan" data-desc-position="bottom"><img class="avatar" src="https://avatars.githubusercontent.com/shenweiyan" onerror="this.style.display='none'"></a></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2019-12-05"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-12-05T00:00:00">2019-12-05</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2023-07-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2023-07-25T02:48:02">2023-07-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" src="" onerror="this.style.display='none'"></a></div></div></div></div></div>
 <p>基因功能富集分析中的基因功能指的是众多代表一定的基因功能特征和生物过程的基因功能集(gene set)。由这些基因功能集构成的常用基因功能数据库有 GO, 生物学通路, 包含生化反应、代谢或信号通路的 KEGG, Reactome, Biocarta 等, 整合数据库, 如 MsigDB 等。</p>
 <p>基因功能富集分析的方法基于数据来源和算法大致可以分为 4 大类: ORA, FCS, PT, NT 的方法。ORA（过代表分析方法）是最早出现的一类基因功能富集方法, 它针对的数据是一组感兴趣的基因(基因列表), 其目的是在这组基因中发现有明显统计学上富集的基因功能集。其基本步骤包括先将给定的基因列表与待测功能集做交集, 找出其中共同的基因并进行计数(统计值), 最后利用统计检验的方式来评估观察的计数值是否显著高于随机, 即待测功能集在基因列表中是否显著富集。</p>
 <p>目前有许多工具及数据库提供 ORA 的使用, 包括 DAVID, GOstat, GenMAPP 等。其中 DAVID 提供的基因功能集数据库最为全面, 不仅包含大量不同物种的基因功能注释信息, 也涵盖了主流的生物通路注释库如 GO 条目和 KEGG 通路, 而且还提供了基因名称转换功能, 及良好的结果展示界面。</p>
@@ -12400,10 +12400,10 @@ var _hmt = _hmt || [];
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.sections", "navigation.path", "content.action.edit", "content.action.view", "content.code.copy", "navigation.footer"], "search": "../../../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.sections", "navigation.path", "content.action.edit", "content.action.view", "content.code.copy", "navigation.footer"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../../../js/mathjax.js"></script>
       

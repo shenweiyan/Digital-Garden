@@ -145,6 +145,33 @@ function initTippy() {
     return context;
 }
 
+// 在滚动时隐藏 author-group 的 tooltip
+function initAuthorGroupTippyGuard() {
+    document.querySelectorAll('.author-group').forEach(groupEl => {
+        if (groupEl._ddTippyGuardAbortController) {
+            groupEl._ddTippyGuardAbortController.abort();
+        }
+        const controller = new AbortController();
+        groupEl._ddTippyGuardAbortController = controller;
+
+        const getInstances = () => {
+            return Array.from(groupEl.querySelectorAll('[data-tippy-content]'))
+                .map(el => el._tippy)
+                .filter(Boolean);
+        };
+        const hideNow = () => {
+            const instances = getInstances();
+            instances.forEach(instance => {
+                instance.hide();
+            });
+        };
+
+        const opts = { passive: true, signal: controller.signal };
+        groupEl.addEventListener('scroll', hideNow, opts);
+        groupEl.addEventListener('touchmove', hideNow, opts);
+    });
+}
+
 // 通过 IIFE（立即执行的函数表达式）创建 tippyManager
 const tippyManager = (() => {
     let tippyInstances = [];
@@ -174,6 +201,7 @@ const tippyManager = (() => {
             if (context && context.observer) {
                 observer = context.observer;
             }
+            initAuthorGroupTippyGuard();
         }
     };
 })();

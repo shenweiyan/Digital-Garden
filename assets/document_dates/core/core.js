@@ -1,5 +1,5 @@
 /*
-    1.生成头像
+    1.加载头像
 */
 function isLatin(name) {
     return /^[A-Za-z\s]+$/.test(name.trim());
@@ -22,7 +22,8 @@ function nameToHSL(name, s = 50, l = 55) {
     const hue = hash % 360;
     return `hsl(${hue}, ${s}%, ${l}%)`;
 }
-function generateAvatar() {
+
+function loadAvatars() {
     document.querySelectorAll('.avatar-wrapper').forEach(wrapper => {
         const name = wrapper.dataset.name || '';
         const initials = extractInitials(name);
@@ -34,11 +35,100 @@ function generateAvatar() {
 
         const imgEl = wrapper.querySelector('img.avatar');
         if (imgEl) {
-            const src = (imgEl.getAttribute('src') || '').trim();
-            if (!src) {
-                imgEl.style.display = 'none';
+            const urls = [];
+            const dataSrc = (imgEl.dataset.src || '').trim();
+            const email = (imgEl.dataset.email || '').trim();
+
+            if (dataSrc) {
+                urls.push(dataSrc);
             }
+            if (email && AvatarService.base) {
+                const hash = md5(email.trim().toLowerCase());
+                urls.push(AvatarService.build(hash));
+            }
+            if (urls.length === 0) {
+                imgEl.style.display = 'none';
+                return;
+            }
+
+            bindAvatar(imgEl, urls);
         }
+    });
+}
+function bindAvatar(imgEl, urls) {
+    let index = 0;
+    function next() {
+        if (index >= urls.length) {
+            imgEl.style.display = 'none';
+            return;
+        }
+        imgEl.src = urls[index++];
+    }
+    imgEl.onerror = next;
+    // 加载成功后清掉 onerror
+    imgEl.onload = () => imgEl.onerror = null;
+
+    next();
+}
+
+const AVATAR_CDNS = {
+    // gravatar: 全球通用头像服务商，国内访问不稳定
+    // weavatar: gravatar 国内镜像，实测发现国内外访问都正常，数据跟 gravatar 一致
+    // cravatar: 国内头像服务商，有国际 CDN，很多开源项目在用，实测发现只包含部分 gravatar 数据
+
+    gravatar: 'https://www.gravatar.com/avatar',
+    weavatar: 'https://weavatar.com/avatar'
+    // cravatar: 'https://cravatar.cn/avatar'
+};
+const PROBE_TARGETS = [
+    { name: 'gravatar', probe: 'https://www.gravatar.com/favicon.ico' },
+    { name: 'weavatar', probe: 'https://weavatar.com/favicon.ico' }
+];
+
+let avatarServiceInited = false;
+const AvatarService = {
+    base: null,
+    async init() {
+        if (avatarServiceInited) return;
+        avatarServiceInited = true;
+
+        const winner = await raceAvatarCDN(PROBE_TARGETS.map(t => t.probe));
+        if (!winner) return;
+
+        const hit = PROBE_TARGETS.find(t => t.probe === winner);
+        this.base = AVATAR_CDNS[hit.name];
+    },
+
+    // style: '404' 'wavatar' 'retro' 'identicon' 'mp' 'monsterid' 'robohash' 'blank'
+    // size: avatar size in pixels (1~2048)
+    build(emailHash, style = '404', size = 128) {
+        if (!this.base) return null;
+        return `${this.base}/${emailHash}?d=${style}&s=${size}`;
+    }
+};
+function raceAvatarCDN(urls, timeout = 500) {
+    return new Promise(resolve => {
+        let done = false;
+        urls.forEach(url => {
+            const img = new Image();
+            const timer = setTimeout(() => {
+                img.src = '';
+            }, timeout);
+            img.onload = () => {
+                if (done) return;
+                done = true;
+                clearTimeout(timer);
+                resolve(url);
+            };
+            img.onerror = () => {
+                clearTimeout(timer);
+            };
+            img.src = url;
+        });
+        // 兜底（全部失败 / 全部超时），不让 Promise 永远 pending
+        setTimeout(() => {
+            if (!done) resolve(null);
+        }, timeout);
     });
 }
 
@@ -54,8 +144,8 @@ const iconKeyMap = {
     doc_author: 'author',
     doc_authors: 'authors'
 };
-// 处理文档日期和提示内容
-function processDocumentDates() {
+// 处理数据加载
+function processDataLoading() {
     document.querySelectorAll('.document-dates-plugin').forEach(ddpEl => {
         // 获取 locale，优先级：用户主动选择 > 服务端显式配置 > 用户浏览器语言 > 站点HTML语言 > 默认英语
         const rawLocale =
@@ -74,7 +164,7 @@ function processDocumentDates() {
             });
         }
 
-        // 处理 tooltip 内容
+        // 动态处理 tooltip 内容
         const langData = TooltipLanguage.get(rawLocale);
         ddpEl.querySelectorAll('[data-tippy-content]').forEach(tippyEl => {
             const iconEl = tippyEl.querySelector('[data-icon]');
@@ -82,9 +172,6 @@ function processDocumentDates() {
             const iconKey = iconKeyMap[rawIconKey] || 'author';
             if (langData[iconKey]) {
                 const content = langData[iconKey] + ': ' + tippyEl.dataset.tippyRaw;
-                // 更新 data-tippy-content 属性
-                tippyEl.dataset.tippyContent = content;
-                // 如果 tippy 实例已存在，直接更新内容
                 if (tippyEl._tippy) {
                     tippyEl._tippy.setContent(content);
                 }
@@ -96,7 +183,7 @@ function processDocumentDates() {
 // 供外部使用：更新文档日期和 tippy 内容到指定语言（可持久化）
 function updateDocumentDates(locale) {
     ddUtils.saveLanguage(locale);
-    processDocumentDates();
+    processDataLoading();
 }
 window.ddPlugin = {
     updateLanguage: updateDocumentDates
@@ -148,27 +235,25 @@ function initTippy() {
 // 在滚动时隐藏 author-group 的 tooltip
 function initAuthorGroupTippyGuard() {
     document.querySelectorAll('.author-group').forEach(groupEl => {
+        // 先取消旧监听器，避免重复绑定
         if (groupEl._ddTippyGuardAbortController) {
             groupEl._ddTippyGuardAbortController.abort();
         }
         const controller = new AbortController();
         groupEl._ddTippyGuardAbortController = controller;
 
-        const getInstances = () => {
-            return Array.from(groupEl.querySelectorAll('[data-tippy-content]'))
-                .map(el => el._tippy)
-                .filter(Boolean);
-        };
-        const hideNow = () => {
-            const instances = getInstances();
-            instances.forEach(instance => {
-                instance.hide();
+        const tippyTargets = groupEl.querySelectorAll('[data-tippy-content]');
+        const hideAllTippies = () => {
+            tippyTargets.forEach(tippyEl => {
+                if (tippyEl._tippy) {
+                    tippyEl._tippy.hide();
+                }
             });
         };
-
+        // true: 浏览器立刻执行默认行为。这个事件监听器只是‘看看’，绝不会阻止浏览器的默认行为
         const opts = { passive: true, signal: controller.signal };
-        groupEl.addEventListener('scroll', hideNow, opts);
-        groupEl.addEventListener('touchmove', hideNow, opts);
+        groupEl.addEventListener('scroll', hideAllTippies, opts);
+        groupEl.addEventListener('touchmove', hideAllTippies, opts);
     });
 }
 
@@ -207,19 +292,102 @@ const tippyManager = (() => {
 })();
 
 
+// 为 author-group 启用横向滚轮滚动
+function enableHorizontalWheelScroll() {
+    // 移动端不接管滚轮
+    const isTouchDevice =
+        'ontouchstart' in window ||
+        navigator.maxTouchPoints > 0 ||
+        navigator.msMaxTouchPoints > 0;
+    if (isTouchDevice) return;
+
+    document.querySelectorAll('.author-group').forEach(groupEl => {
+        // 先取消旧监听器，避免重复绑定
+        if (groupEl._ddWheelAbortController) {
+            groupEl._ddWheelAbortController.abort();
+        }
+        const controller = new AbortController();
+        groupEl._ddWheelAbortController = controller;
+
+        groupEl.addEventListener('wheel', function (event) {
+            // 只处理纵向滚轮（触控板横向滑动不干预）
+            if (Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+            // 在 author-group 内，始终阻止页面纵向滚动
+            event.preventDefault();
+
+            const scrollWidth = groupEl.scrollWidth;
+            const clientWidth = groupEl.clientWidth;
+            // 元素不可横向滚动时返回
+            if (scrollWidth <= clientWidth) return;
+
+            const delta = event.deltaY;
+            const atLeft = groupEl.scrollLeft <= 0;
+            const atRight = groupEl.scrollLeft + clientWidth >= scrollWidth - 1;
+
+            if ((delta < 0 && !atLeft) || (delta > 0 && !atRight)) {
+                groupEl.scrollLeft += delta;
+            }
+        }, {
+            // false: 浏览器你先别急着执行默认行为，等 JS 跑完，再决定要不要动，因为可能会调用 event.preventDefault()
+            passive: false,
+            signal: controller.signal
+        });
+    });
+}
+
+
+// 为 author-group 添加自适应动态布局
+function handleDocumentDatesAutoWrap() {
+    // 设定作者区域最小的显示宽度，大概2个作者宽度
+    const AUTHOR_THRESHOLD = 140;
+    document.querySelectorAll('.document-dates-plugin').forEach(ddpEl => {
+        const leftPart = ddpEl.querySelector('.dd-left');
+        const rightPart = ddpEl.querySelector('.dd-right');
+        if (!leftPart || !rightPart) return;
+
+        // 使用 getBoundingClientRect 更加精确（包含小数）
+        const containerWidth = ddpEl.getBoundingClientRect().width;
+        const leftWidth = leftPart.getBoundingClientRect().width;
+        if (containerWidth <= leftWidth) return;
+
+        // 如果: 容器总宽度 < 日期宽度 + 2个作者宽度，则换行
+        const shouldWrap = containerWidth < (leftWidth + AUTHOR_THRESHOLD);
+        // 只有在状态确实需要改变时才操作 DOM
+        if (ddpEl.classList.contains('is-wrapped') !== shouldWrap) {
+            ddpEl.classList.toggle('is-wrapped', shouldWrap);
+        }
+    });
+}
+
 
 /*
-    入口: 兼容 Material 主题的 'navigation.instant' 属性
+    入口
 */
-if (typeof window.document$ !== 'undefined' && !window.document$.isStopped) {
-    window.document$.subscribe(() => {
-        processDocumentDates();
-        generateAvatar();
-        // 通过 tippyManager 创建 tippy 实例
-        tippyManager.initialize();
+let datesAutoWrapObserver = null;
+function initPluginFeatures() {
+    tippyManager.initialize();
+    processDataLoading();
+    AvatarService.init().then(() => {
+        loadAvatars();
     });
+    enableHorizontalWheelScroll();
+
+    // 观察插件尺寸变化，resize 时动态处理布局
+    if (datesAutoWrapObserver) datesAutoWrapObserver.disconnect();
+    datesAutoWrapObserver = new ResizeObserver(() => {
+        // 使用 RAF 确保在浏览器重绘前处理，减少视觉跳动
+        window.requestAnimationFrame(() => {
+            handleDocumentDatesAutoWrap();
+        });
+    });
+    document.querySelectorAll('.document-dates-plugin').forEach(ddpEl => datesAutoWrapObserver.observe(ddpEl));
+}
+
+// 兼容 Material 主题的 'navigation.instant' 属性
+if (window.document$ && !window.document$.isStopped) {
+    window.document$.subscribe(initPluginFeatures);
+} else if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initPluginFeatures);
 } else {
-    processDocumentDates();
-    generateAvatar();
-    document.addEventListener('DOMContentLoaded', tippyManager.initialize);
+    initPluginFeatures();
 }

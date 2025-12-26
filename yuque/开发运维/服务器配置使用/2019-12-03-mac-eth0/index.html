@@ -12276,7 +12276,7 @@ var _hmt = _hmt || [];
 
   <h1>RHEL 6.X 更换主板后网卡识别失败处理方法</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2019-12-03"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-12-03T00:00:00">2019-12-03</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2024-10-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2024-10-25T00:00:00">2024-10-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" src="" onerror="this.style.display='none'"></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2019-12-03"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-12-03T00:00:00">2019-12-03</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2024-10-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2024-10-25T00:00:00">2024-10-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="" data-email=""></a></div></div></div></div></div>
 <p>上周日，由于断电导致公司所在的集群服务器在关机断电重启后，发现唯一的一个登陆节点主板出现了故障，以致于 log 节点的 Red Hat Enterprise 6&nbsp; 系统无法启动。 </p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsBJMj7aTqfSBLGU8HM1bGf9GmXx.jpeg" data-desc-position="bottom"><img alt="03.jpg" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FsBJMj7aTqfSBLGU8HM1bGf9GmXx.jpeg"></a></p>
 <p>由于集群是生信所有分析工作的基础，我们所用的 IBM LSF 集群一共又 30 多个计算节点，其中还包括了 2 个大内存 fat 节点，log 节点挂掉后，整个生信部门几十号人的工作都没法正常进行，情况可谓是非常紧迫。负责硬件的同时在加班加点联系供应商更换主板后，终于可以把系统启动起来，但是问题也来了：</p>
@@ -12646,6 +12646,8 @@ PING<span class="w"> </span><span class="m">192</span>.168.10.23<span class="w">
         <script src="../../../../assets/document_dates/tippy/popper.min.js"></script>
       
         <script src="../../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../../assets/document_dates/core/default.config.js"></script>
       

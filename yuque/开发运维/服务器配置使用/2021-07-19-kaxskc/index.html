@@ -12276,7 +12276,7 @@ var _hmt = _hmt || [];
 
   <h1>生信服务器基础配置：启动服务</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2021-07-19"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-07-19T00:00:00">2021-07-19</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-07-19"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-07-19T16:18:44">2021-07-19</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" src="" onerror="this.style.display='none'"></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2021-07-19"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-07-19T00:00:00">2021-07-19</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-07-19"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-07-19T16:18:44">2021-07-19</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="" data-email=""></a></div></div></div></div></div>
 <p>关于开机启动服务，CentOS 6 的命令是 chkconfig，CentOS 7 是 systemctl。</p>
 <p>CentOS 6 中的 chkconfig 命令主要用来更新（启动或停止）和查询系统服务的运行级信息。谨记 chkconfig 不是立即自动禁止或激活一个服务，它只是简单的改变了符号连接。</p>
 <p>CentOS 7 中如果要让任务开机自启动，需将对应的 Unit 文件存放于 /etc/systemd/system 下。即 systemctl 将服务加入开机自启动的操作，实际上是在 /etc/systemd/system 某个 target.wants 目录下创建服务配置文件的软链接文件。而显然的，禁用服务开机自启动的操作是移除软链接。</p>
@@ -12565,6 +12565,8 @@ chmod<span class="w"> </span>+x<span class="w"> </span>/etc/rc.d/rc.local
         <script src="../../../../assets/document_dates/tippy/popper.min.js"></script>
       
         <script src="../../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../../assets/document_dates/core/default.config.js"></script>
       

@@ -12118,7 +12118,7 @@ var _hmt = _hmt || [];
 
   <h1>tar 打包的一些注意问题</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2020-02-21"><span class="material-icons" data-icon="doc_created"></span><time datetime="2020-02-21T00:00:00">2020-02-21</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-06-25T10:54:07">2021-06-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" src="" onerror="this.style.display='none'"></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2020-02-21"><span class="material-icons" data-icon="doc_created"></span><time datetime="2020-02-21T00:00:00">2020-02-21</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-06-25T10:54:07">2021-06-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="" data-email=""></a></div></div></div></div></div>
 <p>对于需要打包压缩的目录、文件，如果该目录或者文件不可读，将会引发 Permission denied 的错误。</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmpxm2Evzh8ZNYFQ3QnjgoP3fNn2.png" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/Fmpxm2Evzh8ZNYFQ3QnjgoP3fNn2.png"></a></p>
 <p>如果需要检查一个目录打包是否出现因为权限导致的异常，可以检查 log 日志是否存在 &nbsp;failure/Permission denied/error 等关键字。</p>
@@ -12305,6 +12305,8 @@ grep<span class="w"> </span>-i<span class="w"> </span>failure<span class="w"> </
         <script src="../../../../assets/document_dates/tippy/popper.min.js"></script>
       
         <script src="../../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../../assets/document_dates/core/default.config.js"></script>
       

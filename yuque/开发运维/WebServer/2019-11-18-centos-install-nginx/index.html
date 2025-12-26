@@ -12488,7 +12488,7 @@ var _hmt = _hmt || [];
 
   <h1>CentOS 7 下编译安装 Nginx</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2019-11-18"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-11-18T00:00:00">2019-11-18</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-06-25T10:38:54">2021-06-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" src="" onerror="this.style.display='none'"></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2019-11-18"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-11-18T00:00:00">2019-11-18</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-06-25T10:38:54">2021-06-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="" data-email=""></a></div></div></div></div></div>
 <h2 id="一准备工作">一、准备工作<a class="headerlink" href="#一准备工作" title="Permanent link">¶</a></h2>
 <p>为了编译 &nbsp;<code>Nginx</code>&nbsp; 源代码，需要标准的 &nbsp;<code>GCC</code>&nbsp; 编译器。<code>GCC</code>&nbsp; 的全称为 &nbsp;<code>GNU Compiler Collection</code>，其由 &nbsp;<code>GNU</code>&nbsp; 开发，并以 &nbsp;<code>GPL</code>&nbsp; 及 &nbsp;<code>LGPL</code>&nbsp; 许可证发行，是自由的类 &nbsp;<code>UNIX</code>&nbsp; 即苹果电脑 &nbsp;<code>Mac OSX</code>&nbsp; 操作系统的标准编译器。因为 &nbsp;<code>GCC</code>&nbsp; 原本只能处理 &nbsp;<code>C</code>&nbsp; 语言，所以原名为 &nbsp;<code>GNU C</code>&nbsp; 语言编译器，后来得到快速扩展，可处理 &nbsp;<code>C++</code>、<code>Fortran</code>、<code>Pascal</code>、&nbsp;<code>Objective-C</code>、<code>Java</code>&nbsp; 以及 &nbsp;<code>Ada</code>&nbsp; 等其他语言。</p>
 <p>除此之外，还需要 &nbsp;<code>Automake</code>&nbsp; 工具，以完成自动创建 &nbsp;<code>Makefile</code>&nbsp; 文件的工作。由于 &nbsp;<code>Nginx</code>&nbsp; 的一些模块需要依赖其他第三方库，通常有 &nbsp;<code>pcre</code>&nbsp; 库(支持 &nbsp;<code>rewrite</code>&nbsp; 模块)、<code>zlib</code>&nbsp; 库(支持 &nbsp;<code>gzip</code>&nbsp; 模块)和 &nbsp;<code>openssl</code>&nbsp; 库(支持 &nbsp;<code>ssl</code>&nbsp; 模块)等。</p>
@@ -12887,6 +12887,8 @@ nginx<span class="w"> </span>-h<span class="w">                </span><span clas
         <script src="../../../../assets/document_dates/tippy/popper.min.js"></script>
       
         <script src="../../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../../assets/document_dates/core/default.config.js"></script>
       

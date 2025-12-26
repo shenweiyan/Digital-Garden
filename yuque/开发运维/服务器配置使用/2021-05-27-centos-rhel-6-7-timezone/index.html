@@ -12210,7 +12210,7 @@ var _hmt = _hmt || [];
 
   <h1>更改 RHEL 6/7 中的时区</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2021-05-27"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-05-27T00:00:00">2021-05-27</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-06-25T10:53:50">2021-06-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" src="" onerror="this.style.display='none'"></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2021-05-27"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-05-27T00:00:00">2021-05-27</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2021-06-25"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-06-25T10:53:50">2021-06-25</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="" data-email=""></a></div></div></div></div></div>
 <p>这几天在学习折腾 docker 的时候遇到一个很常见的问题，就是 run container 的时候发现大部分 image 默认使用的时间都是 UTC &nbsp;(Universal Time Coordinated,UTC）世界协调时间，跟平时中使用的 CST &nbsp;(China Standard Time UTC+8:00) 中国沿海时间(北京时间) 差别有点大，很不适应。</p>
 <p>每次去修改的时候又有点不太记得 <code>timedatectl</code> 的具体命令，甚至跑一些基于 CentOS/RHEL 6 镜像的流程时发现根本没有 <code>timedatectl</code> 这个命令！</p>
 <p>虽然之前在《<a href="https://www.yuque.com/bioitee/mp/linux-timestamp-date">【原】生信服务器 | Linux 时间戳和标准时间 · 语雀</a>》这个推文专门写了一些 <code>timedatectl</code> 命令的具体用法，基本都是针对 CentOS/RHEL 7 的系统，不适用于已经停止维护的 CentOS/RHEL 6。</p>
@@ -12421,6 +12421,8 @@ lrwxrwxrwx<span class="w"> </span><span class="m">1</span><span class="w"> </spa
         <script src="../../../../assets/document_dates/tippy/popper.min.js"></script>
       
         <script src="../../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../../assets/document_dates/core/default.config.js"></script>
       

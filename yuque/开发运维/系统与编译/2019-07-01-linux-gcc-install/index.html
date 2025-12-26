@@ -12276,7 +12276,7 @@ var _hmt = _hmt || [];
 
   <h1>非 root 用户手动编译安装 GCC</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2019-07-01"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-07-01T00:00:00">2019-07-01</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2023-03-24"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2023-03-24T09:44:07">2023-03-24</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" src="" onerror="this.style.display='none'"></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2019-07-01"><span class="material-icons" data-icon="doc_created"></span><time datetime="2019-07-01T00:00:00">2019-07-01</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2023-03-24"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2023-03-24T09:44:07">2023-03-24</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="" data-email=""></a></div></div></div></div></div>
 <p>我们知道，关于 GCC 在 CentOS 下通过 yum 安装默认版本号，CentOS 5 是 4.1.2；CentOS 6 是 4.4.7；CentOS 7 是 4.8.3。很多时候在编译安装软件都需要高版本的 GCC，否则就会报错。那么如何升级 GCC 的版本呢？</p>
 <p>首先要确认升级到的 GCC 版本号。目前 GCC 的最新版已经到了 9.1（2019-05-03），而 CentOS 7 则依然使用其 4.8，所以基于兼容性考虑，可以选择升级到 4.8.5。GCC 官网：<a href="https://gcc.gnu.org/">https://gcc.gnu.org</a>。</p>
 <p>需要注意，编译安装 GCC 内存不小于 1GB，Swap 不小于 1GB，硬盘最低不小于 10GB，否则极有可能会中途报错退出。编译安装完后，目录 GCC-4.8.5 将会有 5GB 之多。</p>
@@ -12584,6 +12584,8 @@ more<span class="w"> </span>information,<span class="w"> </span>such<span class=
         <script src="../../../../assets/document_dates/tippy/popper.min.js"></script>
       
         <script src="../../../../assets/document_dates/tippy/tippy.umd.min.js"></script>
+      
+        <script src="../../../../assets/document_dates/core/md5.min.js"></script>
       
         <script src="../../../../assets/document_dates/core/default.config.js"></script>
       

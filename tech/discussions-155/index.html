@@ -12152,7 +12152,7 @@ var _hmt = _hmt || [];
 <p>记录一下在老破旧服务器从源码编译安装 NCBI Blast 2.15.0+ 遇到的一些问题。</p>
 <!-- more -->
 
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/07/ncbi-blast.png" data-desc-position="bottom"><img alt="Basic-Local-Alignment-Search-Tool" src="https://kg.weiyan.cc/2025/07/ncbi-blast.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/07/ncbi-blast.png" data-desc-position="bottom"><img alt="Basic-Local-Alignment-Search-Tool" src="https://gi.weiyan.tech/2025/07/ncbi-blast.png"></a></p>
 <p>先说一下，总体的安装步骤。</p>
 <p>首先，根据 <code>ncbi-blast-2.xx.x+-src/c++/src/algo/blast/core/README</code> 的说明，blast+ 的源码编译安装，直接通过下面命令即可：
 </p><div class="highlight"><pre><span></span><code>./configure<span class="w"> </span>--with-projects<span class="o">=</span>scripts/projects/blast_core_lib.lst<span class="w"> </span><span class="se">\</span>
@@ -12198,7 +12198,7 @@ To<span class="w"> </span>build<span class="w"> </span>selected<span class="w"> 
 <p>很不幸的是，个人在 CentOS 6.5 的老破旧服务器上执行 <code>configure</code> 或者 <code>make</code> 出现了 <code>Makefile.mk:682: *** missing separator.  Stop.</code> 的异常。</p>
 <p>对于这个突如其来的错误，本人最开始也想当然的认为这是 <code>Makefile</code> 语法的一个BUG，很明显 Makefile 中命令的前缀默认要使用 Tab, 不能使用 4 个空格代替，因此需要在 <code>Makefile.mk</code> 682 行开始用 Tab 替换四个空格开头的行。</p>
 <p>事实上，这个问题的根本原因并非单纯的 <code>Makefile</code> 语法的问题，而是问题出现在 <strong><code>configure</code></strong> → <strong>生成 <code>Makefile.mk</code></strong> 这一步。经过对 <strong><code>configure</code></strong> 源码排查了一下发现，问题就出在 <code>curl-config --static-libs</code> 的错误输出被直接插入到了 <code>Makefile</code> 中，导致 <code>make</code> 误解析这些文本（如 <code>--ca</code>, <code>--cc</code> 等）为 <code>Makefil</code>e 规则，从而引发 <code>missing separator</code> 和 <code>ignoring old recipe</code> 错误。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/07/blast-curl-config.webp" data-desc-position="bottom"><img alt="blast-curl-config" src="https://kg.weiyan.cc/2025/07/blast-curl-config.webp"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/07/blast-curl-config.webp" data-desc-position="bottom"><img alt="blast-curl-config" src="https://gi.weiyan.tech/2025/07/blast-curl-config.webp"></a></p>
 <p>因此，有几个解决方法。</p>
 <ul>
 <li>

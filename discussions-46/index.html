@@ -12217,7 +12217,7 @@ var _hmt = _hmt || [];
 
   <h1>Galaxy Project 的 Sphinx 文档部署</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2024-01-05"><span class="material-icons" data-icon="doc_created"></span><time datetime="2024-01-05T00:00:00">2024-01-05</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2025-12-28"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2025-12-28T19:07:46.176776+00:00">2025-12-28</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="https://weiyan.cc/assets/logo.png" data-email=""></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2024-01-05"><span class="material-icons" data-icon="doc_created"></span><time datetime="2024-01-05T00:00:00">2024-01-05</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2025-12-29"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2025-12-29T19:08:40.240035+00:00">2025-12-29</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="https://weiyan.cc/assets/logo.png" data-email=""></a></div></div></div></div></div>
 <p><a href="https://docs.galaxyproject.org/">https://docs.galaxyproject.org/</a> 是 Galaxy Project 官方的文档地址链接，这是一个基于 <a href="https://www.sphinx-doc.org/">Sphinx</a> + <a href="https://readthedocs.org/">Read the Docs</a> 的文档站点。如果我们也想要创建一个这样一模一样的 Galaxy 文档需要怎么操作呢？</p>
 <!-- more -->
 
@@ -12262,7 +12262,7 @@ The generated documentation will be in <code>doc/build/html/</code> and can be v
 </code></pre></div><p></p>
 <h2 id="2-修改配置">2. 修改配置<a class="headerlink" href="#2-修改配置" title="Permanent link">¶</a></h2>
 <p>由于 <code>sphinx-build</code> 会读取 <code>source/conf.py</code> 并执行，但这个文件调用了 <a href="https://github.com/galaxyproject/galaxy/blob/dev/lib/galaxy/version.py"><code>galaxy.version</code></a> 模块：
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://shub.weiyan.tech/kgarden/2024/01/no-galaxy-version.png" data-desc-position="bottom"><img alt="No module named 'galaxy'" src="https://shub.weiyan.tech/kgarden/2024/01/no-galaxy-version.png"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/01/no-galaxy-version.png" data-desc-position="bottom"><img alt="No module named 'galaxy'" src="https://gi.weiyan.tech/2024/01/no-galaxy-version.png"></a></p>
 <p>所以，如果我们想要把 <code>galaxy/doc</code> 和 Galaxy 独立开来进行部署，就需要修改一下 <code>source/conf.py</code>：
 </p><div class="highlight"><pre><span></span><code><span class="c1"># The short X.Y version.</span>
 <span class="c1">#from galaxy.version import (</span>

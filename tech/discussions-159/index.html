@@ -12110,18 +12110,18 @@ var _hmt = _hmt || [];
 <p>2025年9月4日，早上起来看邮件时候，突然发现，邮箱一下子多了几百封 GitHub Actions 构建异常的邮件！</p>
 <p>震惊紧张后，第一个反应就是，该不会是个人的 personal access token，或者密码泄露了，被人动态进行 commit 提交，以至于出现批量的 Actions 异常。于是，赶紧登录 GitHub 看一下到底发生了什么事。</p>
 <p>首先，看到个人账号下基本每个 Public 仓库，甚至包括 organization 下个人创建的所有 Public 仓库，都出现了类似 <strong>“Trigger security scan”</strong> 的 commits 提交。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/09/trigger-security-scan.png" data-desc-position="bottom"><img alt="trigger-security-scan" src="https://kg.weiyan.cc/2025/09/trigger-security-scan.png"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/09/trigger-security-scan.png" data-desc-position="bottom"><img alt="trigger-security-scan" src="https://gi.weiyan.tech/2025/09/trigger-security-scan.png"></a></p>
 <!-- more -->
 
 <p>点击进去一看，好家伙，直接往 README 里面进行注释性的提交。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/09/commit-change-readme.png" data-desc-position="bottom"><img alt="commit-change-readme" src="https://kg.weiyan.cc/2025/09/commit-change-readme.png"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/09/commit-change-readme.png" data-desc-position="bottom"><img alt="commit-change-readme" src="https://gi.weiyan.tech/2025/09/commit-change-readme.png"></a></p>
 <p>再回到 commits 记录一看，果然有连续多次的提交。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/09/commits-20250902.png" data-desc-position="bottom"><img alt="commits-20250902" src="https://kg.weiyan.cc/2025/09/commits-20250902.png"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/09/commits-20250902.png" data-desc-position="bottom"><img alt="commits-20250902" src="https://gi.weiyan.tech/2025/09/commits-20250902.png"></a></p>
 <p>第二，回去仓库的 <code>.github/workflows</code> 下一看，还莫名其妙多了一个 <code>github_actions_security.yml</code> 自动化流程。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/09/github-actions-security.png" data-desc-position="bottom"><img alt="github-actions-security" src="https://kg.weiyan.cc/2025/09/github-actions-security.png"></a></p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/09/github-actions-security-yaml.png" data-desc-position="bottom"><img alt="github-actions-security-yaml" src="https://kg.weiyan.cc/2025/09/github-actions-security-yaml.png"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/09/github-actions-security.png" data-desc-position="bottom"><img alt="github-actions-security" src="https://gi.weiyan.tech/2025/09/github-actions-security.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/09/github-actions-security-yaml.png" data-desc-position="bottom"><img alt="github-actions-security-yaml" src="https://gi.weiyan.tech/2025/09/github-actions-security-yaml.png"></a></p>
 <p>这就直接把 <code>PERSONAL_ACCESS_TOKEN</code> 的信息提交到了一个 <code>https://bold-dhawan.45-139-104-115.plesk.page</code> 的未知站点。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/09/plesk-page.png" data-desc-position="bottom"><img alt="bold-dhawan-45-139-104-115-plesk-page" src="https://kg.weiyan.cc/2025/09/plesk-page.png"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/09/plesk-page.png" data-desc-position="bottom"><img alt="bold-dhawan-45-139-104-115-plesk-page" src="https://gi.weiyan.tech/2025/09/plesk-page.png"></a></p>
 <p>这一连串的骚操作下来，<strong>可以肯定的是 token 或者其他密码泄露，或者是某个共用的 actions 出问题了</strong>，所以：</p>
 <ol>
 <li>第一件事情，先把 personal access token 全部删除。</li>
@@ -12129,7 +12129,7 @@ var _hmt = _hmt || [];
 <li>最后，静观后效。</li>
 </ol>
 <p>在文章最后，感谢 @guedou 在问题仓库中的建议。  </p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/09/compromised-token.png" data-desc-position="bottom"><img alt="compromised-token" src="https://kg.weiyan.cc/2025/09/compromised-token.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/09/compromised-token.png" data-desc-position="bottom"><img alt="compromised-token" src="https://gi.weiyan.tech/2025/09/compromised-token.png"></a></p>
 <script src="https://giscus.app/client.js" data-repo="shenweiyan/Digital-Garden" data-repo-id="R_kgDOKgxWlg" data-mapping="number" data-term="159" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async>
 </script>
 

@@ -12349,7 +12349,7 @@ var _hmt = _hmt || [];
 
   <h1>Galaxy 平台 release_24.x 升级之路</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2024-10-18"><span class="material-icons" data-icon="doc_created"></span><time datetime="2024-10-18T00:00:00">2024-10-18</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2025-12-28"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2025-12-28T19:07:46.175776+00:00">2025-12-28</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="https://weiyan.cc/assets/logo.png" data-email=""></a></div></div></div></div></div>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content data-tippy-raw="2024-10-18"><span class="material-icons" data-icon="doc_created"></span><time datetime="2024-10-18T00:00:00">2024-10-18</time></span><span class="dd-item" data-tippy-content data-tippy-raw="2025-12-29"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2025-12-29T19:08:40.239035+00:00">2025-12-29</time></span></div><div class="dd-right"><span class="material-icons" data-icon="doc_author"></span><div class="author-group"><div class="avatar-wrapper" data-name="Steven Shum" data-tippy-content data-tippy-raw="Steven Shum"><span class="avatar-text"></span><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="" data-desc-position="bottom"><img class="avatar" data-src="https://weiyan.cc/assets/logo.png" data-email=""></a></div></div></div></div></div>
 <p>记录一下 Galaxy 分析平台从 <strong>release_20.09</strong> 升级到 <strong>release_24.0</strong>，横跨九个发布版本的升级之路。</p>
 <!-- more -->
 
@@ -12357,8 +12357,8 @@ var _hmt = _hmt || [];
 <p>很主要的一个原因是随着新技术的更新，旧版本的使用可能会存在一些安全隐患，尤其对于提供互联网公开访问的平台。新版本的升级有助于捕获并应用所有先前的安全更新，以确保平台的安全性。</p>
 <h2 id="版本选择">版本选择<a class="headerlink" href="#版本选择" title="Permanent link">¶</a></h2>
 <p>最开始选择的是 <a href="https://docs.galaxyproject.org/en/master/releases/24.1_announce_user.html">release_24.1</a> 版本，但好不容易安装完成后才发现，这个新版本中增加了一个常规途径下无法隐藏的 <strong>Activity Bar Interface</strong>，一时间无法忍受。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2024/10/23.1-activity-bar.png" data-desc-position="bottom"><img alt="23.1-activity-bar" src="https://kg.weiyan.cc/2024/10/23.1-activity-bar.png"></a>   <br>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2024/10/galaxy-24.1.png" data-desc-position="bottom"><img alt="galaxy-24.1" src="https://kg.weiyan.cc/2024/10/galaxy-24.1.png"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/10/23.1-activity-bar.png" data-desc-position="bottom"><img alt="23.1-activity-bar" src="https://gi.weiyan.tech/2024/10/23.1-activity-bar.png"></a>   <br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/10/galaxy-24.1.png" data-desc-position="bottom"><img alt="galaxy-24.1" src="https://gi.weiyan.tech/2024/10/galaxy-24.1.png"></a></p>
 <p>第二个原因是，后台 PostgreSQL 数据库的升级遇到了 <a href="https://help.galaxyproject.org/t/database-upgrade-error/13687">function gen_random_uuid() does not exist</a> 异常，一下子没法解决也不想去升级 PostgreSQL 版本。</p>
 <p>所以，最终选择了从 <strong>release_20.09</strong> 升级到次新的 <strong>release_24.0</strong> 版本方案。</p>
 <h2 id="安装系统环境">安装系统环境<a class="headerlink" href="#安装系统环境" title="Permanent link">¶</a></h2>
@@ -12366,7 +12366,7 @@ var _hmt = _hmt || [];
 <p>Galaxy release_24.1 默认安装 node-v18.12.1，参考：<code>run.sh</code> → <code>./scripts/common_startup_functions.sh</code> → <code>./scripts/common_startup.sh</code> → <code>nodeenv -n "$NODE_VERSION" -p</code> 的安装代码。</p>
 <p>node-v18.12.1 下载地址：<a href="https://nodejs.org/download/release/v18.12.1/">https://nodejs.org/download/release/v18.12.1/</a></p>
 <p>node-v18.12.1 要求 g++ 8.3.0 or clang++ 8.0.0：  <br>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2024/10/node-v18.12.1-gcc.webp" data-desc-position="bottom"><img alt="node-v18.12.1-gcc" src="https://kg.weiyan.cc/2024/10/node-v18.12.1-gcc.webp"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/10/node-v18.12.1-gcc.webp" data-desc-position="bottom"><img alt="node-v18.12.1-gcc" src="https://gi.weiyan.tech/2024/10/node-v18.12.1-gcc.webp"></a></p>
 <p>可以通过安装 Devtoolset 的方式解决：    </p>
 <ol>
 <li>手动调整  CentOS 7 的 SCL YUM 源（也可以 yum 安装），注意变更 <code>baseurl</code> 为阿里云或者其他的源链接。
@@ -12407,7 +12407,7 @@ make<span class="w"> </span>install
 </code></pre></div><p></p>
 <h2 id="node-环境">Node 环境<a class="headerlink" href="#node-环境" title="Permanent link">¶</a></h2>
 <p>Galaxy 的 <code>sh run.sh</code> 默认通过 <code>ssl</code> 的方式安装已经提前编译好的 node-v18.12.1-linux-x64.tar.gz（直接解压即可使用），对于系统版本比较低的服务器（如 CentOS 7）会存在 GLIBC 异常，因此需要调整为 <code>ignore_ssl_certs</code> 的下载方式 + source 源码安装的方式安装 node-v18.12.1。   <br>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.tech/2024/10/nodeenv-help.webp" data-desc-position="bottom"><img alt="nodeenv--help" src="https://kg.weiyan.tech/2024/10/nodeenv-help.webp"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/10/nodeenv-help.webp" data-desc-position="bottom"><img alt="nodeenv--help" src="https://gi.weiyan.tech/2024/10/nodeenv-help.webp"></a></p>
 <p>所以，最终的方法为调整 <code>./scripts/common_startup.sh</code> 中 <code>nodeenv -n "$NODE_VERSION" -p</code> 的安装代码如下：
 </p><div class="highlight"><pre><span></span><code>nodeenv<span class="w"> </span>-n<span class="w"> </span><span class="s2">"</span><span class="nv">$NODE_VERSION</span><span class="s2">"</span><span class="w"> </span>-p<span class="w"> </span>--source<span class="w"> </span>--ignore_ssl_certs<span class="w"> </span>--jobs<span class="o">=</span><span class="m">1</span>
 </code></pre></div><p></p>
@@ -12461,7 +12461,7 @@ $<span class="w"> </span>make<span class="w"> </span>install
 <li><a href="https://mp.weixin.qq.com/s/arRZ-3mMrpUIsXYuqg4sGQ">https://mp.weixin.qq.com/s/arRZ-3mMrpUIsXYuqg4sGQ</a></li>
 </ul>
 <p>以上解决方法，参考：<a href="https://github.com/galaxyproject/galaxy/issues/19016">galaxyproject/galaxy #19016</a>   </p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2024/10/galaxy-issues-19016.png" data-desc-position="bottom"><img alt="galaxy-issues-19016" src="https://kg.weiyan.cc/2024/10/galaxy-issues-19016.png"></a></p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/10/galaxy-issues-19016.png" data-desc-position="bottom"><img alt="galaxy-issues-19016" src="https://gi.weiyan.tech/2024/10/galaxy-issues-19016.png"></a></p>
 <h2 id="总结">总结<a class="headerlink" href="#总结" title="Permanent link">¶</a></h2>
 <p>更新后的 release_24.0 界面看起来比旧版本要更加清爽舒服一些，各个页面的汉化功能也有所改善，新增的 Notifications 功能也挺不错，总之升级之后各个方面还是挺满意的，其他细节和功能还在体验中。</p>
 <script src="https://giscus.app/client.js" data-repo="shenweiyan/Digital-Garden" data-repo-id="R_kgDOKgxWlg" data-mapping="number" data-term="90" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async>

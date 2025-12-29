@@ -12272,12 +12272,12 @@ var _hmt = _hmt || [];
 $<span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>acl<span class="w"> </span>/boot/config*
 </code></pre></div>
 <p>从下方的截屏可以看到，文件系统类型是 ext4，并且从 <code>CONFIG_EXT4_FS_POSIX_ACL=y</code> 选项可以发现内核是支持 POSIX ACL 的。
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2024/08/config-ext4-fs-posix-acl.webp" data-desc-position="bottom"><img alt="config-ext4-fs-posix-acl" src="https://kg.weiyan.cc/2024/08/config-ext4-fs-posix-acl.webp"></a></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/08/config-ext4-fs-posix-acl.webp" data-desc-position="bottom"><img alt="config-ext4-fs-posix-acl" src="https://gi.weiyan.tech/2024/08/config-ext4-fs-posix-acl.webp"></a></p>
 <h3 id="12-挂载是否使用了-acl">1.2. 挂载是否使用了 ACL<a class="headerlink" href="#12-挂载是否使用了-acl" title="Permanent link">¶</a></h3>
 <p>使用下面的命令，查看文件系统（分区）挂载时是否使用了 ACL 选项。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>tune2fs<span class="w"> </span>-l<span class="w"> </span>/dev/vda1<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>acl
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2024/08/tune2fs-acl.webp" data-desc-position="bottom"><img alt="tune2fs-acl" src="https://kg.weiyan.cc/2024/08/tune2fs-acl.webp"></a>    <br>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/08/tune2fs-acl.webp" data-desc-position="bottom"><img alt="tune2fs-acl" src="https://gi.weiyan.tech/2024/08/tune2fs-acl.webp"></a>    <br>
 通过上边的输出可以发现，默认的挂载项目中已经对 ACL 进行了支持。如果发现结果不如所愿，你可以通过以下命令对指定分区（此例中使用 /dev/sda3）开启 ACL 的支持）。</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>mount<span class="w"> </span>-o<span class="w"> </span>remount,acl<span class="w"> </span>/
 $<span class="w"> </span>tune2fs<span class="w"> </span>-o<span class="w"> </span>acl<span class="w"> </span>/dev/sda3
@@ -12298,7 +12298,7 @@ $<span class="w"> </span>setfacl<span class="w"> </span>-m<span class="w"> </spa
 <span class="c1"># 再次检查目录 ACL 设置（Check new ACL settings for the directory）</span>
 $<span class="w"> </span>getfacl<span class="w"> </span>/data/share
 </code></pre></div>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2024/08/setfacl-m-user.webp" data-desc-position="bottom"><img alt="setfacl-m-user" src="https://kg.weiyan.cc/2024/08/setfacl-m-user.webp"></a>    <br>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2024/08/setfacl-m-user.webp" data-desc-position="bottom"><img alt="setfacl-m-user" src="https://gi.weiyan.tech/2024/08/setfacl-m-user.webp"></a>    <br>
 在上方的截屏中，通过输出结果的第二行 getfacl 命令可以发现，用户 shenweiyan 已经成功的被赋予了 /data/share 目录的读写权限。</p>
 <p>如果想要获取 ACL 列表的更多信息。请参考：</p>
 <ul>

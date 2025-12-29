@@ -12180,7 +12180,7 @@ export LD_LIBRARY_PATH=/bioinfo/software/mylib/libpng-1.6.37/lib:$LD_LIBRARY_PAT
 </p><div class="highlight"><pre><span></span><code>PKG_LIBS=$(PNG_LIBS) `libpng-config --static --ldflags`
 PKG_CFLAGS=$(PNG_CFLAGS) `libpng-config --cflags`
 </code></pre></div>
-<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://kg.weiyan.cc/2025/02/png-src-makevars.png" data-desc-position="bottom"><img alt="png-src-makevars" src="https://kg.weiyan.cc/2025/02/png-src-makevars.png"></a><p></p>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2025/02/png-src-makevars.png" data-desc-position="bottom"><img alt="png-src-makevars" src="https://gi.weiyan.tech/2025/02/png-src-makevars.png"></a><p></p>
 <p>而系统的 <code>libpng-config</code> 和 libpng-1.6.37 的 <code>bin/libpng-config</code> 的链接库和依赖：
 </p><div class="highlight"><pre><span></span><code>$<span class="w"> </span>/usr/bin/libpng-config<span class="w"> </span>--static<span class="w"> </span>--ldflags
 -L/usr/lib64<span class="w"> </span>-lpng12<span class="w"> </span>-lz<span class="w"> </span>-lm

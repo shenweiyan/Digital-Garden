@@ -72,7 +72,7 @@ $ /data/softwares/pgsql/bin/pg_ctl -D /data/softwares/pgsql/data -l /data/softwa
 $ psql
 ```
 
-![psql-db-list](https://kg.weiyan.cc/2024/09/psql-db-list.webp)
+![psql-db-list](https://gi.weiyan.tech/2024/09/psql-db-list.webp)
 
 ## 4. 重启
 

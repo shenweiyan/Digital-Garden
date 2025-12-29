@@ -213,7 +213,7 @@ make && make install
 
 对于 Python 3.10.x (及以下版本，如 Python-3.9.18)，`configure` 中 `--with-tcltk-includes` 和 `--with-tcltk-libs` 的具体使用参考 <https://bugs.python.org/issue21887>：  
    
-![tcltk-issue-21887-msg](https://kg.weiyan.cc/2024/10/tcltk-issue-21887-msg.webp)
+![tcltk-issue-21887-msg](https://gi.weiyan.tech/2024/10/tcltk-issue-21887-msg.webp)
 
 ### Python 2
 

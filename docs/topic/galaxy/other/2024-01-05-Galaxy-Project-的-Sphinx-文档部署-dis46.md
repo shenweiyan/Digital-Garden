@@ -67,7 +67,7 @@ pip3 install Sphinx sphinx_rtd_theme myst_parser
 ## 2. 修改配置
 
 由于 `sphinx-build` 会读取 `source/conf.py` 并执行，但这个文件调用了 [`galaxy.version`](https://github.com/galaxyproject/galaxy/blob/dev/lib/galaxy/version.py) 模块：
-![No module named 'galaxy'](https://shub.weiyan.tech/kgarden/2024/01/no-galaxy-version.png)
+![No module named 'galaxy'](https://gi.weiyan.tech/2024/01/no-galaxy-version.png)
 
 所以，如果我们想要把 `galaxy/doc` 和 Galaxy 独立开来进行部署，就需要修改一下 `source/conf.py`：
 ```python

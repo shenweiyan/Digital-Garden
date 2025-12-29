@@ -18,10 +18,10 @@ tags:
 ## 开始
 
 从 GitHub 可以很直观看到的是 [mkdocs_include_dir_to_nav](https://github.com/mysiki/mkdocs_include_dir_to_nav) 自从 2022-05-01 更新了 [V1.2.0](https://github.com/mysiki/mkdocs_include_dir_to_nav/releases/tag/v1.2.0) 版本后基本就已经停止了更新，Star 也才 20 多人。       
-![mkdocs-include-dir-to-nav](https://shub.weiyan.tech/kgarden/2024/01/mkdocs-include-dir-to-nav.png)
+![mkdocs-include-dir-to-nav](https://gi.weiyan.tech/2024/01/mkdocs-include-dir-to-nav.png)
 
 反而是 [MkDocs Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin) 一直保持着非常积极的更新频率，而且维护者和关注和使用用户也远远比 [mkdocs_include_dir_to_nav](https://github.com/mysiki/mkdocs_include_dir_to_nav) 多得多。     
-![mkdocs-awesome-pages-plugin](https://shub.weiyan.tech/kgarden/2024/01/mkdocs-awesome-pages-plugin.png)
+![mkdocs-awesome-pages-plugin](https://gi.weiyan.tech/2024/01/mkdocs-awesome-pages-plugin.png)
 
 于是，开始着入手 [MkDocs Awesome Pages Plugin](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)。不得不说，Awesome-Pages 这个插件的功能很强大，可以很好解决我"指定子目录自定义文档排序"的需求。但不可否认的是 Awesome-Pages 的文档写的的确有点糙，不认真看还真不知道应该如何上手，这也是花费我最多时间的地方。
 

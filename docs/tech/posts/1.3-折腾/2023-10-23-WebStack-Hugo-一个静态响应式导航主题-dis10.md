@@ -12,7 +12,7 @@ tags: ['语雀', '1.3.25-静态网站']
 
 > Via：[我给自己做了一个导航网站](https://mp.weixin.qq.com/s/gVWGjxG9qd7qSyX3N8Zgag) | [BioIT爱好者](https://github.com/bioitee)    
 
-**📢 让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://kg.weiyan.cc/0000/img/donate.webp) >.<**
+**📢 让更多人的人制作自己的导航网站。如果你觉得本主题对你有所帮助，欢迎请作者 [喝杯咖啡](https://gi.weiyan.tech/0000/img/donate.webp) >.<**
 
 ## 主题开源地址    
 
@@ -33,10 +33,10 @@ tags: ['语雀', '1.3.25-静态网站']
 
 说干就干，从 [WebStack 的开源项目](https://github.com/WebStackPage/WebStackPage.github.io)开始，断断续续的折腾了好几天，终于把轮子造起来了。
 
-<img src="https://kg.weiyan.cc/2023/11/webstack-hugo-collapse.png" width=800>
-<img src="https://kg.weiyan.cc/2023/11/webstack-hugo-expand.png" width=800>
-<img src="https://kg.weiyan.cc/2023/11/webstack-hugo-search.png" width=800>
-<img src="https://kg.weiyan.cc/2023/11/webstack-hugo-phone.png" alt="webstack-apple" width=600>
+<img src="https://gi.weiyan.tech/2023/11/webstack-hugo-collapse.png" width=800>
+<img src="https://gi.weiyan.tech/2023/11/webstack-hugo-expand.png" width=800>
+<img src="https://gi.weiyan.tech/2023/11/webstack-hugo-search.png" width=800>
+<img src="https://gi.weiyan.tech/2023/11/webstack-hugo-phone.png" alt="webstack-apple" width=600>
 
 ## 跟其他导航网站有什么区别
 
@@ -92,7 +92,7 @@ tags: ['语雀', '1.3.25-静态网站']
 
 下载链接：[https://github.com/gohugoio/hugo/releases](https://github.com/gohugoio/hugo/releases)，在这里我们下载 [hugo_0.89.4_Windows-64bit.zip](https://github.com/gohugoio/hugo/releases/download/v0.89.4/hugo_0.89.4_Windows-64bit.zip)。
 
-![download-hugo-windows](https://kg.weiyan.cc/2023/11/download-hugo-windows.png)
+![download-hugo-windows](https://gi.weiyan.tech/2023/11/download-hugo-windows.png)
 
 ### 第二，解压
 
@@ -100,7 +100,7 @@ tags: ['语雀', '1.3.25-静态网站']
 
 解压完成后，在该目录会多出 `hugo.exe`、`LICENSE`、`README.md` 三个文件：
 
-![unzip hugo_0.89.4_Windows-64bit](https://kg.weiyan.cc/2023/11/unzip-hugo-0.89.4-windows-64bit.png)
+![unzip hugo_0.89.4_Windows-64bit](https://gi.weiyan.tech/2023/11/unzip-hugo-0.89.4-windows-64bit.png)
 
 ### 第三，检测是否安装成功
 
@@ -114,40 +114,40 @@ tags: ['语雀', '1.3.25-静态网站']
 
 1. 在 Windows 中使用 **Win+R** 打开“**运行**”对话框，在对话框中输入“**cmd**”，点击确认。
 
-   ![win-r-cmd](https://kg.weiyan.cc/2023/11/win-r-cmd.png)
+   ![win-r-cmd](https://gi.weiyan.tech/2023/11/win-r-cmd.png)
 
 2. 在 Windows 运行窗口，先切换盘符到 **F** 盘，然后进入 `hugo` 的解压缩目录（**F:\WebStack**），具体操作如下。
 
    - 在光标处输入 **F:**，然后按回车；
 
-     ![cmd-change-dir](https://kg.weiyan.cc/2023/11/cmd-change-dir.png)
+     ![cmd-change-dir](https://gi.weiyan.tech/2023/11/cmd-change-dir.png)
 
    - 我们就将盘符切换为 **F** 盘；
 
-     ![cmd-f-dir](https://kg.weiyan.cc/2023/11/cmd-f-dir.png)
+     ![cmd-f-dir](https://gi.weiyan.tech/2023/11/cmd-f-dir.png)
 
    - 接着输入 **cd WebStack**，回车，就进入了 **F:\WebStack** 目录；使用 **ls** 可以看到当前目录下的文件。
 
-     ![webstack-win-ls](https://kg.weiyan.cc/2023/11/webstack-win-ls.png)
+     ![webstack-win-ls](https://gi.weiyan.tech/2023/11/webstack-win-ls.png)
 
    - 最后，输入 **hugo.exe version**，回车，如图所示，则代表安装成功。
 
-     ![hugo-exe-version](https://kg.weiyan.cc/2023/11/hugo-exe-version.png)
+     ![hugo-exe-version](https://gi.weiyan.tech/2023/11/hugo-exe-version.png)
 
 ### 第四，下载 WebStack-Hugo
 
 浏览器打开 [https://github.com/shenweiyan/WebStack-Hugo](https://github.com/shenweiyan/WebStack-Hugo)，点击 Code 下的 **"Download ZIP"**，把 **WebStack-hugo-main.zip** 下载到刚才 hugo 解压缩的目录（**F:\WebStack**）。
 
-![webstack-download-zip](https://kg.weiyan.cc/2023/11/webstack-download-zip.png)
+![webstack-download-zip](https://gi.weiyan.tech/2023/11/webstack-download-zip.png)
 
-![webstack-hugo-main-zip](https://kg.weiyan.cc/2023/11/webstack-hugo-main-zip.png)
+![webstack-hugo-main-zip](https://gi.weiyan.tech/2023/11/webstack-hugo-main-zip.png)
 
 ### 第五，解压和重命名
 
 把 **WebStack-Hugo-main.zip** 解压到当前目录。
 
-![webstack-hugo-main-unzip](https://kg.weiyan.cc/2023/11/webstack-hugo-main-unzip.png)
-![webstack-hugo-main-rename](https://kg.weiyan.cc/2023/11/webstack-hugo-main-rename.png)
+![webstack-hugo-main-unzip](https://gi.weiyan.tech/2023/11/webstack-hugo-main-unzip.png)
+![webstack-hugo-main-rename](https://gi.weiyan.tech/2023/11/webstack-hugo-main-rename.png)
 
 ### 第六，安装主题
 
@@ -155,15 +155,15 @@ tags: ['语雀', '1.3.25-静态网站']
 
 然后，创建一个 **themes** 的文件夹；
 
-![create-themes-dir](https://kg.weiyan.cc/2023/11/create-themes-dir.png)
+![create-themes-dir](https://gi.weiyan.tech/2023/11/create-themes-dir.png)
 
 接着，把解压后的 **WebStack-Hugo** 整个文件夹移动到 **themes** 中。
 
-![mv-webstack-hugo-to-themes](https://kg.weiyan.cc/2023/11/mv-webstack-hugo-to-themes.png)
+![mv-webstack-hugo-to-themes](https://gi.weiyan.tech/2023/11/mv-webstack-hugo-to-themes.png)
 
 第四，将 `themes/WebStack-Hugo/exampleSite` 目录下的所有文件复制到 hugo 站点根目录（即 `F:\WebStack`）。
 
-![cp-examplesite](https://kg.weiyan.cc/2023/11/cp-examplesite.png)
+![cp-examplesite](https://gi.weiyan.tech/2023/11/cp-examplesite.png)
 
 ### 第七，启动预览
 
@@ -173,11 +173,11 @@ tags: ['语雀', '1.3.25-静态网站']
 hugo.exe server
 ```
 
-![hugo-exe-server](https://kg.weiyan.cc/2023/11/hugo-exe-server.png)
+![hugo-exe-server](https://gi.weiyan.tech/2023/11/hugo-exe-server.png)
 
 最后，在浏览器中打开 [**http://127.0.0.1:1313/**](http://127.0.0.1:1313/)，即可看到生成的站点。
 
-![webstack-hugo-1313](https://kg.weiyan.cc/2023/11/webstack-hugo-1313.png)
+![webstack-hugo-1313](https://gi.weiyan.tech/2023/11/webstack-hugo-1313.png)
 
 ## Linux 下安装部署
 
@@ -270,7 +270,7 @@ hugo -D 或者 hugo --minify
 
 🔗 [https://fontawesome.com/v5/search?o=r&m=free](https://fontawesome.com/v5/search?o=r&m=free)
 
-![fontawesome-v5-free](https://kg.weiyan.cc/2023/11/fontawesome-v5-free.png)
+![fontawesome-v5-free](https://gi.weiyan.tech/2023/11/fontawesome-v5-free.png)
 
 ### 调整头部搜索栏
 
@@ -279,8 +279,8 @@ hugo -D 或者 hugo --minify
 1. 直接修改 **layouts/partials/content_search.html**，调整对应部分的位置。
 2. 调整默认的搜索（即点击"常用/搜索/工具 ...." 时下指箭头的指向），把对应的 id 添加到对应的 label 里面。
 
-![set-default-search-bing](https://kg.weiyan.cc/2023/11/set-default-search-bing.png)
-![view-default-search-bing](https://kg.weiyan.cc/2023/11/view-default-search-bing.png)
+![set-default-search-bing](https://gi.weiyan.tech/2023/11/set-default-search-bing.png)
+![view-default-search-bing](https://gi.weiyan.tech/2023/11/view-default-search-bing.png)
 
 ### 自定义头部导航
 
@@ -331,13 +331,13 @@ https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true
 
 除了一为的 API，你也可以使用 <https://favicon.im/> 来在网页中插入其他网站的 Favicon 图片，可以放大显示。
 
-![favicon-im](https://kg.weiyan.cc/2024/08/favicon-im.webp)
+![favicon-im](https://gi.weiyan.tech/2024/08/favicon-im.webp)
 
 #### Favicon Extractor
 
 类似网站 [Favicon Downloader](https://www.faviconextractor.com/)，代码[开源](https://github.com/seadfeng/favicon-downloader)。
 
-![favicon-extractor](https://kg.weiyan.cc/2024/08/favicon-extractor.webp)
+![favicon-extractor](https://gi.weiyan.tech/2024/08/favicon-extractor.webp)
 
 
 ## 已知问题
@@ -354,7 +354,7 @@ https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true
 
 感谢 [WebStack](https://github.com/WebStackPage/WebStackPage.github.io) 的作者 [Viggo](https://twitter.com/decohack) 的肯定和[推广宣传](https://twitter.com/decohack/status/1569188705478516738)。
 
-![twitter-decohack-webstack-hugo](https://kg.weiyan.cc/2023/11/twitter-decohack-webstack-hugo.png)
+![twitter-decohack-webstack-hugo](https://gi.weiyan.tech/2023/11/twitter-decohack-webstack-hugo.png)
 
 感谢以下所有朋友对本主题所做出的贡献。       
 **[@yanbeiyinhanghang](https://github.com/yinhanghang)**      
@@ -364,7 +364,7 @@ https://api.iowen.cn/favicon/www.iowen.cn.png?refresh=true
 
 如果你觉得本项目对你有所帮助，欢迎请作者喝杯热咖啡 >.<     
 
-![donate-wecaht-aliapy](https://kg.weiyan.cc/0000/img/donate.webp)
+![donate-wecaht-aliapy](https://gi.weiyan.tech/0000/img/donate.webp)
 
 ## 反馈与交流
 

@@ -21,8 +21,8 @@ labels: ['3.1.x-GalaxyOther']
 ## 版本选择
 
 最开始选择的是 [release_24.1](https://docs.galaxyproject.org/en/master/releases/24.1_announce_user.html) 版本，但好不容易安装完成后才发现，这个新版本中增加了一个常规途径下无法隐藏的 **Activity Bar Interface**，一时间无法忍受。
-![23.1-activity-bar](https://kg.weiyan.cc/2024/10/23.1-activity-bar.png)     
-![galaxy-24.1](https://kg.weiyan.cc/2024/10/galaxy-24.1.png)
+![23.1-activity-bar](https://gi.weiyan.tech/2024/10/23.1-activity-bar.png)     
+![galaxy-24.1](https://gi.weiyan.tech/2024/10/galaxy-24.1.png)
 
 第二个原因是，后台 PostgreSQL 数据库的升级遇到了 [function gen_random_uuid() does not exist](https://help.galaxyproject.org/t/database-upgrade-error/13687) 异常，一下子没法解决也不想去升级 PostgreSQL 版本。
 
@@ -37,7 +37,7 @@ Galaxy release_24.1 默认安装 node-v18.12.1，参考：`run.sh` → `./script
 node-v18.12.1 下载地址：<https://nodejs.org/download/release/v18.12.1/>
 
 node-v18.12.1 要求 g++ 8.3.0 or clang++ 8.0.0：    
-![node-v18.12.1-gcc](https://kg.weiyan.cc/2024/10/node-v18.12.1-gcc.webp)
+![node-v18.12.1-gcc](https://gi.weiyan.tech/2024/10/node-v18.12.1-gcc.webp)
 
 可以通过安装 Devtoolset 的方式解决：    
 
@@ -91,7 +91,7 @@ export LD_LIBRARY_PATH=/home/shenweiyan/software/openssl-1.1.1/lib:$LD_LIBRARY_P
 ## Node 环境
 
 Galaxy 的 `sh run.sh` 默认通过 `ssl` 的方式安装已经提前编译好的 node-v18.12.1-linux-x64.tar.gz（直接解压即可使用），对于系统版本比较低的服务器（如 CentOS 7）会存在 GLIBC 异常，因此需要调整为 `ignore_ssl_certs` 的下载方式 + source 源码安装的方式安装 node-v18.12.1。     
-![nodeenv--help](https://kg.weiyan.tech/2024/10/nodeenv-help.webp)
+![nodeenv--help](https://gi.weiyan.tech/2024/10/nodeenv-help.webp)
 
 所以，最终的方法为调整 `./scripts/common_startup.sh` 中 `nodeenv -n "$NODE_VERSION" -p` 的安装代码如下：
 ```bash
@@ -161,7 +161,7 @@ Galaxy 在安装 `requirements.txt` 的时候默认使用下面两个源：
 
 以上解决方法，参考：[galaxyproject/galaxy #19016](https://github.com/galaxyproject/galaxy/issues/19016)   
   
-![galaxy-issues-19016](https://kg.weiyan.cc/2024/10/galaxy-issues-19016.png)
+![galaxy-issues-19016](https://gi.weiyan.tech/2024/10/galaxy-issues-19016.png)
 
 ## 总结
 

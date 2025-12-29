@@ -22,27 +22,27 @@ Hugo 的 [Navpage](https://github.com/navpage) 导航虽然颜值上更舒服一
 
 感谢自己省吃俭用薅下来的 4 核 8G 小 VPS，几经折腾下，终于让 Homepage + Documents + Navigation 都集成在了一个 MkDocs Material 里面，先贴几张图，后面可能会开源，也可能会和 [Navpage](https://github.com/navpage) 整合在一起付费提供使用。
 <p align="center">
-    <img src="https://kg.weiyan.tech/2025/04/home-pages.png" alt><br>
+    <img src="https://gi.weiyan.tech/2025/04/home-pages.png" alt><br>
     <span>Homepage</span>
 </p>
 
 <p align="center">
-    <img src="https://kg.weiyan.tech/2025/04/get-start-pages.png" alt><br>
+    <img src="https://gi.weiyan.tech/2025/04/get-start-pages.png" alt><br>
     <span>文档页面</span>
 </p>
 
 <p align="center">
-    <img src="https://kg.weiyan.tech/2025/04/docs-pages.png" alt><br>
+    <img src="https://gi.weiyan.tech/2025/04/docs-pages.png" alt><br>
     <span>文档页面 - 目录</span>
 </p>
 
 <p align="center">
-    <img src="https://kg.weiyan.tech/2025/04/blog-pages.png" alt><br>
+    <img src="https://gi.weiyan.tech/2025/04/blog-pages.png" alt><br>
     <span>博客页面</span>
 </p>
 
 <p align="center">
-    <img src="https://kg.weiyan.tech/2025/04/navigation-pages.png" alt><br>
+    <img src="https://gi.weiyan.tech/2025/04/navigation-pages.png" alt><br>
     <span>导航页面</span>
 </p>
 

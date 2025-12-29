@@ -15,7 +15,7 @@ tags: []
 <!-- more -->
 
 排查一下才发现是因为 RAM 内存不够！      
-![hisat2-resource-usage-summary](https://kg.weiyan.cc/2024/10/hisat2-resource.png)
+![hisat2-resource-usage-summary](https://gi.weiyan.tech/2024/10/hisat2-resource.png)
 
 > Note: If you use [--snp](https://open.bioqueue.org/home/knowledge/showKnowledge/sig/hisat2-build#--snp), [--ss](https://open.bioqueue.org/home/knowledge/showKnowledge/sig/hisat2-build#--ss), and/or [--exon](https://open.bioqueue.org/home/knowledge/showKnowledge/sig/hisat2-build#--exon), hisat2-build will need about **200 GB** RAM for the human genome size as index building involves a graph construction. Otherwise, you will be able to build an index on your desktop with 8GB RAM.
 >    

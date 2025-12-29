@@ -14,7 +14,7 @@ tags: ['1.1.6-软件', 'blast']
 
 <!-- more -->
 
-![Basic-Local-Alignment-Search-Tool](https://kg.weiyan.cc/2025/07/ncbi-blast.png)
+![Basic-Local-Alignment-Search-Tool](https://gi.weiyan.tech/2025/07/ncbi-blast.png)
 
 先说一下，总体的安装步骤。
 
@@ -70,7 +70,7 @@ To build selected projects (as listed in "scripts/projects/blast_core_lib.lst"):
 对于这个突如其来的错误，本人最开始也想当然的认为这是 `Makefile` 语法的一个BUG，很明显 Makefile 中命令的前缀默认要使用 Tab, 不能使用 4 个空格代替，因此需要在 `Makefile.mk` 682 行开始用 Tab 替换四个空格开头的行。
 
 事实上，这个问题的根本原因并非单纯的 `Makefile` 语法的问题，而是问题出现在 **`configure`** → **生成 `Makefile.mk`** 这一步。经过对 **`configure`** 源码排查了一下发现，问题就出在 `curl-config --static-libs` 的错误输出被直接插入到了 `Makefile` 中，导致 `make` 误解析这些文本（如 `--ca`, `--cc` 等）为 `Makefil`e 规则，从而引发 `missing separator` 和 `ignoring old recipe` 错误。
-![blast-curl-config](https://kg.weiyan.cc/2025/07/blast-curl-config.webp)
+![blast-curl-config](https://gi.weiyan.tech/2025/07/blast-curl-config.webp)
 
 因此，有几个解决方法。
 

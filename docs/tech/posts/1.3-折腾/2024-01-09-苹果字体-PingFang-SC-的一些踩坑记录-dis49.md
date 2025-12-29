@@ -40,7 +40,7 @@ body {
 > ```
 > 比如，上述 css 定义，就来自于腾讯云主页。在实际的应用过程中，只有安装好的 pingfang sc 系列字体才能被识别【如下图中的右侧字体】。    
 > **注意：萍方/苹方，在安装的时候，文件名也都是 pingfang-sc 之类的文件名。但是，安装完成的真正成品，可不是这个拼音名字。进而导致字体不能识别。**
-> ![pingfang sc 区别](https://shub.weiyan.tech/kgarden/2024/01/fingfang-sc.png)
+> ![pingfang sc 区别](https://gi.weiyan.tech/2024/01/fingfang-sc.png)
 >     
 > From 《[由 pingfang sc 字体缺失，所暴露的字体加载顺序的潜规则](https://newsn.net/say/css-font-family-pingfang.html)》
 
@@ -62,7 +62,7 @@ body {
 > 如果您非要在 win 下面安装 pingfang sc 字体，可能要三思而后安装了。李鬼似乎有点多...
 
 >    
-> ![PingFang SC Regular](https://shub.weiyan.tech/kgarden/2024/01/pingfang-sc-regular.png)
+> ![PingFang SC Regular](https://gi.weiyan.tech/2024/01/pingfang-sc-regular.png)
 
 ### 删除 PingFang SC
 

@@ -16,7 +16,7 @@ updated: 2024-03-21
 - 邮箱：**shenweiyan@aliyun.com**
 
 <p align="center">
-    <img src="https://shub.weiyan.tech/mkdocs/feedback.gif" alt="feedback">
+    <img src="https://gi.weiyan.tech/0000/img/feedback.gif" alt="feedback">
 </p>
 
 <script src="https://giscus.app/client.js"

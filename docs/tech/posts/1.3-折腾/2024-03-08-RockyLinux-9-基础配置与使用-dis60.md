@@ -14,7 +14,7 @@ tags: ['1.3.17-服务器配置使用', 'Rocky Linux']
 
 <!-- more -->
 
-![aliyun-99-plan](https://shub.weiyan.tech/kgarden/2024/03/aliyun-99-plan.png)
+![aliyun-99-plan](https://gi.weiyan.tech/2024/03/aliyun-99-plan.png)
 
 ## Hostname
 ```

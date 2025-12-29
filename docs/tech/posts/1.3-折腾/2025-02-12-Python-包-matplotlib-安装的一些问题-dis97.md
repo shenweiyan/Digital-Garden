@@ -129,7 +129,7 @@ hint: See above for details.
    ```bash
    pip3 install .
    ```
-   ![pip3-matplotlib](https://kg.weiyan.cc/2025/02/pip3-matplotlib.png)
+   ![pip3-matplotlib](https://gi.weiyan.tech/2025/02/pip3-matplotlib.png)
    
 
 

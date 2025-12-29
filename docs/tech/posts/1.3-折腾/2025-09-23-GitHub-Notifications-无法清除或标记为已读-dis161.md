@@ -12,7 +12,7 @@ tags: ['github']
 
 GitHub 使用多了，最近总是遇到一些奇奇怪怪的问题。这不，今天又遇到了一个 Notifications 无法清除或标记为已读的神奇问题。
 
-![github-notifications](https://kg.weiyan.cc/2025/09/github-notifications.png)
+![github-notifications](https://gi.weiyan.tech/2025/09/github-notifications.png)
 
 <!-- more -->
 

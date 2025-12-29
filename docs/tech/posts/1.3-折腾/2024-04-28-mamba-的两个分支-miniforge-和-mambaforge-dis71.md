@@ -68,7 +68,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Written by Roland McGrath and Ulrich Drepper.
 ```
 
-![miniforge3-24.5.0-0](https://kg.weiyan.tech/2025/03/miniforge3-24.5.0-0.webp)
+![miniforge3-24.5.0-0](https://gi.weiyan.tech/2025/03/miniforge3-24.5.0-0.webp)
 
 
 <script src="https://giscus.app/client.js"

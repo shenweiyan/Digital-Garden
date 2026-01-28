@@ -88,6 +88,10 @@ updated: 2024-03-21
 
     博客人的朋友圈，将一个个散落在各处的孤岛连接成一片广袤无垠的新大陆！
 
+- ![](https://hongjun.vip/assets/avatar.png) [**极简主义**](https://hongjun.vip/)
+
+    文档即产品。
+
 </div>
 
 <script src="https://giscus.app/client.js"

@@ -62,7 +62,7 @@ template: home.html
 我希望这是我**最后一次**折腾个人的站点（博客），作为从为知笔记、[博客园](https://www.cnblogs.com/shenweiyan/)、蚂蚁笔记、Jekyll、Hexo、Hugo ... 一路过来的人，曾经把太多的时间和精力都花费到 Themes/Html/CSS 的装潢上面了。内容才是一个博客的核心和灵魂所在，踏踏实实回归最简单原始的 Issues 或者 Discussions，于我而言已然足够，而且，博客其实本身就是写给自己看的，SEO 流量、关注度、知名度这些，随缘就好。
 
 <p align="center">
-    <img src="https://kg.weiyan.tech/0000/img/kg-readme-cover.gif" alt='readme-cover' style="border-radius: 2%;"><br>
+    <img src="https://gi.weiyan.tech/0000/img/kg-readme-cover.gif" alt='readme-cover' style="border-radius: 2%;"><br>
 </p>
 
 至于为什么选择 Mkdocs，尤其是 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)，主要基于下面几点考虑：
@@ -78,9 +78,9 @@ template: home.html
 ## 如何搜索
 
 1. 使用点本站自带的搜索（推荐方法）。
-2. 使用 [必应](https://cn.bing.com/)/[谷歌](https://www.google.com/) 进行搜索，如 `关键字(例如：生信) site:weiyan.cc` 。
+2. 使用 [必应](https://cn.bing.com/)/[谷歌](https://www.google.com/) 进行搜索，如 `关键字(例如：生信) site:shenwy.com` 。
 <p align="center">
-    <img style="max-width:600" src="https://kg.weiyan.cc/0000/img/google-weiyan-cc.png" alt="keywords-search"><br>
+    <img style="max-width:600" src="https://gi.weiyan.tech/0000/img/google-shenwy-com.png" alt="keywords-search"><br>
 </p>
 
 ## 致谢

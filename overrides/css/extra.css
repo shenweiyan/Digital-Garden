@@ -12,7 +12,7 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
 .md-typeset h1, .md-typeset h2{font-weight: 700;}
 
 /* Grid background */
-.md-main {
+[data-md-color-scheme="default"] .md-main {
   #background-image: linear-gradient(rgba(50,0,0,0.05) 1px,transparent 0),linear-gradient(90deg,rgba(50,0,0,0.05) 1px,transparent 0);
   #background-size: 15px 15px;
   background-image: url('../assets/paper-pattern-clean.png');

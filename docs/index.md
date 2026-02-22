@@ -24,7 +24,7 @@ template: home.html
 </p-->
 
 
-本知识库基于 [**Material for MkDocs**](https://squidfunk.github.io/mkdocs-material/) 进行部署，有一部分文章来源于个人的 [**语雀知识库**](https://www.yuque.com/shenweiyan)，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
+本知识库基于 [**MaterialX for MkDocs**](https://github.com/jaywhj/mkdocs-materialx) 进行部署，有一部分文章来源于个人的 [**语雀知识库**](https://www.yuque.com/shenweiyan)，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
 
 
 <!--p>以下两个地址都可以访问本站点：     
@@ -86,6 +86,8 @@ template: home.html
 ## 致谢
 
 感谢 [Openbiox](https://openbiox.org/) 的 [《生信爱好者周刊》](https://github.com/openbiox/weekly)，它让我第一次知道并认识了 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)。
+
+感谢 [**MaterialX for MkDocs**](https://github.com/jaywhj/mkdocs-materialx)，为本站点提供了更现代化的 MkDocs 主题。
 
 感谢 [LetTTGACO](https://github.com/LetTTGACO) 提供的 [Elog](https://elog.1874.cool/) 工具，提供了一个可以从语雀到本平台的优雅同步方案。
 

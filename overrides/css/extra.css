@@ -11,6 +11,14 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
 
 .md-typeset h1, .md-typeset h2{font-weight: 700;}
 
+/* Topbar Background Color */
+header.md-header {
+  background-color: #4051b5;
+}
+nav.md-tabs {
+  background-color: #4051b5;
+}  
+
 /* Grid background */
 [data-md-color-scheme="default"] .md-main {
   #background-image: linear-gradient(rgba(50,0,0,0.05) 1px,transparent 0),linear-gradient(90deg,rgba(50,0,0,0.05) 1px,transparent 0);

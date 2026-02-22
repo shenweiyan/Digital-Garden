@@ -1,5 +1,5 @@
 mkdocs
-mkdocs-material
+mkdocs-materialx==10.0.9
 mkdocs-rss-plugin
 mkdocs-document-dates
 mkdocs-glightbox

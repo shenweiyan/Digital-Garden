@@ -16,11 +16,25 @@ site_author: Steven Shum
 copyright: 版权所有
 
 theme:
-  name: material
+  name: materialx
   language: zh
   custom_dir: overrides
   favicon: assets/logo.ico
   logo: assets/octocat.png
+  topbar_style: primary
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
   font:
     text: "'Open Sans', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif"
     code: "Consolas,Courier,courier new,stkaiti,kaiti,simkai,monospace"
@@ -37,19 +51,6 @@ theme:
     - content.action.view
     - content.code.copy
     - navigation.footer
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/theme-light-dark
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/theme-light-dark
-        name: Switch to light mode
     
 markdown_extensions:
     - admonition

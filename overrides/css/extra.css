@@ -12,12 +12,18 @@ a.md-nav__link{display:block; overflow:hidden; text-overflow:ellipsis; white-spa
 .md-typeset h1, .md-typeset h2{font-weight: 700;}
 
 /* Topbar Background Color */
-header.md-header {
+/*header.md-header {
   background-color: #4051b5;
 }
 nav.md-tabs {
   background-color: #4051b5;
-}  
+}*/
+[data-mx-topbar="primary"] {
+  --mx-topbar-bg: var(--md-primary-fg-color);
+}
+[data-mx-topbar="accent"] {
+  --mx-topbar-bg: var(--md-accent-fg-color);
+}
 
 /* Grid background */
 [data-md-color-scheme="default"] .md-main {

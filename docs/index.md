@@ -7,31 +7,7 @@ title: 维燕的数字花园
 template: home.html
 ---
 
-<!--style>
-  @media (min-width: 900px) {
-    main > div > div.md-content {
-      max-width: 75%;
-      margin: auto;
-    }
-  }
-</style-->
-
-<!--center><font  color= #518FC1 size=6 class="ml3">循此苦旅，以达星辰</font></center-->
-<!--script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script-->
-
-<!--p align="center">
-    <img src="https://kg.weiyan.tech/0000/img/kg-readme-cover.gif" alt='readme-cover' style="border-radius: 2%;"><br>
-</p-->
-
-
 本知识库基于 [**MaterialX for MkDocs**](https://github.com/jaywhj/mkdocs-materialx) 进行部署，有一部分文章来源于个人的 [**语雀知识库**](https://www.yuque.com/shenweiyan)，是作者关于生物信息学、互联网 IT、运维开发、软件测评使用等相关文章汇总。
-
-
-<!--p>以下两个地址都可以访问本站点：     
-
-- [weiyan.cc](https://www.weiyan.cc)：基于 [Netlify](https://app.netlify.com/)，国内访问相对快一些；     
-- [gh-pages.weiyan.cc](https://gh-pages.weiyan.cc)：基于 [GitHub Pages](https://pages.github.com/)，国内访问可能有一定延迟。
-</p-->
 
 !!! abstract "希望所有读到此博客文章的读者都有所收获"
 
@@ -65,15 +41,17 @@ template: home.html
     <img src="https://gi.weiyan.tech/0000/img/kg-readme-cover.gif" alt='readme-cover' style="border-radius: 2%;"><br>
 </p>
 
-至于为什么选择 Mkdocs，尤其是 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)，主要基于下面几点考虑：
+至于为什么选择 Mkdocs，尤其是 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)/[MaterialX for MkDocs](https://github.com/jaywhj/mkdocs-materialx)，主要基于下面几点考虑：
 
 1. 这是一个基于 Python 的静态站点生成器，生成专业的技术文档。
 2. 支持 Markdown 语法。
 3. 支持全文搜索。
 4. 丰富插件支持和高度可定制化。
 5. 可以直接托管在 GitHub、Netlify、Cloudflare 等平台。
-6. 认可与赞赏 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 包括 [Insiders](https://squidfunk.github.io/mkdocs-material/insiders/) 在内的一些理念。
+6. 认可与赞赏 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 包括 [Insiders](https://squidfunk.github.io/mkdocs-material/insiders/) 在内的一些理念，虽然 mkdocs-material 在 2025.11 已经转移到了 [Zensical](https://zensical.org/)。
 7. Material for MkDocs 的社区活跃，很多问题在 [Discussions](https://github.com/squidfunk/mkdocs-material/discussions) 都能得到及时友好的解决。
+8. 替代品 [Zensical](https://zensical.org/) 虽好，目前还不完善，至少沿用的插件和博客功能尚未支持。
+9. [MaterialX](https://github.com/jaywhj/mkdocs-materialx) 作为 mkdocs-material 的延续，引入了更多的新特性支持和体验优化。
 
 ## 如何搜索
 
@@ -87,7 +65,7 @@ template: home.html
 
 感谢 [Openbiox](https://openbiox.org/) 的 [《生信爱好者周刊》](https://github.com/openbiox/weekly)，它让我第一次知道并认识了 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)。
 
-感谢 [**MaterialX for MkDocs**](https://github.com/jaywhj/mkdocs-materialx)，为本站点提供了更现代化的 MkDocs 主题。
+感谢 [MaterialX for MkDocs](https://github.com/jaywhj/mkdocs-materialx)，为本站点提供了更现代化的 MkDocs 主题。
 
 感谢 [LetTTGACO](https://github.com/LetTTGACO) 提供的 [Elog](https://elog.1874.cool/) 工具，提供了一个可以从语雀到本平台的优雅同步方案。
 

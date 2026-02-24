@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-      - cron: '0 19 * * *'
+      - cron: '0 10 * * *' # 对应北京时间每天 18:00
 
 jobs:
   build:

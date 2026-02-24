@@ -1,1 +1,4 @@
-
+175c175
+< {'title': '友链测试页面', 'number': 3, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/3', 'createdAt': '2023-10-16T05:03:33Z', 'lastEditedAt': '2025-10-29T07:19:47Z', 'updatedAt': '2025-10-29T07:19:47Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '公告说明'}, 'labels': {'nodes': []}}
+---
+> {'title': '站点主页', 'number': 3, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/3', 'createdAt': '2023-10-16T05:03:33Z', 'lastEditedAt': '2026-02-24T02:32:21Z', 'updatedAt': '2026-02-24T02:33:24Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}

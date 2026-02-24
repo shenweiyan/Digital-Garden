@@ -78,7 +78,12 @@ def __main__():
                          f'\tasync>\n'
                          f'</script>\n')
 
-            if int(discussion_number) == 5:
+            if int(discussion_number) == 3:
+                #站点主页
+                docs_md = Path(outputDir).joinpath('index.md')
+                with open(docs_md, "w") as DMD:
+                    DMD.write(discussion_body)
+            elif int(discussion_number) == 5:
                 #友情链接
                 flinks_md  = Path(outputDir).joinpath('flinks/index.md')
                 flinks_dir = flinks_md.parent
@@ -90,7 +95,6 @@ def __main__():
                                f'date: 2023-07-24\n'
                                f'updated: 2024-03-21\n'
                                f'---\n')
-
                 flinks_contents1, flinks_contents2 = discussion_body.split('<!-- flinks-valid -->')
                 lines = [line.strip() for line in flinks_contents2.split('\n') if line.strip() and not line.startswith('#')]
                 groups = []

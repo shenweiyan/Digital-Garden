@@ -131,15 +131,15 @@ hooks:
       
 extra:
   social:
+    - icon: fontawesome/brands/weixin
+      link: https://gi.weiyan.tech/0000/bioitee/wechat-bioitee.webp
+      name: 关注微信公众号
     - icon: fontawesome/brands/github
       link: https://github.com/shenweiyan
       name: GitHub
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/weiyanshum
-      name: Twitter      
-    - icon: fontawesome/brands/mastodon
-      link: https://genomic.social/@weiyanshum
-      name: Mastodon
+    - icon: fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/shenweiyan
+      name: 知乎      
   analytics:
     provider: custom
     property: foobar

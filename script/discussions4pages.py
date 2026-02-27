@@ -63,6 +63,9 @@ def __main__():
             discussion_category     = discussion['category']['name']
             discussion_labels       = [label['name'] for label in discussion['labels']['nodes']] if discussion['labels']['nodes'] else []
 
+            discussion_created = discussion_createdAt[:10]
+            discussion_updated = discussion_updatedAt[:10]
+
             # 使用 giscus 加载评论
             comments = ( f'\n\n<script src="https://giscus.app/client.js"\n'
                          f'\tdata-repo="shenweiyan/Digital-Garden"\n'
@@ -92,8 +95,8 @@ def __main__():
                 f_metadata = ( f'---\n'
                                f'title: 友情链接\n'
                                f'author: 沈维燕\n'
-                               f'date: 2023-07-24\n'
-                               f'updated: 2024-03-21\n'
+                               f'date: {discussion_created}\n'
+                               f'updated: {discussion_updated}\n'
                                f'---\n')
                 flinks_contents1, flinks_contents2 = discussion_body.split('<!-- flinks-valid -->')
                 lines = [line.strip() for line in flinks_contents2.split('\n') if line.strip() and not line.startswith('#')]
@@ -129,8 +132,8 @@ def __main__():
                 m_metadata = ( f'---\n'
                                f'title: 给作者留言\n'
                                f'author: 沈维燕\n'
-                               f'date: 2023-07-24\n'
-                               f'updated: 2024-03-21\n'
+                               f'date: {discussion_created}\n'
+                               f'updated: {discussion_updated}\n'
                                f'---\n\n')
                 with open(message_md, "w") as MMD:
                     MMD.write(m_metadata)
@@ -146,12 +149,25 @@ def __main__():
                 r_metadata = ( f'---\n'
                                f'title: 作者与站点\n'
                                f'author: 沈维燕\n'
-                               f'date: 2023-07-24\n'
-                               f'updated: 2024-03-21\n'
+                               f'date: {discussion_created}\n'
+                               f'updated: {discussion_updated}\n'
                                f'---\n\n')
                 with open(readme_md, "w") as RMD:
                     RMD.write(r_metadata)
                     RMD.write(discussion_body)
+                    RMD.write(comments)
+            elif int(discussion_number) == 45:
+                #更新记录
+                changelogs_md = Path(outputDir).joinpath('readme/changelogs.md')
+                c_metadata = ( f'---\n'
+                               f'title: 更新记录\n'
+                               f'author: 沈维燕\n'
+                               f'date: {discussion_created}\n'
+                               f'updated: {discussion_updated}\n'
+                               f'---\n\n')
+                with open(changelogs_md, "w") as LogMD:
+                    LogMD.write(c_metadata)
+                    LogMD.write(discussion_body)
                     RMD.write(comments)
             else:
                 continue

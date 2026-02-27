@@ -168,7 +168,7 @@ def __main__():
                 with open(changelogs_md, "w") as LogMD:
                     LogMD.write(c_metadata)
                     LogMD.write(discussion_body)
-                    RMD.write(comments)
+                    LogMD.write(comments)
             else:
                 continue
 

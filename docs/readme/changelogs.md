@@ -19,17 +19,17 @@ updated: 2026-02-27
 - 2025-01-22      
   **Knowledge-Garden** 更名为 **Digital-Garden**。
 
-- 2025-01-21
+- 2025-01-21     
   图片相关静态文件 [gi.weiyan.tech](https://gi.weiyan.tech/) 由原来的 Cloudflare Pages 变更为 EdgeOne Pages；Cloudflare Pages 增加 [gi.weiyan.tech](https://gi.weiyan.tech/) 访问域名。
 
-- 2024-07-16
+- 2024-07-16     
   GitHub Pages 域名由 [doc.weiyan.cc](https://doc.weiyan.cc/) 变更为 [gh-pages.weiyan.cc](https://gh-pages.weiyan.cc/)。
 
-- 2024-01-04   
-  域名 `weiyan.cc` DNS 从 Cloudflare 转回阿里云。        
+- 2024-01-04        
+  域名 `weiyan.cc` DNS 从 Cloudflare 转回阿里云。           
   把站点从 [Cloudflare Pages](https://pages.cloudflare.com/) 转移到 [Netlify](https://app.netlify.com/)，绑定 [www.weiyan.cc](https://www.weiyan.cc/)，实现 [weiyan.cc](https://weiyan.cc/) 重定向到 www 主域名 (Redirects automatically to primary domain)。
 
-- 2023-11-28    
+- 2023-11-28      
   镜像站点（[weiyan.pages.dev](https://weiyan.pages.dev/)）部署到 [Cloudflare Pages](https://pages.cloudflare.com/)，绑定自定义域名 [weiyan.cc](https://weiyan.cc/)。 
 
 - 2023-10-16         

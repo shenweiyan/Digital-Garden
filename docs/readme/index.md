@@ -1,8 +1,8 @@
 ---
 title: 作者与站点
 author: 沈维燕
-date: 2023-07-24
-updated: 2024-03-21
+date: 2023-10-16
+updated: 2026-02-27
 ---
 
 聊一聊关于作者和这个站点的一些事情。
@@ -25,9 +25,9 @@ updated: 2024-03-21
 
 ## 当下
 
-正如个人在[语雀花园](https://www.yuque.com/shenweiyan)所说，2023年7月起个人大部分文章已经转移至 [GitHub](https://github.com/shenweiyan)，并同步至 [Knowledge-Garden](https://github.com/shenweiyan/Digital-Garden/) (后期主要在 [Discussions](https://github.com/shenweiyan/Digital-Garden/discussions) 和 [维燕的数字花园](https://weiyan.cc/) 进行写作与更新)，语雀会保持不定期更新（基本已经停更）！
+正如个人在[语雀花园](https://www.yuque.com/shenweiyan)所说，2023年7月起个人大部分文章已经转移至 [GitHub](https://github.com/shenweiyan)，并同步至 [Digital-Garden](https://github.com/shenweiyan/Digital-Garden/) (后期主要在 [Discussions](https://github.com/shenweiyan/Digital-Garden/discussions) 和 [维燕的数字花园](https://shenwy.com/) 进行写作与更新)，语雀会保持不定期更新（基本已经停更）！
 
-现在的这个站点是基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，并整合了个人 **[语雀知识库](https://www.yuque.com/shenweiyan)** 几个主要知识库文章后形成的独立站点。
+现在的这个站点最开始是基于 [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) 进行部署，后面又经历了[一些变更](https://github.com/shenweiyan/Digital-Garden/discussions/45)，但总体样式始终没有脱离 mkdocs-material 的风格。在内容上整合了个人 **[语雀知识库](https://www.yuque.com/shenweiyan)** 几个主要知识库文章，又拉取了 [Digital-Garden](https://github.com/shenweiyan/Digital-Garden/) 的 discussions 文章，汇总成现在的独立站点。
 
 ## 未来
 

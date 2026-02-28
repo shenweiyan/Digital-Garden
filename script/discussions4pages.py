@@ -94,7 +94,7 @@ def __main__():
                     flinks_dir.mkdir(parents=True, exist_ok=True)
                 f_metadata = ( f'---\n'
                                f'title: 友情链接\n'
-                               f'author: 沈维燕\n'
+                               f'author: [shenweiyan]\n'
                                f'date: {discussion_created}\n'
                                f'updated: {discussion_updated}\n'
                                f'---\n')
@@ -131,7 +131,7 @@ def __main__():
                     message_dir.mkdir(parents=True, exist_ok=True)
                 m_metadata = ( f'---\n'
                                f'title: 给作者留言\n'
-                               f'author: 沈维燕\n'
+                               f'author: [shenweiyan]\n'
                                f'date: {discussion_created}\n'
                                f'updated: {discussion_updated}\n'
                                f'---\n\n')
@@ -148,7 +148,7 @@ def __main__():
                     readme_dir.mkdir(parents=True, exist_ok=True)
                 r_metadata = ( f'---\n'
                                f'title: 作者与站点\n'
-                               f'author: 沈维燕\n'
+                               f'author: [shenweiyan]\n'
                                f'date: {discussion_created}\n'
                                f'updated: {discussion_updated}\n'
                                f'---\n\n')
@@ -161,7 +161,7 @@ def __main__():
                 changelogs_md = Path(outputDir).joinpath('readme/changelogs.md')
                 c_metadata = ( f'---\n'
                                f'title: 更新记录\n'
-                               f'author: 沈维燕\n'
+                               f'author: [shenweiyan]\n'
                                f'date: {discussion_created}\n'
                                f'updated: {discussion_updated}\n'
                                f'---\n\n')

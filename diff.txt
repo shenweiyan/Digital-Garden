@@ -1,4 +1,1 @@
-133c133
-< {'title': '更新记录', 'number': 45, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/45', 'createdAt': '2024-01-04T05:50:47Z', 'lastEditedAt': '2026-02-27T02:55:36Z', 'updatedAt': '2026-02-27T02:55:36Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
----
-> {'title': '更新记录', 'number': 45, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/45', 'createdAt': '2024-01-04T05:50:47Z', 'lastEditedAt': '2026-02-27T03:54:29Z', 'updatedAt': '2026-02-27T03:54:29Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '0.1-站点'}, 'labels': {'nodes': []}}
+

@@ -4,7 +4,8 @@ number: 91
 slug: discussions-91/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/91
 date: 2024-10-23
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 生信
 tags: []

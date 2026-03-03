@@ -4,7 +4,8 @@ number: 69
 slug: discussions-69/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/69
 date: 2024-04-22
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 乱弹
 tags: 

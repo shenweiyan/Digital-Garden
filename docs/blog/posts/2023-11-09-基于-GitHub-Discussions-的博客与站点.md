@@ -4,7 +4,8 @@ number: 15
 slug: discussions-15/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/15
 date: 2023-11-09
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 好玩
 tags: 

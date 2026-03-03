@@ -4,7 +4,8 @@ number: 128
 slug: discussions-128/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/128
 date: 2022-04-30
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 语雀
 tags: 

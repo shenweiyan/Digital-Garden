@@ -4,7 +4,8 @@ number: 61
 slug: discussions-61/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/61
 date: 2024-03-21
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 编程
 tags: ['翻译', '1.2.3-Python']

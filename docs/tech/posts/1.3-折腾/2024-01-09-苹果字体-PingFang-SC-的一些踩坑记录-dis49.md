@@ -4,7 +4,8 @@ number: 49
 slug: discussions-49/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/49
 date: 2024-01-09
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['公众号', '1.3.10-Windows']

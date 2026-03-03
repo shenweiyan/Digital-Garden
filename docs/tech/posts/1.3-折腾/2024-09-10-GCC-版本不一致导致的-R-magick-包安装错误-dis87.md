@@ -4,7 +4,8 @@ number: 87
 slug: discussions-87/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/87
 date: 2024-09-10
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['1.3.6-R']

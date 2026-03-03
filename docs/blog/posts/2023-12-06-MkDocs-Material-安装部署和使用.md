@@ -4,7 +4,8 @@ number: 37
 slug: discussions-37/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/37
 date: 2023-12-06
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 好玩
 tags: 

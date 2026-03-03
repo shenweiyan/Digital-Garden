@@ -4,7 +4,8 @@ number: 42
 slug: discussions-42/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/42
 date: 2023-12-28
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 乱弹
 tags: 

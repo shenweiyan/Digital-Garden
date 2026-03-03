@@ -4,7 +4,8 @@ number: 24
 slug: discussions-24/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/24
 date: 2023-11-27
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['1.3.22-虚拟环境']

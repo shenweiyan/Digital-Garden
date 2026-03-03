@@ -4,7 +4,8 @@ number: 79
 slug: discussions-79/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/79
 date: 2024-07-03
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 编程
 tags: ['python']

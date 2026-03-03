@@ -4,7 +4,8 @@ number: 156
 slug: discussions-156/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/156
 date: 2025-07-15
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 人工智能
 tags: ['1.3.26-人工智能', 'dify', 'ollama']

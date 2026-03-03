@@ -4,7 +4,8 @@ number: 65
 slug: discussions-65/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/65
 date: 2024-04-11
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 乱弹
 tags: 

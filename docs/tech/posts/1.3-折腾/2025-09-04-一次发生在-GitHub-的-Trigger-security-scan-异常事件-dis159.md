@@ -4,7 +4,8 @@ number: 159
 slug: discussions-159/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/159
 date: 2025-09-04
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['github']

@@ -4,7 +4,8 @@ number: 57
 slug: discussions-57/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/57
 date: 2024-02-04
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 3.1-Galaxy
 labels: ['3.1.x-GalaxyOther']

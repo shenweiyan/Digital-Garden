@@ -4,7 +4,8 @@ number: 60
 slug: discussions-60/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/60
 date: 2024-03-08
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['1.3.17-服务器配置使用', 'Rocky Linux']

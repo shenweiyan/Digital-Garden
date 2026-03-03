@@ -4,7 +4,8 @@ number: 7
 slug: discussions-7/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/7
 date: 2023-10-19
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 乱弹
 tags: 

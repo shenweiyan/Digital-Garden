@@ -4,7 +4,8 @@ number: 20
 slug: discussions-20/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/20
 date: 2023-11-23
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 知识
 tags: 

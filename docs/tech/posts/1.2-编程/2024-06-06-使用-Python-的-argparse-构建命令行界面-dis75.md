@@ -4,7 +4,8 @@ number: 75
 slug: discussions-75/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/75
 date: 2024-06-06
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 编程
 tags: ['1.2.3-Python']

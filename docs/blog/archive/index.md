@@ -74,7 +74,7 @@ vssue: ""
         - 2024-01-23 [Mkdocs material 使用自定义 slug 和 url](../posts/2024-01-23-Mkdocs-material-使用自定义-slug-和-url.md) 
         - 2024-01-19 [Mkdocs material 对指定页面隐藏 H1 标题](../posts/2024-01-19-Mkdocs-material-对指定页面隐藏-H1-标题.md) 
         - 2024-01-18 [MkDocs Material  的一些使用与问题汇总](../posts/2024-01-18-MkDocs-Material-的一些使用与问题汇总.md) 
-        - 2024-01-11 [MkDocs 主题 awesome-pages 使用](../posts/2024-01-11-MkDocs-主题-awesome-pages-使用.md) 
+        - 2024-01-11 [MkDocs 插件 awesome-pages 使用](../posts/2024-01-11-MkDocs-插件-awesome-pages-使用.md) 
         - 2024-01-10 [2023 年年终总结](../posts/2024-01-10-2023-年年终总结.md) 
     === "2023"
         - 2023-12-28 [基于 Matrix 协议的 Elements 通讯加密应用](../posts/2023-12-28-基于-Matrix-协议的-Elements-通讯加密应用.md) 

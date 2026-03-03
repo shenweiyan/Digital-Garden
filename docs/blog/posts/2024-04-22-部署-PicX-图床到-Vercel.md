@@ -4,7 +4,8 @@ number: 68
 slug: discussions-68/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/68
 date: 2024-04-22
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 好玩
 tags: 

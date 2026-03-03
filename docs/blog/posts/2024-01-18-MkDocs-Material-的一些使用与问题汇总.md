@@ -4,7 +4,8 @@ number: 52
 slug: discussions-52/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/52
 date: 2024-01-18
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 好玩
 tags: 

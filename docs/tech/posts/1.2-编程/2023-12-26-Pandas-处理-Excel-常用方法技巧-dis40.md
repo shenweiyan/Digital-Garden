@@ -4,7 +4,8 @@ number: 40
 slug: discussions-40/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/40
 date: 2023-12-26
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 编程
 tags: ['1.2.3-Python']

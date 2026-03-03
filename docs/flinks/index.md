@@ -1,6 +1,6 @@
 ---
 title: 友情链接
-author: 沈维燕
+author: [shenweiyan]
 date: 2023-10-16
 updated: 2026-01-28
 ---

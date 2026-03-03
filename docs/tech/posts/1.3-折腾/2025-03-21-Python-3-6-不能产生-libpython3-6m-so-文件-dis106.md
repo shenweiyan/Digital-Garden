@@ -4,7 +4,8 @@ number: 106
 slug: discussions-106/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/106
 date: 2025-03-21
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['1.3.5-Python']

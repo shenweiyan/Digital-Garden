@@ -4,7 +4,8 @@ number: 93
 slug: discussions-93/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/93
 date: 2024-11-06
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['1.3.18-版本控制']

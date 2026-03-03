@@ -4,7 +4,8 @@ number: 161
 slug: discussions-161/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/161
 date: 2025-09-23
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['github']

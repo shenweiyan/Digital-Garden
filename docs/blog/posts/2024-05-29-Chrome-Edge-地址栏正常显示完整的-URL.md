@@ -4,7 +4,8 @@ number: 74
 slug: discussions-74/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/74
 date: 2024-05-29
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 好玩
 tags: 

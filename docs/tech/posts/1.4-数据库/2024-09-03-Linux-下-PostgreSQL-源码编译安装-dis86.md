@@ -4,7 +4,8 @@ number: 86
 slug: discussions-86/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/86
 date: 2024-09-03
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 数据库
 tags: ['1.4.1-PostgreSQL']

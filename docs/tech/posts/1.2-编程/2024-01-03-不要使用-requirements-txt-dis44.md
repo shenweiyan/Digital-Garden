@@ -4,7 +4,8 @@ number: 44
 slug: discussions-44/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/44
 date: 2024-01-03
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 编程
 tags: ['翻译', '1.2.3-Python']

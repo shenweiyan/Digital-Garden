@@ -4,7 +4,8 @@ number: 36
 slug: discussions-36/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/36
 date: 2023-12-06
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 好玩
 tags: 

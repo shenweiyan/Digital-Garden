@@ -4,7 +4,8 @@ number: 46
 slug: discussions-46/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/46
 date: 2024-01-05
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 3.1-Galaxy
 labels: ['公众号', '3.1.x-GalaxyOther']

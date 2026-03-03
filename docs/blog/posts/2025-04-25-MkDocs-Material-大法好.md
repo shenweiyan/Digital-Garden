@@ -4,7 +4,8 @@ number: 110
 slug: discussions-110/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/110
 date: 2025-04-25
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 好玩
 tags: 

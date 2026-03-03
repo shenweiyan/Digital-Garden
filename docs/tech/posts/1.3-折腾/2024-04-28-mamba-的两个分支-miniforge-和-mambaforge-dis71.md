@@ -4,7 +4,8 @@ number: 71
 slug: discussions-71/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/71
 date: 2024-04-28
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['1.3.22-虚拟环境']

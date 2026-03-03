@@ -4,7 +4,8 @@ number: 10
 slug: discussions-10/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/10
 date: 2023-10-23
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['语雀', '1.3.25-静态网站']

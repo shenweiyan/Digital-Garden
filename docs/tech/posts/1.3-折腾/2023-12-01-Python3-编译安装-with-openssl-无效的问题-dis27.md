@@ -4,7 +4,8 @@ number: 27
 slug: discussions-27/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/27
 date: 2023-12-01
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 折腾
 tags: ['1.3.5-Python']

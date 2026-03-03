@@ -1,6 +1,6 @@
 ---
 title: 作者与站点
-author: 沈维燕
+author: [shenweiyan]
 date: 2023-10-16
 updated: 2026-02-27
 ---

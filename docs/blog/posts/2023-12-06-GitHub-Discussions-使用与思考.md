@@ -4,7 +4,8 @@ number: 38
 slug: discussions-38/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/38
 date: 2023-12-06
-authors: [shenweiyan]
+authors: 
+  - shenweiyan
 categories: 
   - 乱弹
 tags: 

@@ -12074,6 +12074,66 @@ var _hmt = _hmt || [];
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-03-03 00:00:00+00:00">2026年3月3日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 3 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="用-docker-来解决-lineardesign-的-glibc-版本过低问题"><a class="toclink" href="discussions-179/">用 Docker 来解决 LinearDesign 的 GLIBC 版本过低问题</a></h2>
+<h3 id="lineardesign-介绍"><a class="toclink" href="discussions-179/#lineardesign-介绍">LinearDesign 介绍</a></h3>
+<p>LinearDesign 是一款用于优化 mRNA 设计的软件，旨在提高 mRNA 的稳定性和免疫原性。该项目由 He Zhang、Liang Zhang、Ang Lin 等研究人员开发，并已在 Nature杂志上发表相关研究成果。LinearDesign 通过算法优化 mRNA 序列，使其在保持高翻译效率的同时，具有更好的结构稳定性。</p>
+<p>GitHub 地址：<a href="https://github.com/LinearDesignSoftware/LinearDesign">https://github.com/LinearDesignSoftware/LinearDesign</a></p>
+<h3 id="项目快速启动"><a class="toclink" href="discussions-179/#项目快速启动">项目快速启动</a></h3>
+<p>确保你的系统满足以下依赖要求：
+- Clang 11.0.0 或更高版本，或 GCC 4.8.5 或更高版本
+- Python 2.7
+- GLIBC≥2.29</p>
+<blockquote>
+<p>glibc (GNU C Library) 是 GNU 发布的 C 标准运行库，是 Linux 系统中最底层、最核心的 API，几乎所有应用软件都依赖它。它主要负责封装 Linux 内核系统调用，并提供内存管理、字符串操作、文件操作等标准函数。</p>
+</blockquote>
+<p>在 Ubuntu 18.04.6 LTS 中，GLIBC 最高只有 2.27，在不升级系统更新 GLIBC 风险太大，因此可以考虑用 Docker 的方式来解决 LinearDesign 的 GLIBC 版本过低问题。</p>
+
+    
+      <nav class="md-post__action">
+        <a href="discussions-179/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-12-12 00:00:00+00:00">2025年12月12日</time></li>
         
           <li class="md-meta__item">
@@ -12504,67 +12564,6 @@ var _hmt = _hmt || [];
     
       <nav class="md-post__action">
         <a href="discussions-101/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-02-14 00:00:00+00:00">2025年2月14日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 3 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="r-语言中的-libpng-版本冲突"><a class="toclink" href="discussions-98/">R 语言中的 libpng 版本冲突</a></h2>
-<p>事情起因是在 R 语言中调用 <code>png</code> 包的 <code>readPNG</code> 读取 png 图片的时候，碰到了错误：<strong>libpng error: Incompatible libpng version in application and library</strong>。</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">library</span><span class="p">(</span><span class="n">png</span><span class="p">)</span>
-<span class="o">&gt;</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span>
-<span class="n">Error</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
-<span class="w">  </span><span class="n">libpng</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Incompatible</span><span class="w"> </span><span class="n">libpng</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">library</span>
-<span class="n">In</span><span class="w"> </span><span class="n">addition</span><span class="o">:</span><span class="w"> </span><span class="n">Warning</span><span class="w"> </span><span class="n">messages</span><span class="o">:</span>
-<span class="m">1</span><span class="o">:</span><span class="w"> </span><span class="n">In</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
-<span class="w">  </span><span class="n">libpng</span><span class="w"> </span><span class="n">warning</span><span class="o">:</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">compiled</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">png.h</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">libpng</span><span class="m">-1.6</span><span class="n">.</span><span class="m">37</span>
-<span class="m">2</span><span class="o">:</span><span class="w"> </span><span class="n">In</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
-<span class="w">  </span><span class="n">libpng</span><span class="w"> </span><span class="n">warning</span><span class="o">:</span><span class="w"> </span><span class="n">Application</span><span class="w">  </span><span class="n">is</span><span class="w">  </span><span class="n">running</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">png.c</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">libpng</span><span class="m">-1.2</span><span class="n">.</span><span class="m">49</span>
-<span class="o">&gt;</span><span class="w"> </span>
-</code></pre></div>
-<p>这个问题，其实在 《<a href="https://weiyan.cc/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-15-r-ramigo/">RamiGO 安装及库依赖解决备忘</a>》曾经遇到过，当时的解决方法，在现在看起来其实是并不完善的。所以，在问题解决前，我们先来看看这个问题到底是怎么导致的。</p>
-
-    
-      <nav class="md-post__action">
-        <a href="discussions-98/">
           继续阅读
         </a>
       </nav>

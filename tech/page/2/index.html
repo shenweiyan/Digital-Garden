@@ -12039,6 +12039,67 @@ var _hmt = _hmt || [];
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-02-14 00:00:00+00:00">2025年2月14日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="../../category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 3 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="r-语言中的-libpng-版本冲突"><a class="toclink" href="../../discussions-98/">R 语言中的 libpng 版本冲突</a></h2>
+<p>事情起因是在 R 语言中调用 <code>png</code> 包的 <code>readPNG</code> 读取 png 图片的时候，碰到了错误：<strong>libpng error: Incompatible libpng version in application and library</strong>。</p>
+<div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">library</span><span class="p">(</span><span class="n">png</span><span class="p">)</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="n">p1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span>
+<span class="n">Error</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">  </span><span class="n">libpng</span><span class="w"> </span><span class="n">error</span><span class="o">:</span><span class="w"> </span><span class="n">Incompatible</span><span class="w"> </span><span class="n">libpng</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="n">application</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">library</span>
+<span class="n">In</span><span class="w"> </span><span class="n">addition</span><span class="o">:</span><span class="w"> </span><span class="n">Warning</span><span class="w"> </span><span class="n">messages</span><span class="o">:</span>
+<span class="m">1</span><span class="o">:</span><span class="w"> </span><span class="n">In</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">  </span><span class="n">libpng</span><span class="w"> </span><span class="n">warning</span><span class="o">:</span><span class="w"> </span><span class="n">Application</span><span class="w"> </span><span class="n">was</span><span class="w"> </span><span class="n">compiled</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">png.h</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">libpng</span><span class="m">-1.6</span><span class="n">.</span><span class="m">37</span>
+<span class="m">2</span><span class="o">:</span><span class="w"> </span><span class="n">In</span><span class="w"> </span><span class="nf">readPNG</span><span class="p">(</span><span class="s">"/bioinfo/polyA/circos.png"</span><span class="p">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">  </span><span class="n">libpng</span><span class="w"> </span><span class="n">warning</span><span class="o">:</span><span class="w"> </span><span class="n">Application</span><span class="w">  </span><span class="n">is</span><span class="w">  </span><span class="n">running</span><span class="w"> </span><span class="n">with</span><span class="w"> </span><span class="n">png.c</span><span class="w"> </span><span class="n">from</span><span class="w"> </span><span class="n">libpng</span><span class="m">-1.2</span><span class="n">.</span><span class="m">49</span>
+<span class="o">&gt;</span><span class="w"> </span>
+</code></pre></div>
+<p>这个问题，其实在 《<a href="https://weiyan.cc/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/R/2019-07-15-r-ramigo/">RamiGO 安装及库依赖解决备忘</a>》曾经遇到过，当时的解决方法，在现在看起来其实是并不完善的。所以，在问题解决前，我们先来看看这个问题到底是怎么导致的。</p>
+
+    
+      <nav class="md-post__action">
+        <a href="../../discussions-98/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-02-12 00:00:00+00:00">2025年2月12日</time></li>
         
           <li class="md-meta__item">
@@ -12474,57 +12535,6 @@ var _hmt = _hmt || [];
     
       <nav class="md-post__action">
         <a href="../../discussions-71/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2024-03-21 00:00:00+00:00">2024年3月21日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="../../category/%E7%BC%96%E7%A8%8B/" class="md-meta__link">编程</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 2 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="python-里面没-if-也能用-else"><a class="toclink" href="../../discussions-61/">Python 里面没 if 也能用 else</a></h2>
-<blockquote>
-<p>这是来自于 <a href="https://twitter.com/YangZhou1993">Yang Zhou</a> 发表在 <a href="https://medium.com/techtofreedom/beyond-if-else-leveraging-pythons-versatile-else-statements-9ac260dac102">Medium</a> 的一篇文章 《<a href="https://medium.com/techtofreedom/beyond-if-else-leveraging-pythons-versatile-else-statements-9ac260dac102">Beyond If-Else: Leveraging Python’s Versatile “Else” Statements</a>》，作者觉得挺有意思的，拿过来简单翻译了一下在这里分享给大家。</p>
-</blockquote>
-
-    
-      <nav class="md-post__action">
-        <a href="../../discussions-61/">
           继续阅读
         </a>
       </nav>

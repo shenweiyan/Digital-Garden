@@ -1,5 +1,5 @@
 ---
-title: MkDocs 插件 awesome-pages 使用
+title: MkDocs 的 Nav 导航结构与目录自定义调整插件使用
 number: 51
 slug: discussions-51/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/51

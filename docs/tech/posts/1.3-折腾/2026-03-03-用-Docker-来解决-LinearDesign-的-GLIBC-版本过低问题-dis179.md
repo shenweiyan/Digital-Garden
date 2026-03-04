@@ -20,9 +20,9 @@ GitHub 地址：<https://github.com/LinearDesignSoftware/LinearDesign>
 ## 项目快速启动 
 
 确保你的系统满足以下依赖要求：
-- Clang 11.0.0 或更高版本，或 GCC 4.8.5 或更高版本
-- Python 2.7
-- GLIBC≥2.29
+- Clang 11.0.0 或更高版本，或 GCC 4.8.5 或更高版本         
+- Python 2.7          
+- GLIBC≥2.29          
 
 > glibc (GNU C Library) 是 GNU 发布的 C 标准运行库，是 Linux 系统中最底层、最核心的 API，几乎所有应用软件都依赖它。它主要负责封装 Linux 内核系统调用，并提供内存管理、字符串操作、文件操作等标准函数。
 

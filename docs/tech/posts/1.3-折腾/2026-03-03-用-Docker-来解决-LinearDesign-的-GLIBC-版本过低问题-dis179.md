@@ -19,8 +19,8 @@ GitHub 地址：<https://github.com/LinearDesignSoftware/LinearDesign>
 
 ## 项目快速启动 
 
-确保你的系统满足以下依赖要求：
-- Clang 11.0.0 或更高版本，或 GCC 4.8.5 或更高版本         
+确保你的系统满足以下依赖要求：       
+- Clang 11.0.0 或更高版本，或 GCC 4.8.5 或更高版本               
 - Python 2.7          
 - GLIBC≥2.29          
 

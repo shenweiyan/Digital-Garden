@@ -6,9 +6,7 @@ date: 2021-02-20
 updated: 2026-03-10
 ---
 
-R 语言中，不管是安装包，还是下载数据，很多时候都会用到 **`download.file`** 这个函数。如果你在安装包或者下载数据过程中出现中断，或者异常，想要判断是远程源服务器的问题，还是自身服务器的问题，还是网络故障，甚至于你想要换一种方法去继续你的下载，了解一下 `download.file` 还是很有帮助的。
-
-[download.file: Download File from the Internet](https://rdrr.io/r/utils/download.file.html)
+R 语言中，不管是安装包，还是下载数据，很多时候都会用到 **`download.file`** 这个函数。如果你在安装包或者下载数据过程中出现中断，或者异常，想要判断是远程源服务器的问题，还是自身服务器的问题，还是网络故障，甚至于你想要换一种方法去继续你的下载，了解一下 [`download.file`](https://rdrr.io/r/utils/download.file.html) 还是很有帮助的。
 
 上面的链接是关于 **`download.file`** 函数非常详细的一个文档，个人非常关注就是它关于 **`method`** 参数设置和理解。
 
@@ -18,6 +16,8 @@ R 语言中，不管是安装包，还是下载数据，很多时候都会用到
 > - On Windows the `"wininet"` method is used apart from for ftps\:// URLs where `"libcurl"` is tried. The `"wininet"` method uses the WinINet functions (part of the OS).
 >
 > Support for method `"libcurl"` is optional on Windows: use `capabilities("libcurl")` to see if it is supported on your build. It uses an external library of that name (<https://curl.se/libcurl/>) against which R can be compiled.
+
+<!-- more -->
 
 **关于 `download.file` 的几点理解和值得注意的地方：**
 

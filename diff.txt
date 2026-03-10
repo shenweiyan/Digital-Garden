@@ -1,2 +1,4 @@
-0a1
-> {'title': 'Bioconductor 西湖大学镜像软件包无法下载', 'number': 180, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/180', 'createdAt': '2026-03-10T06:22:07Z', 'lastEditedAt': None, 'updatedAt': '2026-03-10T06:22:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.6-R'}, {'name': 'Bioconductor'}]}}
+1c1
+< {'title': 'Bioconductor 西湖大学镜像软件包无法下载', 'number': 180, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/180', 'createdAt': '2026-03-10T06:22:07Z', 'lastEditedAt': None, 'updatedAt': '2026-03-10T06:22:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.6-R'}, {'name': 'Bioconductor'}]}}
+---
+> {'title': 'Bioconductor 西湖大学镜像无法下载安装 R 包', 'number': 180, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/180', 'createdAt': '2026-03-10T06:22:07Z', 'lastEditedAt': '2026-03-10T08:58:49Z', 'updatedAt': '2026-03-10T08:58:49Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.3-折腾'}, 'labels': {'nodes': [{'name': '1.3.6-R'}, {'name': 'Bioconductor'}]}}

@@ -12053,6 +12053,75 @@ var _hmt = _hmt || [];
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-03-10 00:00:00+00:00">2026年3月10日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="./" class="md-meta__link">折腾</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 3 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="bioconductor-西湖大学镜像软件包无法下载"><a class="toclink" href="../../discussions-180/">Bioconductor 西湖大学镜像软件包无法下载</a></h2>
+<p><a href="https://www.bioconductor.org/"><strong>Bioconductor</strong></a> 为高通量基因组数据的分析和可视化提供开源工具。Bioconductor 多数软件包采用 R 统计编程语言开发。Bioconductor 每年释出两个版本，并有活跃的用户社区。</p>
+<h3 id="版本说明"><a class="toclink" href="../../discussions-180/#版本说明">版本说明</a></h3>
+<p>由于 Bioconductor 的 rsync 上游会自行删除非最新的版本，大部分镜像站仅提供 Bioconductor 的当前最新版本和开发版本，只有少量镜像站点会保留过时的版本。目前已知<a href="https://mirrors.westlake.edu.cn/">西湖大学镜像站</a>提供了历史版本的镜像。</p>
+<p>详细讨论参见 <a href="https://github.com/tuna/issues/issues/1969">tuna/issues#1969</a>。</p>
+<h3 id="问题"><a class="toclink" href="../../discussions-180/#问题">问题</a></h3>
+<p>先看一下问题，在 R 里面直接配置配置西湖大学的 bioconductor 镜像站，执行 <code>BiocManager::install</code> 包安装提示 “cannot open URL”。
+</p><div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">options</span><span class="p">(</span><span class="n">BioC_mirror</span><span class="o">=</span><span class="s">"https://mirrors.westlake.edu.cn/bioconductor"</span><span class="p">)</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="n">BiocManager</span><span class="o">::</span><span class="nf">install</span><span class="p">(</span><span class="s">"ChAMP"</span><span class="p">)</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">bioc</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/bioc/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">annotation</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/data/annotation/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">experiment</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/data/experiment/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">workflows</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/workflows/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">books</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/books/src/contrib/PACKAGES'</span>
+<span class="n">Bioconductor</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="m">3.18</span><span class="w"> </span><span class="p">(</span><span class="n">BiocManager</span><span class="w"> </span><span class="m">1.30</span><span class="n">.</span><span class="m">22</span><span class="p">),</span><span class="w"> </span><span class="n">R</span><span class="w"> </span><span class="m">4.3</span><span class="n">.</span><span class="m">0</span><span class="w"> </span><span class="p">(</span><span class="m">2023-04-21</span><span class="p">)</span>
+<span class="n">Installing</span><span class="w"> </span><span class="nf">package</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="s">'ChAMP'</span>
+</code></pre></div><p></p>
+
+    
+      <nav class="md-post__action">
+        <a href="../../discussions-180/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2026-03-03 00:00:00+00:00">2026年3月3日</time></li>
         
           <li class="md-meta__item">
@@ -12505,55 +12574,6 @@ var _hmt = _hmt || [];
     
       <nav class="md-post__action">
         <a href="../../discussions-98/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-02-12 00:00:00+00:00">2025年2月12日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="./" class="md-meta__link">折腾</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 5 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="python-包-matplotlib-安装的一些问题"><a class="toclink" href="../../discussions-97/">Python 包 matplotlib 安装的一些问题</a></h2>
-<p>Python 的 matplotlib 在安装的过程中一直无法解决 freetype2 自动下载的问题，导致始终安装不成功。</p>
-
-    
-      <nav class="md-post__action">
-        <a href="../../discussions-97/">
           继续阅读
         </a>
       </nav>

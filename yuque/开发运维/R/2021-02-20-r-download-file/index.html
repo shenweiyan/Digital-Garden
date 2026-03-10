@@ -12150,8 +12150,7 @@ var _hmt = _hmt || [];
   <h1>R 语言 download.file 的几点知识</h1>
 
 <div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content="" data-tippy-raw="2021-02-20"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-02-20T00:00:00">2021-02-20</time></span><span class="dd-item" data-tippy-content="" data-tippy-raw="2026-03-10"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2026-03-10T00:00:00">2026-03-10</time></span></div></div></div>
-<p>R 语言中，不管是安装包，还是下载数据，很多时候都会用到 <strong><code>download.file</code></strong> 这个函数。如果你在安装包或者下载数据过程中出现中断，或者异常，想要判断是远程源服务器的问题，还是自身服务器的问题，还是网络故障，甚至于你想要换一种方法去继续你的下载，了解一下 <code>download.file</code> 还是很有帮助的。</p>
-<p><a href="https://rdrr.io/r/utils/download.file.html">download.file: Download File from the Internet</a></p>
+<p>R 语言中，不管是安装包，还是下载数据，很多时候都会用到 <strong><code>download.file</code></strong> 这个函数。如果你在安装包或者下载数据过程中出现中断，或者异常，想要判断是远程源服务器的问题，还是自身服务器的问题，还是网络故障，甚至于你想要换一种方法去继续你的下载，了解一下 <a href="https://rdrr.io/r/utils/download.file.html"><code>download.file</code></a> 还是很有帮助的。</p>
 <p>上面的链接是关于 <strong><code>download.file</code></strong> 函数非常详细的一个文档，个人非常关注就是它关于 <strong><code>method</code></strong> 参数设置和理解。</p>
 <blockquote>
 <p>If <code>method = "auto"</code> is chosen (the default), the behavior depends on the platform:</p>
@@ -12161,6 +12160,8 @@ var _hmt = _hmt || [];
 </ul>
 <p>Support for method <code>"libcurl"</code> is optional on Windows: use <code>capabilities("libcurl")</code> to see if it is supported on your build. It uses an external library of that name (<a href="https://curl.se/libcurl/">https://curl.se/libcurl/</a>) against which R can be compiled.</p>
 </blockquote>
+<!-- more -->
+
 <p><strong>关于 <code>download.file</code> 的几点理解和值得注意的地方：</strong></p>
 <ul>
 <li>

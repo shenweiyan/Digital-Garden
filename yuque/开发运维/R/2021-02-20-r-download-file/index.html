@@ -12149,10 +12149,10 @@ var _hmt = _hmt || [];
 
   <h1>R 语言 download.file 的几点知识</h1>
 
-<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content="" data-tippy-raw="2021-02-20"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-02-20T00:00:00">2021-02-20</time></span><span class="dd-item" data-tippy-content="" data-tippy-raw="2021-12-07"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2021-12-07T10:22:00">2021-12-07</time></span></div></div></div>
-<p>R 语言中，不管是安装包，还是下载数据，很多时候都会用到 download.file 这个函数。如果你在安装包或者下载数据过程中出现中断，或者异常，想要判断是远程源服务器的问题，还是自身服务器的问题，还是网络故障，甚至于你想要换一种方法去继续你的下载，了解一下 download.file 还是很有帮助的。</p>
+<div class="document-dates-plugin-wrapper document-dates-top"><div class="document-dates-plugin" locale=""><div class="dd-left"><span class="dd-item" data-tippy-content="" data-tippy-raw="2021-02-20"><span class="material-icons" data-icon="doc_created"></span><time datetime="2021-02-20T00:00:00">2021-02-20</time></span><span class="dd-item" data-tippy-content="" data-tippy-raw="2026-03-10"><span class="material-icons" data-icon="doc_updated"></span><time datetime="2026-03-10T00:00:00">2026-03-10</time></span></div></div></div>
+<p>R 语言中，不管是安装包，还是下载数据，很多时候都会用到 <strong><code>download.file</code></strong> 这个函数。如果你在安装包或者下载数据过程中出现中断，或者异常，想要判断是远程源服务器的问题，还是自身服务器的问题，还是网络故障，甚至于你想要换一种方法去继续你的下载，了解一下 <code>download.file</code> 还是很有帮助的。</p>
 <p><a href="https://rdrr.io/r/utils/download.file.html">download.file: Download File from the Internet</a></p>
-<p>上面的链接是关于 <strong>download.file</strong> 函数非常详细的一个文档，个人非常关注就是它关于 **method **参数设置和理解。</p>
+<p>上面的链接是关于 <strong><code>download.file</code></strong> 函数非常详细的一个文档，个人非常关注就是它关于 <strong><code>method</code></strong> 参数设置和理解。</p>
 <blockquote>
 <p>If <code>method = "auto"</code> is chosen (the default), the behavior depends on the platform:</p>
 <ul>
@@ -12161,16 +12161,16 @@ var _hmt = _hmt || [];
 </ul>
 <p>Support for method <code>"libcurl"</code> is optional on Windows: use <code>capabilities("libcurl")</code> to see if it is supported on your build. It uses an external library of that name (<a href="https://curl.se/libcurl/">https://curl.se/libcurl/</a>) against which R can be compiled.</p>
 </blockquote>
-<p><strong>关于 download.file 的几点理解和值得注意的地方：</strong></p>
+<p><strong>关于 <code>download.file</code> 的几点理解和值得注意的地方：</strong></p>
 <ul>
 <li>
-<p><strong>download.file</strong> 是来源于 R 自带的 <code>utils</code>&nbsp; 包的一个函数，使用 <code>packageVersion("utils")</code> 可以查看该包的版本。</p>
+<p><code>download.file</code> 是来源于 R 自带的 <code>utils</code>&nbsp;包的一个函数，使用 <code>packageVersion("utils")</code> 可以查看该包的版本。</p>
 </li>
 <li>
-<p>在类 Unix 系统中，默认使用 <code>"libcurl"</code> 的方法，而对 file:// 的链接会使用 <code>"internal"</code> 的下载方法。</p>
+<p>在类 Unix 系统中，默认使用 <code>libcurl</code> 的方法，而对 <code>file://</code> 的链接会使用 <code>"internal"</code> 的下载方法。</p>
 </li>
 <li>
-<p>在 windows 中，默认使用 <code>"wininet"</code> 的方法，对于 ftps\:// 的资源会尝试使用 <code>"libcurl"</code> 的下载方法。</p>
+<p>在 windows 中，默认使用 <code>wininet</code> 的方法，对于 <code>ftps\://</code> 的资源会尝试使用 <code>"libcurl"</code> 的下载方法。</p>
 </li>
 <li>
 <p>Method to be used for downloading files. Current download methods are&nbsp; <code>"internal"</code>，&nbsp;<code>"wininet"</code>&nbsp;(Windows only)&nbsp;<code>"libcurl"</code>,&nbsp;<code>"wget"</code>&nbsp;and&nbsp;<code>"curl"</code>, and there is a value&nbsp;<code>"auto"</code> .</p>
@@ -12181,21 +12181,21 @@ var _hmt = _hmt || [];
 <li>
 <p><strong>相同点：</strong></p>
 <ul>
-<li>curl 和 libcurl 都可以利用多种多样的协议来传输文件，包括 HTTP, HTTPS, FTP, FTPS, GOPHER, LDAP, DICT, TELNET and FILE 等。</li>
+<li><code>curl</code> 和 <code>libcurl</code> 都可以利用多种多样的协议来传输文件，包括 HTTP, HTTPS, FTP, FTPS, GOPHER, LDAP, DICT, TELNET and FILE 等。</li>
 </ul>
 </li>
 <li>
 <p><strong>不同点</strong></p>
 <ul>
-<li>curl 是命令行工具，可以通过 shell 或脚本来运行 curl。curl 底层所使用的库是 libcurl。</li>
-<li>libcurl 是一个库，通常与别的程序绑定在一起使用，如命令行工具 curl 就是封装了 libcurl 库。所以我们也可以在你自己的程序或项目中使用 libcurl 以获得类似 CURL 的强大功能。</li>
+<li><code>curl</code> 是命令行工具，可以通过 shell 或脚本来运行 <code>curl</code>。<code>curl</code> 底层所使用的库是 <code>libcurl</code>。</li>
+<li><code>libcurl</code> 是一个库，通常与别的程序绑定在一起使用，如命令行工具 <code>curl</code> 就是封装了 <code>libcurl</code> 库。所以我们也可以在你自己的程序或项目中使用 <code>libcurl</code> 以获得类似 CURL 的强大功能。</li>
 </ul>
 </li>
 <li>
-<p>The method can also be set through the option&nbsp;<code>"download.file.method"</code>: see&nbsp;<code>options()</code>.</p>
+<p>The method can also be set through the option&nbsp;<code>"download.file.method"</code>: see&nbsp;<a href="https://search.r-project.org/R/refmans/base/html/options.html"><code>options()</code></a>.</p>
 </li>
 <li>
-<p>可以使用 **options(download.file.method = “libcurl”) **的方式指定全局下载的方法。</p>
+<p>可以使用 <strong><code>options(download.file.method = "libcurl")</code></strong> 的方式指定全局下载的方法。</p>
 </li>
 <li>参考：<a href="https://stackoverflow.com/a/63104633">https://stackoverflow.com/a/63104633</a></li>
 </ul>
@@ -12214,7 +12214,7 @@ var _hmt = _hmt || [];
 </code></pre></div>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpMVz5NAdqvK7DdK8zMMIkKZIbhd.png" data-desc-position="bottom"><img alt="image.png" src="https://shub.weiyan.tech/yuque/elog-cookbook-img/FpMVz5NAdqvK7DdK8zMMIkKZIbhd.png"></a></p>
 <ul>
-<li>使用 curl 方法时，通常需要加上 -L 参数。这时候 R 会自动调用系统的 curl 命令在后台执行对应包的下载。</li>
+<li>使用 <code>curl</code> 方法时，通常需要加上 <code>-L</code> 参数。这时候 R 会自动调用系统的 <code>curl</code> 命令在后台执行对应包的下载。</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="c1"># For method "curl" use argument extra = "-L".</span>
 <span class="nf">options</span><span class="p">(</span><span class="n">download.file.method</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"curl"</span><span class="p">,</span><span class="w"> </span><span class="n">extra</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"-L"</span><span class="p">)</span>

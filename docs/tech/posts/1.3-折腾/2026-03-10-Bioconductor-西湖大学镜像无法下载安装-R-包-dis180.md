@@ -1,5 +1,5 @@
 ---
-title: Bioconductor 西湖大学镜像软件包无法下载
+title: Bioconductor 西湖大学镜像无法下载安装 R 包
 number: 180
 slug: discussions-180/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/180
@@ -40,6 +40,8 @@ Installing package(s) 'ChAMP'
 ```
 
 <!-- more -->
+
+总所周知，当 R 通过 HTTP 传输文件时（例如使用 `install.packages` 或 `download.file` 函数），下载方式的选择取决于 `download.file.method` 选项，其选项值包括了 `"internal"`，`"wininet"`(Windows only)，`"libcurl"`，`"wget"` 以及 `"curl"`，如果没有显式指定选项，则默认使用 R 内部的 HTTP 实现，即 `method = "auto"`。 
 
 在 R 中验证 `libcurl` 支持，也发现不支持 http2，而且 `download.file` 时候提示 'SSL connect error'。
 ```r
@@ -117,7 +119,17 @@ options(download.file.extra = paste(
 
 ## 使用 curl 方法
 
-这个方法其实在《[R 语言 download.file 的几点知识](https://shenwy.com/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/r/2021-02-20-r-download-file/)》也提到过，具体就是 —— 使用 `curl` 方法时，通常需要加上 `-L` 参数。这时候 R 会自动调用系统的 `curl` 命令在后台执行对应包的下载。
+这个方法其实在《[R 语言 download.file 的几点知识](https://shenwy.com/yuque/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/r/2021-02-20-r-download-file/)》也提到过，具体就是 —— 使用 `curl` 方法时，通常需要加上 `-L` 参数。这时候 R 会自动调用系统的 `curl` 命令在后台执行对应包的下载。使用这个方法的前提是，对应的 R 包能正常通过 `curl` 命令进行下载。
+
+```bash
+$ curl -L -S https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/bioc/src/contrib/ChAMP_2.32.0.tar.gz -o ChAMP_2.32.0.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 8134k  100 8134k    0     0   948k      0  0:00:08  0:00:08 --:--:-- 1833k
+```
+
+配置 `download.file.method` 使用 `curl` 方法：
+
 ```r
 # For method "curl" use argument extra = "-L".
 options(download.file.method = "curl", extra = "-L")
@@ -125,6 +137,10 @@ options(download.file.method = "curl", extra = "-L")
 # （可选）BiocManager 专属选项（某些版本支持）
 options(BiocManager.download.file.method = "curl", extra = "-L")
 ```
+
+## 参考资料
+
+1. [R and SSL/curl on Ubuntu linux: failed SSL connect in R, but works in curl](https://stackoverflow.com/questions/45061272/r-and-ssl-curl-on-ubuntu-linux-failed-ssl-connect-in-r-but-works-in-curl) - [Stack Overflow](https://stackoverflow.com/)
 
 <script src="https://giscus.app/client.js"
 	data-repo="shenweiyan/Digital-Garden"

@@ -1,5 +1,5 @@
 ---
-title: 用 AI 优化 mRNA 序列设计软件 LinearDesign 的一次尝试
+title: 用 AI 优化 mRNA 序列设计软件 LinearDesign 的一些尝试
 number: 181
 slug: discussions-181/
 url: https://github.com/shenweiyan/Digital-Garden/discussions/181

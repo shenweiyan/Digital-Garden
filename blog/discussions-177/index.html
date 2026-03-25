@@ -12267,7 +12267,8 @@ var _hmt = _hmt || [];
 - HTTP/自定义元数据编辑
 - <strong>可共享链接</strong> - 创建安全的公开文件 URL，可选择设置密码保护、过期时间和下载次数限制</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/02/r2-explorer-manage.png" data-desc-position="bottom"><img alt="r2-explorer-manage" src="https://gi.weiyan.tech/2026/02/r2-explorer-manage.png"></a></p>
-<p><a href="https://github.com/G4brym/R2-Explorer/issues/51">复制图片的直接链接</a> 的功能目前也已经支持，不过个人测试发现还是<a href="https://github.com/G4brym/R2-Explorer/issues/120">有一些问题</a>，未来可期。</p>
+<p><a href="https://github.com/G4brym/R2-Explorer/issues/51">复制图片的直接链接</a> 的功能现在也已经支持，如果你在这个功能的配置中遇到了问题，可以参考<a href="https://github.com/G4brym/R2-Explorer/issues/120">这里</a>。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/02/r2-explorer-copy-public-url.png" data-desc-position="bottom"><img alt="r2-explorer-copy-public-url" src="https://gi.weiyan.tech/2026/02/r2-explorer-copy-public-url.png"></a></p>
 <h2 id="文件处理">文件处理<a class="headerlink" href="#文件处理" title="Permanent link">¶</a></h2>
 <p>支持 PDF 文档、图片、文本文件、Markdown、CSV 等，浏览器内文件预览。</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/02/r2-explorer-pdf-preview.png" data-desc-position="bottom"><img alt="r2-explorer-pdf-preview" src="https://gi.weiyan.tech/2026/02/r2-explorer-pdf-preview.png"></a></p>
@@ -12288,7 +12289,7 @@ var _hmt = _hmt || [];
 <p>配置 GitHub Variables</p>
 <ul>
 <li><code>R2EXPLORER_WORKER_NAME =&gt; gitimg-r2-explorer</code>  </li>
-<li><code>R2EXPLORER_CONFIG =&gt; { readonly: false, basicAuth: { username: 'steven', password: '123456' }, }</code></li>
+<li><code>R2EXPLORER_CONFIG =&gt; { readonly: false, basicAuth: { username: 'steven', password: '123456' }, buckets: { 'gitimg-r2-explorer': { publicUrl: "https://gi.weiyan.tech" } }, }</code></li>
 <li><code>R2EXPLORER_BUCKETS =&gt; gitimg-r2-explorer:gitimg</code></li>
 <li><code>R2EXPLORER_DOMAIN =&gt; gg.weiyan.tech</code></li>
 </ul>

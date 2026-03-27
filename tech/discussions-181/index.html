@@ -57,17 +57,17 @@
     
       <link rel="stylesheet" href="../../assets/document_dates/fonts/material-icons.css">
     
-      <link rel="stylesheet" href="../../assets/document_dates/tippy/light.css">
-    
-      <link rel="stylesheet" href="../../assets/document_dates/tippy/material.css">
-    
-      <link rel="stylesheet" href="../../assets/document_dates/tippy/backdrop.css">
-    
-      <link rel="stylesheet" href="../../assets/document_dates/tippy/shift-away.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/tippy.css">
     
       <link rel="stylesheet" href="../../assets/document_dates/tippy/scale.css">
     
-      <link rel="stylesheet" href="../../assets/document_dates/tippy/tippy.css">
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/material.css">
+    
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/shift-away.css">
+    
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/light.css">
+    
+      <link rel="stylesheet" href="../../assets/document_dates/tippy/backdrop.css">
     
       <link rel="stylesheet" href="../../assets/document_dates/core/core.css">
     
@@ -12173,6 +12173,17 @@ var _hmt = _hmt || [];
   
 
 
+  <nav class="md-tags">
+    
+      
+      
+      
+      
+        <a href="../../tags/#tag:mrna" class="md-tag">mRNA</a>
+      
+    
+  </nav>
+
 
   
     <a href="https://github.com/shenweiyan/Digital-Garden/edit/main/docs/tech/posts/1.6-人工智能/2026-03-13-用-AI-优化-mRNA-序列设计软件-LinearDesign-的一些尝试-dis181.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
@@ -12199,6 +12210,8 @@ var _hmt = _hmt || [];
 </ul>
 <h2 id="lineardesign">LinearDesign<a class="headerlink" href="#lineardesign" title="Permanent link">¶</a></h2>
 <p>LinearDesign 是百度自主研发的 mRNA 序列设计优化算法，其核心功能是同时优化 mRNA 的折叠自由能（MFE）和密码子适应指数（CAI），为研究人员提供专业的序列设计解决方案。</p>
+<!-- more -->
+
 <p>LinearDesign 项目的源代码托管在 GitHub 上，全球的开发者和研究人员都可以共同协作和改进。安装和使用过这个软件的小伙伴，都会发现几个问题：</p>
 <ol>
 <li>默认仅支持 Python2 语法；</li>
@@ -12208,8 +12221,6 @@ var _hmt = _hmt || [];
 <h2 id="qwen-code-cli">Qwen Code CLI<a class="headerlink" href="#qwen-code-cli" title="Permanent link">¶</a></h2>
 <p>Qwen Code CLI 是阿里巴巴通义千问团队推出的一款，基于 Gemini CLI 改造、针对 Qwen3-Coder 模型优化的开源命令行工具，专为终端用户设计，能够实现自然语言生成代码、调试 bug、解释代码、文件操作及自动化工作流，显著提升开发效率。</p>
 <p>虽然 Gemini CLI 能力更强（如联网搜索、长上下文），但 Qwen Code 在本地文件操作、代码生成方面更成熟，而且主打国产自主、每天 2000 次免费额度，适合中文社区和阿里生态。因此，我们在这里选择使用 Qwen Code CLI 对 LinearDesign 上面提到的两个尝试进行 AI 优化修复。</p>
-<!-- more -->
-
 <h2 id="优化修复">优化修复<a class="headerlink" href="#优化修复" title="Permanent link">¶</a></h2>
 <ol>
 <li>

@@ -1,1 +1,6 @@
-
+0a1
+> {'title': 'MkDocs 的缓慢崩溃', 'number': 184, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/184', 'createdAt': '2026-03-27T05:54:35Z', 'lastEditedAt': '2026-03-27T09:32:01Z', 'updatedAt': '2026-03-27T09:32:01Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '2.3-资讯'}, 'labels': {'nodes': [{'name': 'mkdocs'}]}}
+3c4
+< {'title': '用 AI 优化 mRNA 序列设计软件 LinearDesign 的一些尝试', 'number': 181, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/181', 'createdAt': '2026-03-13T07:07:50Z', 'lastEditedAt': None, 'updatedAt': '2026-03-25T01:24:07Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.6-人工智能'}, 'labels': {'nodes': []}}
+---
+> {'title': '用 AI 优化 mRNA 序列设计软件 LinearDesign 的一些尝试', 'number': 181, 'url': 'https://github.com/shenweiyan/Digital-Garden/discussions/181', 'createdAt': '2026-03-13T07:07:50Z', 'lastEditedAt': '2026-03-27T06:12:10Z', 'updatedAt': '2026-03-27T06:12:10Z', 'author': {'login': 'shenweiyan'}, 'category': {'name': '1.6-人工智能'}, 'labels': {'nodes': [{'name': 'mRNA'}]}}

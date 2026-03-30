@@ -2,7 +2,7 @@
 title: 给作者留言
 author: [shenweiyan]
 date: 2023-11-09
-updated: 2025-12-29
+updated: 2026-03-30
 ---
 
 如果你通过本人的博文/平台学到了一点东西，那么对我最好的奖赏就是请你也尝试教我些东西。你可以通过邮箱、微信，或者移步到 “[GitHub Discussions](https://github.com/shenweiyan/Digital-Garden/discussions/16)” 写下您的建议，或者向我提问。

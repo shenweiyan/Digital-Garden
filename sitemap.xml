@@ -666,6 +666,11 @@
         <changefreq>daily</changefreq>
     </url>
     <url>
+        <loc>https://shenwy.com/blog/discussions-185/</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
         <loc>https://shenwy.com/flinks/</loc>
         <lastmod>2026-03-18</lastmod>
         <changefreq>daily</changefreq>
@@ -2061,17 +2066,17 @@
         <changefreq>daily</changefreq>
     </url>
     <url>
+        <loc>https://shenwy.com/blog/category/%E4%B9%B1%E5%BC%B9/</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
         <loc>https://shenwy.com/blog/category/%E8%B5%84%E8%AE%AF/</loc>
         <lastmod>2026-03-31</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://shenwy.com/blog/category/%E5%A5%BD%E7%8E%A9/</loc>
-        <lastmod>2026-03-31</lastmod>
-        <changefreq>daily</changefreq>
-    </url>
-    <url>
-        <loc>https://shenwy.com/blog/category/%E4%B9%B1%E5%BC%B9/</loc>
         <lastmod>2026-03-31</lastmod>
         <changefreq>daily</changefreq>
     </url>
@@ -2177,6 +2182,11 @@
     </url>
     <url>
         <loc>https://shenwy.com/blog/category/%E4%B9%B1%E5%BC%B9/page/6/</loc>
+        <lastmod>2026-03-31</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://shenwy.com/blog/category/%E4%B9%B1%E5%BC%B9/page/7/</loc>
         <lastmod>2026-03-31</lastmod>
         <changefreq>daily</changefreq>
     </url>

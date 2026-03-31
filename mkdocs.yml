@@ -88,9 +88,8 @@ plugins:
       auto_caption: false    
       caption_position: bottom
   - search:
-      lang:
-          - en
-          - zh
+      lang: zh
+      separator: '[\s\u200b\-]'
   - document-dates:
       position: top            # 显示位置: top(标题后) bottom(文档末尾)
       type: date               # 时间类型: date datetime timeago, 默认：date

@@ -4,3 +4,4 @@ mkdocs-rss-plugin
 mkdocs-document-dates
 mkdocs-glightbox
 mkdocs-awesome-nav
+jieba

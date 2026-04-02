@@ -25,7 +25,7 @@
         <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../feed_rss_updated.xml">
       
       <link rel="icon" href="../assets/logo.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-materialx-10.1.2">
     
     
       
@@ -33,7 +33,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.b72b68c2.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.07d82dd6.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.204eaadb.min.css">
@@ -662,6 +662,8 @@ var _hmt = _hmt || [];
       
         
       
+        
+      
     
     
     
@@ -847,6 +849,36 @@ var _hmt = _hmt || [];
     
   
     编程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="category/%E8%BD%AF%E4%BB%B6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    软件
   
 
     
@@ -12195,12 +12227,141 @@ var _hmt = _hmt || [];
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-03-10 00:00:00+00:00">2026年3月10日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="category/%E8%BD%AF%E4%BB%B6/" class="md-meta__link">软件</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 3 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="bioconductor-西湖大学镜像无法下载安装-r-包"><a class="toclink" href="discussions-180/">Bioconductor 西湖大学镜像无法下载安装 R 包</a></h2>
+<p><a href="https://www.bioconductor.org/"><strong>Bioconductor</strong></a> 为高通量基因组数据的分析和可视化提供开源工具。Bioconductor 多数软件包采用 R 统计编程语言开发。Bioconductor 每年释出两个版本，并有活跃的用户社区。</p>
+<h3 id="版本说明"><a class="toclink" href="discussions-180/#版本说明">版本说明</a></h3>
+<p>由于 Bioconductor 的 rsync 上游会自行删除非最新的版本，大部分镜像站仅提供 Bioconductor 的当前最新版本和开发版本，只有少量镜像站点会保留过时的版本。目前已知<a href="https://mirrors.westlake.edu.cn/">西湖大学镜像站</a>提供了历史版本的镜像。</p>
+<p>详细讨论参见 <a href="https://github.com/tuna/issues/issues/1969">tuna/issues#1969</a>。</p>
+<h3 id="问题"><a class="toclink" href="discussions-180/#问题">问题</a></h3>
+<p>先看一下问题，在 R 里面直接配置配置西湖大学的 bioconductor 镜像站，执行 <code>BiocManager::install</code> 包安装提示 “cannot open URL”。
+</p><div class="highlight"><pre><span></span><code><span class="o">&gt;</span><span class="w"> </span><span class="nf">options</span><span class="p">(</span><span class="n">BioC_mirror</span><span class="o">=</span><span class="s">"https://mirrors.westlake.edu.cn/bioconductor"</span><span class="p">)</span>
+<span class="o">&gt;</span><span class="w"> </span><span class="n">BiocManager</span><span class="o">::</span><span class="nf">install</span><span class="p">(</span><span class="s">"ChAMP"</span><span class="p">)</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">bioc</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/bioc/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">annotation</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/data/annotation/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">data</span><span class="o">/</span><span class="n">experiment</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/data/experiment/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">workflows</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/workflows/src/contrib/PACKAGES'</span>
+<span class="n">Warning</span><span class="o">:</span><span class="w"> </span><span class="n">unable</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">index</span><span class="w"> </span><span class="kr">for</span><span class="w"> </span><span class="n">repository</span><span class="w"> </span><span class="n">https</span><span class="o">://</span><span class="n">mirrors.westlake.edu.cn</span><span class="o">/</span><span class="n">bioconductor</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="m">3.18</span><span class="o">/</span><span class="n">books</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">contrib</span><span class="o">:</span>
+<span class="w">  </span><span class="n">cannot</span><span class="w"> </span><span class="n">open</span><span class="w"> </span><span class="n">URL</span><span class="w"> </span><span class="s">'https://mirrors.westlake.edu.cn/bioconductor/packages/3.18/books/src/contrib/PACKAGES'</span>
+<span class="n">Bioconductor</span><span class="w"> </span><span class="n">version</span><span class="w"> </span><span class="m">3.18</span><span class="w"> </span><span class="p">(</span><span class="n">BiocManager</span><span class="w"> </span><span class="m">1.30</span><span class="n">.</span><span class="m">22</span><span class="p">),</span><span class="w"> </span><span class="n">R</span><span class="w"> </span><span class="m">4.3</span><span class="n">.</span><span class="m">0</span><span class="w"> </span><span class="p">(</span><span class="m">2023-04-21</span><span class="p">)</span>
+<span class="n">Installing</span><span class="w"> </span><span class="nf">package</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="s">'ChAMP'</span>
+</code></pre></div><p></p>
+
+    
+      <nav class="md-post__action">
+        <a href="discussions-180/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2026-03-03 00:00:00+00:00">2026年3月3日</time></li>
         
           <li class="md-meta__item">
             分类于
             
               <a href="category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 3 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="用-docker-来解决-lineardesign-的-glibc-版本过低问题"><a class="toclink" href="discussions-179/">用 Docker 来解决 LinearDesign 的 GLIBC 版本过低问题</a></h2>
+<h3 id="lineardesign-介绍"><a class="toclink" href="discussions-179/#lineardesign-介绍">LinearDesign 介绍</a></h3>
+<p>LinearDesign 是一款用于优化 mRNA 设计的软件，旨在提高 mRNA 的稳定性和免疫原性。该项目由 He Zhang、Liang Zhang、Ang Lin 等研究人员开发，并已在 Nature杂志上发表相关研究成果。LinearDesign 通过算法优化 mRNA 序列，使其在保持高翻译效率的同时，具有更好的结构稳定性。</p>
+<p>GitHub 地址：<a href="https://github.com/LinearDesignSoftware/LinearDesign">https://github.com/LinearDesignSoftware/LinearDesign</a></p>
+<h3 id="项目快速启动"><a class="toclink" href="discussions-179/#项目快速启动">项目快速启动</a></h3>
+<p>确保你的系统满足以下依赖要求：     <br>
+- Clang 11.0.0 或更高版本，或 GCC 4.8.5 或更高版本             <br>
+- Python 2.7        <br>
+- GLIBC≥2.29          </p>
+<blockquote>
+<p>glibc (GNU C Library) 是 GNU 发布的 C 标准运行库，是 Linux 系统中最底层、最核心的 API，几乎所有应用软件都依赖它。它主要负责封装 Linux 内核系统调用，并提供内存管理、字符串操作、文件操作等标准函数。</p>
+</blockquote>
+<p>在 Ubuntu 18.04.6 LTS 中，GLIBC 最高只有 2.27，在不升级系统更新 GLIBC 风险太大，因此可以考虑用 Docker 的方式来解决 LinearDesign 的 GLIBC 版本过低问题。</p>
+
+    
+      <nav class="md-post__action">
+        <a href="discussions-179/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2026-03-03 00:00:00+00:00">2026年3月3日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="category/%E8%BD%AF%E4%BB%B6/" class="md-meta__link">软件</a></li>
         
         
           
@@ -12310,12 +12471,117 @@ var _hmt = _hmt || [];
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2025-12-12 00:00:00+00:00">2025年12月12日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="category/%E8%BD%AF%E4%BB%B6/" class="md-meta__link">软件</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 3 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="python-包和项目管理工具-uv-安装与更新"><a class="toclink" href="discussions-173/">Python 包和项目管理工具 UV 安装与更新</a></h2>
+<p><code>uv</code> 有人评价是近十年来 Python 生态出现的最好东西，它彻底改变了 Python 的安装和使用方式，尤其在快速解决依赖冲突（这对大型项目至关重要）方面，速度快得惊人。作为一个由 Astral 开发，用 Rust 编写，几乎可以在任何操作系统或平台上运行的免费的开源工具，个人在越来越多的开源模型、项目中都能看到它的身影，<code>uv</code> 似乎已经和 <code>conda</code> 成为了现在 Python 环境构建与管理的标配。</p>
+<p align="center">
+    <img src="https://gi.weiyan.tech/2025/12/uv-fast.webp" alt="uv-fast"><br>
+    <em>Installing <a href="https://trio.readthedocs.io/" target="_blank">Trio</a>'s dependencies with a warm cache.</em>
+</p>
+
+<p>官方文档 <a href="https://docs.astral.sh/uv/getting-started/installation/#installing-uv">Installing uv</a> 大多数都是先下载 <code>install.sh</code>，然后 <code>sh install.sh</code> 执行安装。</p>
+
+    
+      <nav class="md-post__action">
+        <a href="discussions-173/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2025-09-23 00:00:00+00:00">2025年9月23日</time></li>
         
           <li class="md-meta__item">
             分类于
             
               <a href="category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 1 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="github-notifications-无法清除或标记为已读"><a class="toclink" href="discussions-161/">GitHub Notifications 无法清除或标记为已读</a></h2>
+<p>GitHub 使用多了，最近总是遇到一些奇奇怪怪的问题。这不，今天又遇到了一个 Notifications 无法清除或标记为已读的神奇问题。</p>
+<p><img alt="github-notifications" src="https://gi.weiyan.tech/2025/09/github-notifications.png"></p>
+
+    
+      <nav class="md-post__action">
+        <a href="discussions-161/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
+          <time datetime="2025-09-23 00:00:00+00:00">2025年9月23日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="category/%E8%BD%AF%E4%BB%B6/" class="md-meta__link">软件</a></li>
         
         
           
@@ -12398,203 +12664,6 @@ var _hmt = _hmt || [];
   </div>
 </article>
       
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-07-15 00:00:00+00:00">2025年7月15日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="category/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" class="md-meta__link">人工智能</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 2 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="dify-上的-ollama-不支持-rerank-模型"><a class="toclink" href="discussions-156/">Dify 上的 Ollama 不支持 Rerank 模型</a></h2>
-<p>在 Dify Cloud 平台调用各大平台的大模型 API 一直都没发现这个问题，随着开始折腾本地化使用，才发现 Ollama 部署大模型虽然方便，但是 RAG 中 Dify 知识库混合检索，需要 Rerank 模型时，这一点上，Ollama 居然是不支持 Rerank 模型的。   <br>
-<img alt="rag-pipelines" src="https://gi.weiyan.tech/2025/07/rag-pipelines.webp"></p>
-
-    
-      <nav class="md-post__action">
-        <a href="discussions-156/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-07-13 00:00:00+00:00">2025年7月13日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="category/%E7%94%9F%E4%BF%A1/" class="md-meta__link">生信</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 6 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="ncbi-blast-源码编译安装"><a class="toclink" href="discussions-155/">NCBI Blast 源码编译安装</a></h2>
-<p>记录一下在老破旧服务器从源码编译安装 NCBI Blast 2.15.0+ 遇到的一些问题。</p>
-
-    
-      <nav class="md-post__action">
-        <a href="discussions-155/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-04-25 00:00:00+00:00">2025年4月25日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 1 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="vim-缩进插入删除使用技巧"><a class="toclink" href="discussions-111/">Vim 缩进插入删除使用技巧</a></h2>
-<p>在服务器环境下，Vim 因其高效、轻量、无需图形界面的特性，确实是开发者最常用的代码编辑工具之一。针对 vim 使用过程中最常遇到的一些操作技巧简单记录一下。</p>
-
-    
-      <nav class="md-post__action">
-        <a href="discussions-111/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-03-21 00:00:00+00:00">2025年3月21日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 1 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="python-36-不能产生-libpython36mso-文件"><a class="toclink" href="discussions-106/">Python 3.6 不能产生 libpython3.6m.so 文件</a></h2>
-<p>在 Python-3.6.9 中测试 <code>Cheetah</code> 包的时候遇到了找不到 <code>libpython3.6m.so.1.0</code> 静态库，记录一下填坑。</p>
-
-    
-      <nav class="md-post__action">
-        <a href="discussions-106/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
       
         
           
@@ -12602,7 +12671,7 @@ var _hmt = _hmt || [];
 
 
 <nav class="md-pagination">
-  <span class="md-pagination__current">1</span> <a class="md-pagination__link" href="page/2/">2</a> <a class="md-pagination__link" href="page/3/">3</a> <a class="md-pagination__link" href="page/4/">4</a>
+  <span class="md-pagination__current">1</span> <a class="md-pagination__link" href="page/2/">2</a> <a class="md-pagination__link" href="page/3/">3</a> <span class="md-pagination__dots">..</span> <a class="md-pagination__link" href="page/7/">7</a>
 </nav>
         
       

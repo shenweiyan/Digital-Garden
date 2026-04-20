@@ -671,6 +671,8 @@ var _hmt = _hmt || [];
       
         
       
+        
+      
     
     
     
@@ -886,6 +888,36 @@ var _hmt = _hmt || [];
     
   
     软件
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+  
+  
+    <li class="md-nav__item">
+      <a href="category/%E8%BF%90%E7%BB%B4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    运维
   
 
     
@@ -12111,6 +12143,87 @@ var _hmt = _hmt || [];
     <div class="md-post__meta md-meta">
       <ul class="md-meta__list">
         <li class="md-meta__item">
+          <time datetime="2026-04-20 00:00:00+00:00">2026年4月20日</time></li>
+        
+          <li class="md-meta__item">
+            分类于
+            
+              <a href="category/%E8%BF%90%E7%BB%B4/" class="md-meta__link">运维</a></li>
+        
+        
+          
+          <li class="md-meta__item">
+            
+              需要 4 分钟阅读时间
+            
+          </li>
+        
+        
+      </ul>
+      
+    </div>
+  </header>
+  <div class="md-post__content md-typeset">
+    <h2 id="scipy-安装无法识别-blas-和-lapack"><a class="toclink" href="discussions-188/">SciPy 安装无法识别 BLAS 和 LAPACK</a></h2>
+<p>这个问题出现在 <code>import sklearn</code> 时候，调用 <code>from scipy.linalg import _flapack</code>，出现 <code>undefined symbol: sgeqrt_</code> 错误。</p>
+<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="o">/</span><span class="n">ifs1</span><span class="o">/</span><span class="n">SoftWare</span><span class="o">/</span><span class="n">Python</span><span class="o">-</span><span class="mf">3.10.16</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python3</span>
+<span class="n">Python</span> <span class="mf">3.10.16</span> <span class="p">(</span><span class="n">main</span><span class="p">,</span> <span class="n">Feb</span> <span class="mi">11</span> <span class="mi">2025</span><span class="p">,</span> <span class="mi">13</span><span class="p">:</span><span class="mi">45</span><span class="p">:</span><span class="mi">26</span><span class="p">)</span> <span class="p">[</span><span class="n">GCC</span> <span class="mf">7.3.1</span> <span class="mi">20180303</span> <span class="p">(</span><span class="n">Red</span> <span class="n">Hat</span> <span class="mf">7.3.1</span><span class="o">-</span><span class="mi">5</span><span class="p">)]</span> <span class="n">on</span> <span class="n">linux</span>
+<span class="n">Type</span> <span class="s2">"help"</span><span class="p">,</span> <span class="s2">"copyright"</span><span class="p">,</span> <span class="s2">"credits"</span> <span class="ow">or</span> <span class="s2">"license"</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span><span class="w"> </span><span class="nn">sklearn</span>
+<span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+  <span class="n">File</span> <span class="s2">"&lt;stdin&gt;"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">1</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/sklearn/__init__.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">82</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">clone</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/sklearn/base.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">17</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">_IS_32BIT</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/sklearn/utils/__init__.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">29</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.fixes</span><span class="w"> </span><span class="kn">import</span> <span class="n">parse_version</span><span class="p">,</span> <span class="n">threadpool_info</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/sklearn/utils/fixes.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">19</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">import</span><span class="w"> </span><span class="nn">scipy.stats</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/scipy/stats/__init__.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">391</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.stats</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/scipy/stats/stats.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">174</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.spatial.distance</span><span class="w"> </span><span class="kn">import</span> <span class="n">cdist</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/scipy/spatial/__init__.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">101</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">._procrustes</span><span class="w"> </span><span class="kn">import</span> <span class="n">procrustes</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/scipy/spatial/_procrustes.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">9</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.linalg</span><span class="w"> </span><span class="kn">import</span> <span class="n">orthogonal_procrustes</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/scipy/linalg/__init__.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">195</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.misc</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/scipy/linalg/misc.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">4</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.lapack</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_lapack_funcs</span>
+  <span class="n">File</span> <span class="s2">"/ifs1/SoftWare/Python-3.10.16/lib/python3.10/site-packages/scipy/linalg/lapack.py"</span><span class="p">,</span> <span class="n">line</span> <span class="mi">808</span><span class="p">,</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.linalg</span><span class="w"> </span><span class="kn">import</span> <span class="n">_flapack</span>
+<span class="ne">ImportError</span><span class="p">:</span> <span class="o">/</span><span class="n">ifs1</span><span class="o">/</span><span class="n">SoftWare</span><span class="o">/</span><span class="n">Python</span><span class="o">-</span><span class="mf">3.10.16</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.10</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">scipy</span><span class="o">/</span><span class="n">linalg</span><span class="o">/</span><span class="n">_flapack</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mi">310</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="n">linux</span><span class="o">-</span><span class="n">gnu</span><span class="o">.</span><span class="n">so</span><span class="p">:</span> <span class="n">undefined</span> <span class="n">symbol</span><span class="p">:</span> <span class="n">sgeqrt_</span>
+<span class="o">&gt;&gt;&gt;</span>
+</code></pre></div>
+<p>这个错误的核心原因是：<code>scipy.linalg._flapack</code> 在运行时无法找到 <code>LAPACK</code> 函数的 <code>sgeqrt_</code>。</p>
+
+    
+      <nav class="md-post__action">
+        <a href="discussions-188/">
+          继续阅读
+        </a>
+      </nav>
+    
+    
+  </div>
+</article>
+      
+        <article class="md-post md-post--excerpt">
+  <header class="md-post__header">
+    
+      <nav class="md-post__authors md-typeset">
+        
+          <span class="md-author">
+            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
+          </span>
+        
+      </nav>
+    
+    <div class="md-post__meta md-meta">
+      <ul class="md-meta__list">
+        <li class="md-meta__item">
           <time datetime="2026-03-13 00:00:00+00:00">2026年3月13日</time></li>
         
           <li class="md-meta__item">
@@ -12611,58 +12724,6 @@ var _hmt = _hmt || [];
     
       <nav class="md-post__action">
         <a href="discussions-161/">
-          继续阅读
-        </a>
-      </nav>
-    
-    
-  </div>
-</article>
-      
-        <article class="md-post md-post--excerpt">
-  <header class="md-post__header">
-    
-      <nav class="md-post__authors md-typeset">
-        
-          <span class="md-author">
-            <img src="https://gi.weiyan.tech/0000/logo/logo.webp" alt="Steven Shum">
-          </span>
-        
-      </nav>
-    
-    <div class="md-post__meta md-meta">
-      <ul class="md-meta__list">
-        <li class="md-meta__item">
-          <time datetime="2025-09-04 00:00:00+00:00">2025年9月4日</time></li>
-        
-          <li class="md-meta__item">
-            分类于
-            
-              <a href="category/%E6%8A%98%E8%85%BE/" class="md-meta__link">折腾</a></li>
-        
-        
-          
-          <li class="md-meta__item">
-            
-              需要 2 分钟阅读时间
-            
-          </li>
-        
-        
-      </ul>
-      
-    </div>
-  </header>
-  <div class="md-post__content md-typeset">
-    <h2 id="一次发生在-github-的-trigger-security-scan-异常事件"><a class="toclink" href="discussions-159/">一次发生在 GitHub 的 Trigger security scan 异常事件</a></h2>
-<p>2025年9月4日，早上起来看邮件时候，突然发现，邮箱一下子多了几百封 GitHub Actions 构建异常的邮件！</p>
-<p>震惊紧张后，第一个反应就是，该不会是个人的 personal access token，或者密码泄露了，被人动态进行 commit 提交，以至于出现批量的 Actions 异常。于是，赶紧登录 GitHub 看一下到底发生了什么事。</p>
-<p>首先，看到个人账号下基本每个 Public 仓库，甚至包括 organization 下个人创建的所有 Public 仓库，都出现了类似 <strong>“Trigger security scan”</strong> 的 commits 提交。
-<img alt="trigger-security-scan" src="https://gi.weiyan.tech/2025/09/trigger-security-scan.png"></p>
-
-    
-      <nav class="md-post__action">
-        <a href="discussions-159/">
           继续阅读
         </a>
       </nav>

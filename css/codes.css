@@ -1,0 +1,126 @@
+/* =============================================================================
+   github-dark 样式覆盖（适配 mkdocs-material）
+   色值来源：Pygments github-dark + VS Code Dark+
+   ============================================================================= */
+
+/* ---- 1. 重置 Material 默认代码变量 ---- */
+:root {
+  --md-code-bg-color: #0d1117 !important;    /* VS Code 深色背景 */
+  --md-code-fg-color: #c9d1d9 !important;    /* 默认文本色 */
+  --md-code-hl-color: rgba(56, 139, 253, 0.15) !important;  /* 行高亮 */
+}
+
+/* 代码块容器背景 */
+.md-typeset pre,
+.md-typeset pre > code,
+.md-typeset .highlight,
+.md-typeset .highlight > code {
+  background-color: #0d1117 !important;
+  color: #c9d1d9 !important;
+}
+
+/* 行号区域背景（如果启用 anchor_linenums） */
+.md-typeset .linenodiv pre,
+.md-typeset .linenodiv code {
+  background-color: #161b22 !important;
+  color: #6e7681 !important;
+  border-right: 1px solid #30363d !important;
+}
+
+/* ---- 2. Pygments Token 着色（github-dark 核心色值） ---- */
+/* 注释 */
+.highlight .c, .highlight .ch, .highlight .cm,
+.highlight .c1, .highlight .cs, .highlight .cp,
+.highlight .sd, .highlight .sh {
+  color: #6a9955 !important;
+  font-style: italic;
+}
+
+/* 关键字 / 控制流 */
+.highlight .k, .highlight .kn, .highlight .kd,
+.highlight .kp, .highlight .kr, .highlight .kt,
+.highlight .ow {
+  color: #569cd6 !important;
+  font-weight: normal;
+}
+
+/* 字符串 / 字符 */
+.highlight .s, .highlight .sb, .highlight .sc,
+.highlight .sd, .highlight .s2, .highlight .se,
+.highlight .sh, .highlight .si, .highlight .sx,
+.highlight .sr, .highlight .s1, .highlight .ss {
+  color: #ce9178 !important;
+}
+
+/* 函数名 / 方法调用 */
+.highlight .nf, .highlight .fm, .highlight .na {
+  color: #dcdcaa !important;
+}
+
+/* 类名 / 类型 */
+.highlight .nc, .highlight .nn, .highlight .nv,
+.highlight .vc, .highlight .vg, .highlight .vi,
+.highlight .bp {
+  color: #4ec9b0 !important;
+}
+
+/* 数字 / 布尔值 */
+.highlight .m, .highlight .mb, .highlight .mf,
+.highlight .mh, .highlight .mi, .highlight .mo,
+.highlight .il {
+  color: #b5cea8 !important;
+}
+
+/* 运算符 / 标点 */
+.highlight .o, .highlight .p, .highlight .pi,
+.highlight .nt {
+  color: #d4d4d4 !important;
+}
+
+/* 内置函数 / 特殊变量 */
+.highlight .nb, .highlight .ne {
+  color: #4ec9b0 !important;
+}
+
+/* 装饰器 */
+.highlight .nd {
+  color: #dcdcaa !important;
+  font-style: italic;
+}
+
+/* 参数变量 */
+.highlight .n, .highlight .nx {
+  color: #9cdcfe !important;
+}
+
+/* 错误/删除 */
+.highlight .err, .highlight .gr {
+  color: #f85149 !important;
+  background-color: rgba(248, 81, 73, 0.1);
+}
+
+/* ---- 3. 兼容 Material 的交互效果 ---- */
+/* 代码块复制按钮适配 */
+.md-clipboard {
+  color: #6e7681 !important;
+}
+.md-clipboard:hover {
+  color: #c9d1d9 !important;
+}
+
+/* 行高亮背景（如 {1,3-5} 语法） */
+.md-typeset .highlight .hll {
+  background-color: #1f242e !important;
+  display: block;
+  margin: 0 -1.2rem;
+  padding: 0 1.2rem;
+}
+
+/* 代码块内链接颜色 */
+.md-typeset .highlight a {
+  color: #58a6ff !important;
+  text-decoration: none;
+}
+.md-typeset .highlight a:hover {
+  text-decoration: underline;
+}

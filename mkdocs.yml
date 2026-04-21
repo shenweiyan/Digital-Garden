@@ -145,6 +145,7 @@ extra:
 
 extra_css:
   - css/extra.css
+  - css/codes.css
 
 extra_javascript:
     - js/mathjax.js

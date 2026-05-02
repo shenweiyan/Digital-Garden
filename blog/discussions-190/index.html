@@ -12157,7 +12157,7 @@ var _hmt = _hmt || [];
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"></path></svg>
                           <span class="md-ellipsis">
                             
-                              需要 1 分钟阅读时间
+                              需要 3 分钟阅读时间
                             
                           </span>
                         </div>
@@ -12196,8 +12196,78 @@ var _hmt = _hmt || [];
   <h1>在 Qwen Code CLI 中接入 DeepSeek V4 模型</h1>
 
 <p>在前一篇《<a href="https://shenwy.com/blog/discussions-189/">选择一套适合自己的 AI Code CLI</a>》文章中，我们提到通义千问 OAuth 免费套餐已经成为了历史，作为付费备选方案，今天介绍一下 Qwen Code CLI + DeepSeek V4（Flash/Pro）这一套组合，方便国内的用户可以直接配置使用。     </p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-deepseek-v4.png" data-desc-position="bottom"><img alt="qwen-deepseek-v4" src="https://gi.weiyan.tech/2026/04/qwen-deepseek-v4.png"></a></p>
 <!-- more -->
 
+<p>首先，在 DeepSeek 开放平台的 <a href="https://platform.deepseek.com/top_up">充值</a> 页面先充值。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/deepseek-top-up.png" data-desc-position="bottom"><img alt="deepseek-top-up" src="https://gi.weiyan.tech/2026/04/deepseek-top-up.png"></a></p>
+<p>第二，在 DeepSeek 开放平台的 <a href="https://platform.deepseek.com/api_keys">API Keys</a> 页面创建 API Key。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/deepseek-api-keys.png" data-desc-position="bottom"><img alt="deepseek-api-keys" src="https://gi.weiyan.tech/2026/04/deepseek-api-keys.png"></a></p>
+<p>第三，配置 Qwen Code。有两种配置方式，一个是直接编辑 <code>settings.json</code> 文件；第二是通过 <code>qwen</code> 命令，一步步进行配置。</p>
+<p>方法一，直接编辑 <code>settings.json</code> 文件。具体是，找到 <code>settings.json</code> 文件（通常在 <code>~/.qwen</code> 目录下，或通过终端输入配置命令打开），填写和编辑下面的内容。
+</p><div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"env"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"QWEN_CUSTOM_API_KEY_OPENAI_HTTPS_API_DEEPSEEK_COM"</span><span class="p">:</span><span class="w"> </span><span class="s2">"YOUR_DEEPSEEK_API_KEY"</span><span class="w">     </span><span class="c1">// 填入你的 API Key</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">"modelProviders"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"openai"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"deepseek-v4-flash"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"deepseek-v4-flash"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"baseUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.deepseek.com"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"envKey"</span><span class="p">:</span><span class="w"> </span><span class="s2">"QWEN_CUSTOM_API_KEY_OPENAI_HTTPS_API_DEEPSEEK_COM"</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">"security"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"auth"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"selectedType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"openai"</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">"model"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"deepseek-v4-flash"</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p></p>
+<p>方法二，在命令行打开 <code>qwen</code>，根据提示进行一步一步配置。</p>
+<ol>
+<li>
+<p>命令行打开 <code>qwen</code>，认证方式选择 <strong>API Key</strong>。
+   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-setting-api-key.png" data-desc-position="bottom"><img alt="qwen-setting-api-key" src="https://gi.weiyan.tech/2026/04/qwen-setting-api-key.png"></a>        </p>
+</li>
+<li>
+<p><strong>API Key Type</strong> 选择 <strong>“Custom API Key”</strong>。
+   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-setting-api-key-type.png" data-desc-position="bottom"><img alt="qwen-setting-api-key-type" src="https://gi.weiyan.tech/2026/04/qwen-setting-api-key-type.png"></a>          </p>
+</li>
+<li>
+<p>由于 <a href="https://api-docs.deepseek.com/zh-cn/">DeepSeek API 使用与 OpenAI/Anthropic 兼容的 API 格式</a>，在 Protocol 这一步可以选择 <strong>“OpenAI-compatible”</strong>，或者 <strong>“Anthropic-compatible”</strong>，我这里选择前者。
+    <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-openai-compatible.png" data-desc-position="bottom"><img alt="qwen-openai-compatible" src="https://gi.weiyan.tech/2026/04/qwen-openai-compatible.png"></a>          </p>
+</li>
+<li>
+<p>API endpoint 这里填写：<code>https://api.deepseek.com</code>。       <br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-seeting-api-endpoint.png" data-desc-position="bottom"><img alt="qwen-seeting-api-endpoint" src="https://gi.weiyan.tech/2026/04/qwen-seeting-api-endpoint.png"></a>          </p>
+</li>
+<li>
+<p>API Key 填写前面创建的 API Key。       <br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-setting-enter-api-key.png" data-desc-position="bottom"><img alt="qwen-setting-enter-api-key" src="https://gi.weiyan.tech/2026/04/qwen-setting-enter-api-key.png"></a>          </p>
+</li>
+<li>
+<p><strong>Model IDs</strong> 这里填写 <code>deepseek-v4-flash</code>。        <br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-setting-model-ids.png" data-desc-position="bottom"><img alt="qwen-setting-model-ids" src="https://gi.weiyan.tech/2026/04/qwen-setting-model-ids.png"></a>          </p>
+</li>
+<li>
+<p><strong>Advanced Config</strong> 这里选择 <code>Enable thinking</code>。        <br>
+<a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-setting-advanced-config.png" data-desc-position="bottom"><img alt="qwen-setting-advanced-config" src="https://gi.weiyan.tech/2026/04/qwen-setting-advanced-config.png"></a>          </p>
+</li>
+<li>
+<p>最后，一路回车，直至配置完成。完成配置后通过 <code>/model</code> 指令，就可以看到你现在使用的模型。
+   <a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-deepseek-v4-flash.png" data-desc-position="bottom"><img alt="qwen-deepseek-v4-flash" src="https://gi.weiyan.tech/2026/04/qwen-deepseek-v4-flash.png"></a></p>
+</li>
+</ol>
+<p>完成上面的 8 步后，在 Qwen Code CLI 中接入 DeepSeek-V4-Flash 模型就算全部配置完成了，接下来就可以在 Qwen Code CLI 中体验智能编程的乐趣了。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/qwen-deepseek-v4-coding.png" data-desc-position="bottom"><img alt="qwen-deepseek-v4-coding" src="https://gi.weiyan.tech/2026/04/qwen-deepseek-v4-coding.png"></a></p>
+<p>回到 DeepSeek 开放平台的 <a href="https://platform.deepseek.com/usage">用量信息</a> 页面就可以看到自己的用量信息和余额。</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="https://gi.weiyan.tech/2026/04/platform-deepseek-usage.png" data-desc-position="bottom"><img alt="platform-deepseek-usage" src="https://gi.weiyan.tech/2026/04/platform-deepseek-usage.png"></a></p>
 <script src="https://giscus.app/client.js" data-repo="shenweiyan/Digital-Garden" data-repo-id="R_kgDOKgxWlg" data-mapping="number" data-term="190" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="light" data-lang="zh-CN" crossorigin="anonymous" async="">
 </script>
 

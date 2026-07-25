@@ -1,0 +1,87 @@
+name: mkdocs-deploy
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+      - cron: '0 10 * * *' # 对应北京时间每天 18:00
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v5
+
+      - name: Git 配置
+        run: |
+          git config --global user.name "shenweiyan"
+          git config --global user.email "weiyanshum@gmail.com"
+
+      - name: Git 拉取
+        run: git pull
+
+      - name: 安装 Python3
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: 安装 Python3 依赖
+        run: pip3 install requests python-slugify pytz PyYaml gitpython
+
+      - name: 获取并保存所有 Discussions content+meta 信息
+        run: |
+          ls -al docs
+          python3 script/getAllDiscussions.py -r shenweiyan/Digital-Garden -t ${{ secrets.PERSONAL_ACCESS_TOKEN }} -m both
+          ls -al docs
+
+      - name: 生成 mkdocs 博客文章
+        run: python3 script/discussions2blog.py -i docs/Discussions.txt
+
+      - name: 生成 mkdocs 技术页面
+        run: python3 script/discussions2tech.py -i docs/Discussions.txt
+
+      - name: 生成 mkdocs 专题页面
+        run: python3 script/discussions2topic.py -i docs/Discussions.txt -c nav4dir.yml
+
+      - name: 生成 mkdocs 指定页面
+        run: python3 script/discussions4pages.py -i docs/Discussions.txt
+
+      # 检查 Discussions 是否有变动 (过去 24 小时)
+      - name: Check Discussions Changes
+        id: check_discussions
+        run: |
+          YESTERDAY=$(date -d "24 hours ago" -u +"%Y-%m-%dT%H:%M:%SZ")
+          echo "Checking discussions updated since: $YESTERDAY"
+
+          # 查询过去 24 小时内更新的讨论
+          RECENT_DISCUSSIONS=$(gh api /repos/${{ github.repository }}/discussions --paginate -q ".[] | select(.updated_at > \"$YESTERDAY\")")
+
+          if [ -n "$RECENT_DISCUSSIONS" ]; then
+            echo "Discussion changes detected."
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "No discussion changes in the last 24 hours."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+
+      - uses: actions/cache@v5
+        with:
+          key: mkdocs-material-${{ env.cache_id }}
+          path: ~/.cache
+          restore-keys: |
+            mkdocs-materialx-
+
+      # main 或者 discussions 有变动时执行部署
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' || steps.check_discussions.outputs.has_changes == 'true'
+        run: |
+          pip install -r requirements.txt
+          mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}

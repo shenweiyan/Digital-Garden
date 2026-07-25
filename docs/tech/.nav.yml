@@ -1,0 +1,3 @@
+sort: 
+  direction: desc
+  by: filename

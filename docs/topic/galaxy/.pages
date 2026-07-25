@@ -1,0 +1,6 @@
+nav:
+    - index.md
+    - 版本说明: release
+    - 管理员文档: admin
+    - 开发者文档: devel
+    - 其他文档: other

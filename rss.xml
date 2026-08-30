@@ -13,8 +13,8 @@
     <language>zh</language>
 
     
-    <pubDate>Sat, 29 Aug 2026 14:56:39 -0000</pubDate>
-    <lastBuildDate>Sat, 29 Aug 2026 14:56:39 -0000</lastBuildDate>
+    <pubDate>Sun, 30 Aug 2026 14:42:30 -0000</pubDate>
+    <lastBuildDate>Sun, 30 Aug 2026 14:42:30 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     
@@ -11828,11 +11828,11 @@ $&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;ls&lt;span class=&#34;w&#34;&gt; &l
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;查看请求地址
-  &lt;img alt=&#34;appmsgpublish url&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/Gitbook/wechat_url.png&#34; /&gt;&lt;/p&gt;
+  &lt;img alt=&#34;wechat-appmsgpublish-url&#34; src=&#34;https://gi.weiyan.tech/2023/10/wechat-appmsgpublish-url.png&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;获取 cookie
-  &lt;img alt=&#34;wecaht cookie&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/Gitbook/wecaht_cookie.png&#34; /&gt;&lt;/p&gt;
+  &lt;img alt=&#34;wecaht-cookie&#34; src=&#34;https://gi.weiyan.tech/2023/10/wecaht-cookie.png&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;requests&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;json&lt;/span&gt;
@@ -11848,7 +11848,7 @@ $&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;ls&lt;span class=&#34;w&#34;&gt; &l
 &lt;span class=&#34;n&#34;&gt;req_json&lt;/span&gt;
 &lt;span class=&#34;c1&#34;&gt;# total_count 即为已发表文章的总数&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;img alt=&#34;Wecaht posts total_count&#34; src=&#34;https://slab-1251708715.cos.ap-guangzhou.myqcloud.com/Gitbook/total_count.png&#34; /&gt;&lt;/p&gt;
+&lt;img alt=&#34;wecaht-posts-total-count&#34; src=&#34;https://gi.weiyan.tech/2023/10/wecaht-posts-total-count.png&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;获取所有的文章信息&#34;&gt;获取所有的文章信息&lt;a class=&#34;headerlink&#34; href=&#34;#获取所有的文章信息&#34; title=&#34;Permanent link&#34;&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;以下程序的 &lt;code&gt;mp.txt&lt;/code&gt; 就是得到的该公众号所有文章信息的列表。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class=&#34;n&#34;&gt;allPostList&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[]&lt;/span&gt;
